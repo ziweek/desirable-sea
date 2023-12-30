@@ -4,7 +4,6 @@
 <img src="/src/banner.png"/>
 
 **제주위성데이터를 활용한 장기방치차량 탐지 지능형 플랫폼**  
-
 "Intelligent Platform for Long-Term Abandoned Vehicle Detection Utilizing Jeju Satellite Data"
 
 <p align="left">
