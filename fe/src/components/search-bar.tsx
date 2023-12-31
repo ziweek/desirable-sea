@@ -129,7 +129,6 @@ export default function SearchBar(props: SearchBarProps): any {
       inputProps={{
         classNames: {
           base: "text-[#006FEE]",
-          inputWrapper: "border-4",
           label: "text-[#006FEE]",
         },
       }}
@@ -140,7 +139,7 @@ export default function SearchBar(props: SearchBarProps): any {
       allowsCustomValue={true}
       placeholder="검색 키워드를 입력하시오."
       variant="bordered"
-      size={pathname == "/dashboard" ? "md" : "sm"}
+      size={"sm"}
       isClearable={true}
       inputValue={textInput}
       onInputChange={(e) => {

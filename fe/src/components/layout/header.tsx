@@ -1,6 +1,14 @@
 "use client";
 
-import { Button, Card } from "@nextui-org/react";
+import {
+  Card,
+  Pagination,
+  PaginationItem,
+  PaginationCursor,
+  CardBody,
+  CardHeader,
+  Divider,
+} from "@nextui-org/react";
 import { IconLogo } from "../common/icons";
 import { useRouter } from "next/navigation";
 import SearchBar from "../search-bar";
@@ -19,26 +27,21 @@ export default function Header(props: HeaderProps) {
 
   return (
     <div
-      className={`z-50 absolute top-0 flex flex-row items-center justify-between w-full mx-auto mt-4`}
+      style={{ display: "grid", gridTemplateRows: "auto 1fr", gap: "15px" }}
+      className={`z-50 absolute top-0 flex flex-col items-start justify-center px-8 w-[450px] h-screen py-8`}
     >
       <Card
         isBlurred
-        className={`flex flex-row items-center justify-between w-[95vw] mx-auto px-8 py-2 max-w-[1024px]`}
+        className={`flex flex-row items-center justify-between w-full px-4 py-2 max-w-[1024px]`}
         style={{
           display: "grid",
-          gridTemplateColumns: "1fr 4fr 2fr",
-          gap: "10px",
+          gridTemplateColumns: "1fr 4fr",
+          gap: "5px",
         }}
       >
-        <div>
+        <div className="flex flex-col justify-center w-fit px-2">
           {props.isLogoVisible || props.isLogoVisible == undefined ? (
-            <button
-              onClick={() => {
-                router.push("/");
-              }}
-            >
-              <IconLogo width={"70px"} fill={"#000000"}></IconLogo>
-            </button>
+            <IconLogo width={"50px"} fill={"#006FEE"}></IconLogo>
           ) : (
             <></>
           )}
@@ -52,30 +55,35 @@ export default function Header(props: HeaderProps) {
             <></>
           )}
         </div>
-        <div className="flex h-[60px] flex-row items-center justify-end space-x-4">
-          <Button
-            variant="light"
-            disableRipple
-            onPress={() => {
-              router.push("/");
-            }}
-          >
-            <p className={`font-bold text-${props.textColor || "black"}`}>
-              서비스 소개
-            </p>
-          </Button>
-          <Button
-            variant="light"
-            disableRipple
-            onPress={() => {
-              router.push("https://github.com/ziweek/milipat");
-            }}
-          >
-            <p className={`font-bold text-${props.textColor || "black"}`}>
-              개발팀 소개
-            </p>
-          </Button>
-        </div>
+      </Card>
+      <Card className="w-full h-full" isBlurred>
+        {/* <CardHeader></CardHeader>
+        <Divider></Divider> */}
+        <CardBody>
+          <div className="flex flex-col mx-auto justify-between h-full py-8">
+            <div className="space-y-4">
+              {[1, 2, 3, 4].map((e, i) => {
+                return (
+                  <Card key={i} className="h-[150px]">
+                    <p>제주시 어디 공영주차장</p>
+                    <p>제주시 어디동 어디어디</p>
+                    <p>사진1</p>
+                    <p>기간</p>
+                    <p>최초포착</p>
+                    <p>최근포착</p>
+                  </Card>
+                );
+              })}
+            </div>
+            <Pagination
+              size={"sm"}
+              total={10}
+              initialPage={1}
+              showControls
+              variant={"bordered"}
+            />
+          </div>
+        </CardBody>
       </Card>
     </div>
   );
