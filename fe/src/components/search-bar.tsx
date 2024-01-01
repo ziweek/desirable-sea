@@ -40,41 +40,11 @@ const dataset = [
         latitude: "2023.01.01",
         longitude: "2023.01.01",
       },
-      {
-        name: "제주시 000 공영주차장",
-        address: "제주서 어디어디 어디어디",
-        latitude: "2023.01.01",
-        longitude: "2023.01.01",
-      },
-      {
-        name: "제주시 000 공영주차장",
-        address: "제주서 어디어디 어디어디",
-        latitude: "2023.01.01",
-        longitude: "2023.01.01",
-      },
-      {
-        name: "제주시 000 공영주차장",
-        address: "제주서 어디어디 어디어디",
-        latitude: "2023.01.01",
-        longitude: "2023.01.01",
-      },
     ],
   },
   {
     section: "서귀포시 추천 장소",
     documents: [
-      {
-        name: "서귀포시 000 공영주차장",
-        address: "서귀포시 어디어디 어디어디",
-        latitude: "2023.01.01",
-        longitude: "2023.01.01",
-      },
-      {
-        name: "서귀포시 000 공영주차장",
-        address: "서귀포시 어디어디 어디어디",
-        latitude: "2023.01.01",
-        longitude: "2023.01.01",
-      },
       {
         name: "서귀포시 000 공영주차장",
         address: "서귀포시 어디어디 어디어디",
@@ -125,6 +95,7 @@ export default function SearchBar(props: SearchBarProps): any {
       classNames={{
         clearButton: "text-[#006FEE]",
         selectorButton: "text-[#006FEE]",
+        listboxWrapper: "min-h-[500px]",
       }}
       inputProps={{
         classNames: {
