@@ -37,7 +37,7 @@
       <img src="https://drive.google.com/uc?export=view&id=1dbPTWjUbmXZW73A21PFVhkA261sAduhf" width=200 height=250/>
     </td>
     <td>
-      <img src="" width=200 height=250/>
+      <img src="https://drive.google.com/uc?export=view&id=1RXq9nhJ5xsv_tMCUZ4l6QwDeiyR1mtSD" width=200 height=250/>
     </td>
   </tr>
   <tr>
