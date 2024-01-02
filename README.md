@@ -8,7 +8,7 @@
 
 <p align="left">
   <img src="https://img.shields.io/badge/ultralytics-YOLOv8-FEE500?style=flat-square"/>
-  <img src="https://img.shields.io/badge/hugging%20face--FEE500?style=flat-square"/>
+  <img src="https://img.shields.io/badge/OpenMMLab-MMRotate-FEE500?style=flat-square"/>
   <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"/>
   <br/>
   <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
@@ -16,7 +16,6 @@
   <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"/>
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white"/>
   <img src="https://img.shields.io/badge/Amazon%20AWS-FF9900?style=flat-square&logo=amazonaws&logoColor=white"/>
 </p>
 
