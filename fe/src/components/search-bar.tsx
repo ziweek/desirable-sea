@@ -9,57 +9,34 @@ import { useCallback, useState } from "react";
 
 const dataset = [
   {
-    section: "최근 검색 장소",
+    section: "제주시 방치 차량 탐지 장소",
     documents: [
       {
-        name: "제주시 000 공영주차장",
-        address: "제주서 어디어디 어디어디",
+        name: "삼다수숲길 주차장",
+        address: "제주특별자치도 제주시 조천읍 교래리 280",
         latitude: "2023.01.01",
         longitude: "2023.01.01",
       },
       {
-        name: "제주시 000 공영주차장",
-        address: "제주서 어디어디 어디어디",
+        name: "조천읍 무료 주차장(405-2-000274)",
+        address: "제주특별자치도 제주시 조천읍 함덕16길 15-13",
         latitude: "2023.01.01",
         longitude: "2023.01.01",
       },
     ],
   },
   {
-    section: "제주시 추천 장소",
+    section: "서귀포시 방치 차량 탐지 장소",
     documents: [
       {
-        name: "제주시 000 공영주차장",
-        address: "제주서 어디어디 어디어디",
+        name: "제주은행맞은편공영주차장",
+        address: "제주특별자치도 서귀포시 대정읍 하모리 846-11",
         latitude: "2023.01.01",
         longitude: "2023.01.01",
       },
       {
-        name: "제주시 000 공영주차장",
-        address: "제주서 어디어디 어디어디",
-        latitude: "2023.01.01",
-        longitude: "2023.01.01",
-      },
-    ],
-  },
-  {
-    section: "서귀포시 추천 장소",
-    documents: [
-      {
-        name: "서귀포시 000 공영주차장",
-        address: "서귀포시 어디어디 어디어디",
-        latitude: "2023.01.01",
-        longitude: "2023.01.01",
-      },
-      {
-        name: "서귀포시 000 공영주차장",
-        address: "서귀포시 어디어디 어디어디",
-        latitude: "2023.01.01",
-        longitude: "2023.01.01",
-      },
-      {
-        name: "서귀포시 000 공영주차장",
-        address: "서귀포시 어디어디 어디어디",
+        name: "대정읍하모리 노상공영주차장",
+        address: "제주특별자치도 서귀포시 대정읍 하모리 772-22",
         latitude: "2023.01.01",
         longitude: "2023.01.01",
       },
@@ -95,7 +72,7 @@ export default function SearchBar(props: SearchBarProps): any {
       classNames={{
         clearButton: "text-[#006FEE]",
         selectorButton: "text-[#006FEE]",
-        listboxWrapper: "min-h-[500px]",
+        // listboxWrapper: "min-h-[500px]",
       }}
       inputProps={{
         classNames: {

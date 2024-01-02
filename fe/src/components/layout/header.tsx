@@ -71,8 +71,10 @@ export default function Header(props: HeaderProps) {
                 return (
                   <Card key={i} className="h-fit p-4 space-y-4">
                     <div className="flex flex-col justify-center items-start">
-                      <p className="font-bold">제주시 어디 공영주차장</p>
-                      <p className="text-xs">제주시 어디동 어디어디</p>
+                      <p className="font-bold">제주은행맞은편공영주차장</p>
+                      <p className="text-xs">
+                        제주특별자치도 서귀포시 대정읍 하모리 846-11
+                      </p>
                     </div>
                     <div className="flex flex-col justify-around items-center space-y-2 w-full">
                       <div className="flex flex-col justify-center items-center space-y-1">
