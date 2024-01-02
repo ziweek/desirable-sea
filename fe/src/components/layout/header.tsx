@@ -57,57 +57,58 @@ export default function Header(props: HeaderProps) {
         </div>
       </Card>
       <Card className="w-full h-full" isBlurred>
-        {/* <CardHeader></CardHeader>
-        <Divider></Divider> */}
         <CardBody>
-          <div className="flex flex-col mx-auto justify-between h-full py-8">
-            <div className="space-y-4">
-              {[1, 2].map((e, i) => {
+          <div className="flex flex-col mx-auto justify-between h-full py-4 select-none">
+            <div
+              className="h-full"
+              style={{
+                display: "grid",
+                gridTemplateRows: "1fr auto",
+                gap: "20px",
+              }}
+            >
+              {[1].map((e, i) => {
                 return (
                   <Card key={i} className="h-fit p-4 space-y-4">
                     <div className="flex flex-col justify-center items-start">
                       <p className="font-bold">제주시 어디 공영주차장</p>
                       <p className="text-xs">제주시 어디동 어디어디</p>
                     </div>
-                    <div className="flex flex-row justify-around items-center spzce-x-4 w-full">
+                    <div className="flex flex-col justify-around items-center space-y-2 w-full">
                       <div className="flex flex-col justify-center items-center space-y-1">
                         <Card
-                          className="h-[125px] w-[125px] bg-black"
+                          className="h-[175px] w-[175px] bg-[url('../../public/images/before-detection.jpeg')] bg-cover bg-center"
                           radius={"none"}
                           shadow={"none"}
-                        >
-                          d
-                        </Card>
-                        <p className="text-xs">최초포착</p>
+                        ></Card>
+                        <p className="text-xs">2023.03.07</p>
                       </div>
                       <div className="flex flex-col justify-center items-center space-y-1">
                         <Card
-                          className="h-[125px] w-[125px] bg-black"
+                          className="h-[175px] w-[175px] bg-[url('../../public/images/after-detection.jpeg')] bg-cover bg-center"
                           radius={"none"}
                           shadow={"none"}
-                        >
-                          d
-                        </Card>
-                        <p className="text-xs">최근포착</p>
+                        ></Card>
+                        <p className="text-xs">2023.12.29</p>
                       </div>
                     </div>
                     <div className="flex flex-col justify-center items-end">
-                      <p className="font-bold text-red-500">
+                      <p className="font-bold text-red-500 text-lg">
                         장기 방치 차량으로 탐지됨.
                       </p>
-                      <p className="text-xs">지난 1년 간 정차되어 있음.</p>
+                      <p className="text-xs">지난 9개월 간 정차되어 있음.</p>
                     </div>
                   </Card>
                 );
               })}
+              <Pagination
+                size={"sm"}
+                total={10}
+                initialPage={1}
+                showControls
+                variant={"bordered"}
+              />
             </div>
-            <Pagination
-              size={"sm"}
-              total={10}
-              initialPage={1}
-              showControls
-              variant={"bordered"}
-            />
           </div>
         </CardBody>
       </Card>
