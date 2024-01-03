@@ -3,10 +3,19 @@
 **제주위성데이터를 활용한 장기방치차량 탐지 지능형 플랫폼**  
 "Intelligent Platform for Long-Term Abandoned Vehicle Detection Utilizing Jeju Satellite Data"
 
+<br/>
+
 <p align="left">
-  <img src="https://img.shields.io/badge/ultralytics-YOLOv8-FEE500?style=flat-square"/>
-  <img src="https://img.shields.io/badge/OpenMMLab-MMRotate-FEE500?style=flat-square"/>
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white"/>
+  <a href='https://desirable-sea.vercel.app/' target="_blank">
+    <img src="https://img.shields.io/badge/Deployment-Vercel-000000?style=flat-square"/>
+  </a>
+  <a href='' target="_blank">
+    <img src="https://img.shields.io/badge/Modeling-goorm-ffffff?style=flat-square"/>
+  </a>
+  <br/>
+  <img src="https://img.shields.io/badge/Ensemble-Weighted%20boxes%20fusion-FEE500?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Baseline-MMRotate-FEE500?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Baseline-YOLOv8-FEE500?style=flat-square"/>
   <br/>
   <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
   <img src="https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white"/>
@@ -25,7 +34,7 @@
 
 # 2. Get Started
 
-### 2.1 객체 인식
+### 2.1 객체 인식 모델링
 ```
 desirable-sea
 ├── checkpoints
@@ -41,10 +50,6 @@ setup.sh
 this code is written in Linux.
 
 ```shell
-
-sudo apt update   
-sudo apt upgrade
-
 wget https://repo.anaconda.com/miniconda/Miniconda3-py37_4.9.2-Linux-x86_64.sh
 chmod +x Miniconda3-py37_4.9.2-Linux-x86_64.sh
 bash ./Miniconda3-py37_4.9.2-Linux-x86_64.sh -b -f -p /usr/local
@@ -88,7 +93,7 @@ python mmrotate/demo/image_demo.py demo.png mmrotate/configs/rotated_retinanet/r
 
 <br/>
 
-### 2.2 웹페이지 대쉬보드
+### 2.2 웹페이지 대쉬보드 구현
 
 
 <br/>
