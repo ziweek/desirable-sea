@@ -41,6 +41,10 @@ setup.sh
 this code is written in Linux.
 
 ```shell
+
+wget https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh
+sudo sh Anaconda3-2019.10-Linux-x86_64.sh
+
 conda create -n open-mmlab
 conda activate open-mmlab
 
