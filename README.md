@@ -38,10 +38,9 @@
 ```
 desirable-sea
 ├── checkpoints
-│   └── rotated_retinanet_obb_r50_fpn_1x_dota_ms_rr_le90-1da1ec9c.pth
 └── mmrotate
     ├── config
-    │   └── config
+    ├── ...
     └── demo
 ```
 
