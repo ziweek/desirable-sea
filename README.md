@@ -17,8 +17,74 @@
 </p>
 
 <br/>
+
+# 1. Introduction
+본 아이디어는, 제주 위성데이터를 활용하고 컴퓨터 비전의 객체 인식 AI 기술을 적용하여, 제주 지역에서 장기적으로 주차되거나 방치되어 있는 차량을 탐지하고, 해당 정보를 유관 기관이 통합하여 관리할 수 있는 지능형 플랫폼을 연구 및 개발하는 것입니다. 이를 통해 장기 방치 차량의 전수조사에 소요되는 인력과 시간을 절약하고 제주 미래항공우주산업 육성을 위한 첫걸음이 되기를 기대합니다.
+
 <br/>
+
+# 2. Get Started
+
+### 2.1 객체 인식
+```
+desirable-sea
+├── checkpoints
+│   └── rotated_retinanet_obb_r50_fpn_1x_dota_ms_rr_le90-1da1ec9c.pth
+└── mmrotate
+    ├── config
+    │   └── config
+    └── demo
+```
+
+
+setup.sh
+this code is written in Linux.
+
+```shell
+conda create -n open-mmlab
+conda activate open-mmlab
+
+pip install torch==1.7.0+cu110 torchvision==0.8.1+cu110 torchaudio==0.7.0 -f https://download.pytorch.org/whl/torch_stable.html
+pip install openmim
+mim install mmcv-full==1.5.3
+mim install mmdet==2.25.1
+
+git clone https://github.com/open-mmlab/mmrotate.git
+cd mmrotate
+pip install -r requirements/build.txt
+pip install -v -e .
+
+cd ..
+```
+
 <br/>
+
+
+```shell
+mkdir checkpoints
+wget https://github.com/open-mmlab/mmrotate/blob/main/configs/rotated_retinanet/rotated_retinanet_obb_r50_fpn_1x_dota_ms_rr_le90.py
+
+cd ..
+```
+
+<br/>
+
+inference.sh
+this code is written in Linux.
+
+```shell
+python mmrotate/demo/image_demo.py demo.png mmrotate/configs/rotated_retinanet/rotated_retinanet_obb_r50_fpn_1x_dota_ms_rr_le90.py checkpoints/rotated_retinanet_obb_r50_fpn_1x_dota_ms_rr_le90-1da1ec9c.pth --out-file result.jpg
+```
+
+<br/>
+
+### 2.2 웹페이지 대쉬보드
+
+
+<br/>
+
+# Contribute
+
 
 <table>
   <tr>
@@ -55,60 +121,6 @@
   </tr>
 </table>
 
-
-
-<br/>
-<br/>
-<br/>
-
-
-
-# Introduction
-본 아이디어는, 제주 위성데이터를 활용하고 컴퓨터 비전의 객체 인식 AI 기술을 적용하여, 제주 지역에서 장기적으로 주차되거나 방치되어 있는 차량을 탐지하고, 해당 정보를 유관 기관이 통합하여 관리할 수 있는 지능형 플랫폼을 연구 및 개발하는 것입니다. 이를 통해 장기 방치 차량의 전수조사에 소요되는 인력과 시간을 절약하고 제주 미래항공우주산업 육성을 위한 첫걸음이 되기를 기대합니다.
-
-<br/>
-
-# Architecture
-
-### 객체 인식 구현
-
-```shell
-# setup.sh
-# this code is written in Linux.
-
-
-conda create -n open-mmlab
-conda activate open-mmlab
-
-pip install torch==1.7.0+cu110 torchvision==0.8.1+cu110 torchaudio==0.7.0 -f https://download.pytorch.org/whl/torch_stable.html
-pip install openmim
-mim install mmcv-full==1.5.3
-mim install mmdet==2.25.1
-
-git clone https://github.com/open-mmlab/mmrotate.git
-cd mmrotate
-pip install -r requirements/build.txt
-pip install -v -e .
-```
-
-```shell
-# inference.sh
-# this code is written in Linux.
-
-python mmrotate/demo/image_demo.py demo.png mmrotate/configs/rotated_retinanet/rotated_retinanet_obb_r50_fpn_1x_dota_ms_rr_le90.py checkpoints/rotated_retinanet_obb_r50_fpn_1x_dota_ms_rr_le90-1da1ec9c.pth --out-file result.jpg
-```
-
-### 웹페이지 대쉬보드 구현
-
-
-<br/>
-
-# Comment
-
-김지욱
-
-
-부선웅
 
 
 
