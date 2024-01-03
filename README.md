@@ -41,10 +41,14 @@ setup.sh
 this code is written in Linux.
 
 ```shell
+
+sudo apt update   
+sudo apt upgrade
+
 wget https://repo.anaconda.com/miniconda/Miniconda3-py37_4.9.2-Linux-x86_64.sh
 chmod +x Miniconda3-py37_4.9.2-Linux-x86_64.sh
 bash ./Miniconda3-py37_4.9.2-Linux-x86_64.sh -b -f -p /usr/local
-which conda  # should return /usr/local/bin/conda
+which conda
 conda --version
 
 conda create -n open-mmlab
