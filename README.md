@@ -34,10 +34,10 @@
   </tr>
    <tr>
     <td>
-      <img src="https://drive.google.com/uc?export=view&id=1dbPTWjUbmXZW73A21PFVhkA261sAduhf" width=200 height=250/>
+      <img src="https://drive.google.com/uc?export=view&id=1459-NPm4sC50nrQRdjTpmpz_eKunIi04" width=210 height=280/>
     </td>
     <td>
-      <img src="https://drive.google.com/uc?export=view&id=1RXq9nhJ5xsv_tMCUZ4l6QwDeiyR1mtSD" width=200 height=250/>
+      <img src="https://drive.google.com/uc?export=view&id=1RXq9nhJ5xsv_tMCUZ4l6QwDeiyR1mtSD" width=210 height=280/>
     </td>
   </tr>
   <tr>
