@@ -24,7 +24,7 @@
   <a href='https://desirable-sea.vercel.app/'>
     <img src="https://img.shields.io/badge/Webpage-Vercel-000000?style=flat-square"/>
   </a>
-  <a href='https://goor.me/sNAKy6hRhoZnGsCj6'>
+  <a href='https://goor.me/FaXXZ3XPE5X2mMyW7'>
     <img src="https://img.shields.io/badge/Modeling-goorm-ffffff?style=flat-square"/>
   </a>
 </p>
