@@ -18,7 +18,8 @@
 
 <br/>
 
-아래에서 프로토타입을 확인해보세요.
+
+***아래에서 프로토타입을 확인해보세요.***
 
 <p align="left">
   <a href='https://desirable-sea.vercel.app/' target="_blank">
@@ -104,7 +105,7 @@ cd ..
 
 <br/>
 
-
+.pth 파일을 다운로드
 ```shell
 mkdir checkpoints
 wget https://github.com/open-mmlab/mmrotate/blob/main/configs/rotated_retinanet/rotated_retinanet_obb_r50_fpn_1x_dota_ms_rr_le90.py
@@ -117,6 +118,7 @@ cd ..
 inference.sh
 this code is written in Linux.
 
+추론 시작
 ```shell
 python mmrotate/demo/image_demo.py demo.png mmrotate/configs/rotated_retinanet/rotated_retinanet_obb_r50_fpn_1x_dota_ms_rr_le90.py checkpoints/rotated_retinanet_obb_r50_fpn_1x_dota_ms_rr_le90-1da1ec9c.pth --out-file result.jpg
 ```
