@@ -3,16 +3,7 @@
 **제주위성데이터를 활용한 장기방치차량 탐지 지능형 플랫폼**  
 "Intelligent Platform for Long-Term Abandoned Vehicle Detection Utilizing Jeju Satellite Data"
 
-<br/>
-
 <p align="left">
-  <a href='https://desirable-sea.vercel.app/' target="_blank">
-    <img src="https://img.shields.io/badge/Deployment-Vercel-000000?style=flat-square"/>
-  </a>
-  <a href='' target="_blank">
-    <img src="https://img.shields.io/badge/Modeling-goorm-ffffff?style=flat-square"/>
-  </a>
-  <br/>
   <img src="https://img.shields.io/badge/Ensemble-Weighted%20boxes%20fusion-FEE500?style=flat-square"/>
   <img src="https://img.shields.io/badge/Baseline-MMRotate-FEE500?style=flat-square"/>
   <img src="https://img.shields.io/badge/Baseline-YOLOv8-FEE500?style=flat-square"/>
@@ -24,6 +15,20 @@
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
   <img src="https://img.shields.io/badge/Amazon%20AWS-FF9900?style=flat-square&logo=amazonaws&logoColor=white"/>
 </p>
+
+<br/>
+
+아래에서 프로토타입을 확인해보세요.
+
+<p align="left">
+  <a href='https://desirable-sea.vercel.app/' target="_blank">
+    <img src="https://img.shields.io/badge/Deployment-Vercel-000000?style=flat-square"/>
+  </a>
+  <a href='' target="_blank">
+    <img src="https://img.shields.io/badge/Modeling-goorm-ffffff?style=flat-square"/>
+  </a>
+</p>
+
 
 <br/>
 
@@ -44,10 +49,10 @@
   </tr>
    <tr>
     <td>
-      <img src="https://drive.google.com/uc?export=view&id=1459-NPm4sC50nrQRdjTpmpz_eKunIi04" width=210 height=280/>
+      <img src="./src/model-performance.png" width=500 height=250/>
     </td>
     <td>
-      <img src="https://drive.google.com/uc?export=view&id=1RXq9nhJ5xsv_tMCUZ4l6QwDeiyR1mtSD" width=210 height=280/>
+      <img src="./src/user-ux.png" width=500 height=250/>
     </td>
   </tr>
 </table>
@@ -57,6 +62,8 @@
 # 2. Get Started
 
 ### 2.1 객체 인식 모델링
+
+디렉토리 구조
 ```
 desirable-sea
 ├── checkpoints
@@ -66,6 +73,7 @@ desirable-sea
     └── demo
 ```
 
+설치방법
 
 setup.sh
 this code is written in Linux.
