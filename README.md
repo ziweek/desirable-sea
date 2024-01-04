@@ -21,10 +21,10 @@
 ***아래의 뱃지에서 프로토타입을 확인해보세요.***
 
 <p align="left">
-  <a href='https://desirable-sea.vercel.app/' target="_blank">
+  <a href='https://desirable-sea.vercel.app/'>
     <img src="https://img.shields.io/badge/Webpage-Vercel-000000?style=flat-square"/>
   </a>
-  <a href='https://goor.me/sNAKy6hRhoZnGsCj6' target="_blank">
+  <a href='https://goor.me/sNAKy6hRhoZnGsCj6'>
     <img src="https://img.shields.io/badge/Modeling-goorm-ffffff?style=flat-square"/>
   </a>
 </p>
