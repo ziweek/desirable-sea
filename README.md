@@ -101,15 +101,11 @@ pip install -r requirements/build.txt
 pip install -v -e .
 
 cd ..
-```
 
-<br/>
 
-.pth 파일을 다운로드
-```shell
 mkdir checkpoints
-wget https://github.com/open-mmlab/mmrotate/blob/main/configs/rotated_retinanet/rotated_retinanet_obb_r50_fpn_1x_dota_ms_rr_le90.py
-
+cd checkpoints
+wget https://download.openmmlab.com/mmrotate/v0.1.0/rotated_retinanet/rotated_retinanet_obb_r50_fpn_1x_dota_ms_rr_le90/rotated_retinanet_obb_r50_fpn_1x_dota_ms_rr_le90-1da1ec9c.pth
 cd ..
 ```
 
