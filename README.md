@@ -30,6 +30,28 @@
 # 1. Introduction
 본 아이디어는, 제주 위성데이터를 활용하고 컴퓨터 비전의 객체 인식 AI 기술을 적용하여, 제주 지역에서 장기적으로 주차되거나 방치되어 있는 차량을 탐지하고, 해당 정보를 유관 기관이 통합하여 관리할 수 있는 지능형 플랫폼을 연구 및 개발하는 것입니다. 이를 통해 장기 방치 차량의 전수조사에 소요되는 인력과 시간을 절약하고 제주 미래항공우주산업 육성을 위한 첫걸음이 되기를 기대합니다.
 
+
+<table>
+  <tr>
+    <td>
+      <p align='center'>딥러닝 모델링</p>
+    </td>
+    <td>
+      <p align='center'>
+        사용자 UX
+      </p>
+    </td>
+  </tr>
+   <tr>
+    <td>
+      <img src="https://drive.google.com/uc?export=view&id=1459-NPm4sC50nrQRdjTpmpz_eKunIi04" width=210 height=280/>
+    </td>
+    <td>
+      <img src="https://drive.google.com/uc?export=view&id=1RXq9nhJ5xsv_tMCUZ4l6QwDeiyR1mtSD" width=210 height=280/>
+    </td>
+  </tr>
+</table>
+
 <br/>
 
 # 2. Get Started
