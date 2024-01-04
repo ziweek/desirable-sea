@@ -28,7 +28,9 @@
     <img src="https://img.shields.io/badge/Modeling-goorm-ffffff?style=flat-square"/>
   </a>
 </p>
+
 * 웹페이지 - 메인 서버와 딥러닝 서버를 구분하여 개발 중에 있음.
+
 * 딥러닝 모델링 - 아래의 프로덕트 > 모델링 > 추론 실행방법을 참고하여, MVP 시연이 가능함.
 <br/>
 
