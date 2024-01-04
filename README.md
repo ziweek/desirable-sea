@@ -72,14 +72,14 @@
 디렉토리 구조
 ```
 desirable-sea
-├── checkpoints
-├── mmrotate
+├── checkpoints  # Pytorch 모델을 저장하는 폴더입니다.
+├── mmrotate     # 베이스라인 관련 코드입니다.
 │   ├── config
 │   ├── ...
 │   └── demo
 ├── ...
-├── demo.png
-└── result.jpg
+├── demo.png     # MVP 시연에 사용될 데모 이미지입니다.
+└── result.jpg   # 모델링 결과로 출력되는 이미지입니다.
 ```
 
 ### 초기 설치방법
