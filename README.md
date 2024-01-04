@@ -41,11 +41,11 @@
 <table>
   <tr>
     <td>
-      <p align='center'>딥러닝 모델링</p>
+      <p align='center'>딥러닝 모델링 시연 결과</p>
     </td>
     <td>
       <p align='center'>
-        사용자 UX
+        사용자 UX 개발 내용
       </p>
     </td>
   </tr>
