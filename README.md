@@ -25,7 +25,7 @@
   <a href='https://desirable-sea.vercel.app/' target="_blank">
     <img src="https://img.shields.io/badge/Deployment-Vercel-000000?style=flat-square"/>
   </a>
-  <a href='' target="_blank">
+  <a href='https://goor.me/sNAKy6hRhoZnGsCj6' target="_blank">
     <img src="https://img.shields.io/badge/Modeling-goorm-ffffff?style=flat-square"/>
   </a>
 </p>
