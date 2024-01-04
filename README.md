@@ -15,7 +15,6 @@
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
   <img src="https://img.shields.io/badge/Amazon%20AWS-FF9900?style=flat-square&logo=amazonaws&logoColor=white"/>
 </p>
-
 <br/>
 
 
@@ -23,14 +22,14 @@
 
 <p align="left">
   <a href='https://desirable-sea.vercel.app/' target="_blank">
-    <img src="https://img.shields.io/badge/Deployment-Vercel-000000?style=flat-square"/>
+    <img src="https://img.shields.io/badge/Webpage-Vercel-000000?style=flat-square"/>
   </a>
   <a href='https://goor.me/sNAKy6hRhoZnGsCj6' target="_blank">
     <img src="https://img.shields.io/badge/Modeling-goorm-ffffff?style=flat-square"/>
   </a>
 </p>
-
-
+* 웹페이지 - 메인 서버와 딥러닝 서버를 구분하여 개발 중에 있음.
+* 딥러닝 모델링 - 아래의 프로덕트 > 모델링 > 추론 실행방법을 참고하여, MVP 시연이 가능함.
 <br/>
 
 # 1. 프로젝트 개요
@@ -57,16 +56,16 @@
     </td>
   </tr>
 </table>
-
 <br/>
 
 # 2. 프로젝트 설계
 
-<img src="./src/web-architecture" width=1050 height=400/>
+<img src="./src/web-architecture.png">
+<br/>
 
-# 3. 프로젝트 설치방법
+# 3. 프로덕트
 
-### 2.1 객체 인식 모델링
+## 모델링
 
 디렉토리 구조
 ```
@@ -81,12 +80,14 @@ desirable-sea
 └── result.jpg
 ```
 
-설치방법
-
-setup.sh
-this code is written in Linux.
+### 초기 설치방법
+1. setup.sh 파일 만들기.
+2. 아래의 쉘스크립트 복사 후 붙여넣기.
+3. 터미널에서 setup.sh 실행
 
 ```shell
+# this code is written in Linux.
+
 sudo apt update
 sudo apt -y install libgl1-mesa-glx
 
@@ -120,17 +121,18 @@ wget https://raw.githubusercontent.com/ziweek/desirable-sea/main/src/demo.png
 
 <br/>
 
-inference.sh
-this code is written in Linux.
+### 추론 실행방법
+1. 아래의 쉘스크립트 복사 후 터미널에 붙여넣기.
+2. 터미널에서 실행하기.
+3. 동일 디렉토리 내에서 result.jpg 파일 확인하기.
 
-추론 시작
 ```shell
 python mmrotate/demo/image_demo.py demo.png mmrotate/configs/rotated_retinanet/rotated_retinanet_obb_r50_fpn_1x_dota_ms_rr_le90.py checkpoints/rotated_retinanet_obb_r50_fpn_1x_dota_ms_rr_le90-1da1ec9c.pth --out-file result.jpg
 ```
-
+<img src="./src/mvp-performance.png">
 <br/>
 
-### 2.2 웹페이지 대쉬보드 구현
+## 웹페이지
 
 
 <br/>
