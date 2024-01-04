@@ -72,10 +72,13 @@
 ```
 desirable-sea
 ├── checkpoints
-└── mmrotate
-    ├── config
-    ├── ...
-    └── demo
+├── mmrotate
+│   ├── config
+│   ├── ...
+│   └── demo
+├── ...
+├── demo.png
+└── result.jpg
 ```
 
 설치방법
@@ -116,6 +119,8 @@ this code is written in Linux.
 
 추론 시작
 ```shell
+wget https://raw.githubusercontent.com/ziweek/desirable-sea/main/src/demo.png
+
 python mmrotate/demo/image_demo.py demo.png mmrotate/configs/rotated_retinanet/rotated_retinanet_obb_r50_fpn_1x_dota_ms_rr_le90.py checkpoints/rotated_retinanet_obb_r50_fpn_1x_dota_ms_rr_le90-1da1ec9c.pth --out-file result.jpg
 ```
 
