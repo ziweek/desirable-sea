@@ -87,6 +87,9 @@ setup.sh
 this code is written in Linux.
 
 ```shell
+sudo apt update
+sudo apt -y install libgl1-mesa-glx
+
 wget https://repo.anaconda.com/miniconda/Miniconda3-py37_4.9.2-Linux-x86_64.sh
 chmod +x Miniconda3-py37_4.9.2-Linux-x86_64.sh
 bash ./Miniconda3-py37_4.9.2-Linux-x86_64.sh -b -f -p /usr/local
@@ -110,6 +113,9 @@ mkdir checkpoints
 cd checkpoints
 wget https://download.openmmlab.com/mmrotate/v0.1.0/rotated_retinanet/rotated_retinanet_obb_r50_fpn_1x_dota_ms_rr_le90/rotated_retinanet_obb_r50_fpn_1x_dota_ms_rr_le90-1da1ec9c.pth
 cd ..
+
+wget https://raw.githubusercontent.com/ziweek/desirable-sea/main/src/demo.png
+
 ```
 
 <br/>
@@ -119,8 +125,6 @@ this code is written in Linux.
 
 추론 시작
 ```shell
-wget https://raw.githubusercontent.com/ziweek/desirable-sea/main/src/demo.png
-
 python mmrotate/demo/image_demo.py demo.png mmrotate/configs/rotated_retinanet/rotated_retinanet_obb_r50_fpn_1x_dota_ms_rr_le90.py checkpoints/rotated_retinanet_obb_r50_fpn_1x_dota_ms_rr_le90-1da1ec9c.pth --out-file result.jpg
 ```
 
