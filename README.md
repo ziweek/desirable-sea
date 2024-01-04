@@ -90,9 +90,6 @@ bash ./Miniconda3-py37_4.9.2-Linux-x86_64.sh -b -f -p /usr/local
 which conda
 conda --version
 
-conda create -n open-mmlab
-conda activate open-mmlab
-
 pip install torch==1.7.0+cu110 torchvision==0.8.1+cu110 torchaudio==0.7.0 -f https://download.pytorch.org/whl/torch_stable.html
 pip install openmim --use-feature=2020-resolver
 pip install psutil ninja
