@@ -19,7 +19,7 @@
 <br/>
 
 
-***아래에서 프로토타입을 확인해보세요.***
+***아래의 뱃지에서 프로토타입을 확인해보세요.***
 
 <p align="left">
   <a href='https://desirable-sea.vercel.app/' target="_blank">
@@ -62,7 +62,7 @@
 
 # 2. 프로젝트 설계
 
-### 2.1 객체 인식 모델링
+<img src="./src/web-architecture" width=1050 height=400/>
 
 # 3. 프로젝트 설치방법
 
