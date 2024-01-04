@@ -18,6 +18,7 @@
 <br/>
 
 
+
 ***아래의 뱃지에서 프로토타입을 확인해보세요.***
 
 <p align="left">
@@ -28,6 +29,9 @@
     <img src="https://img.shields.io/badge/Modeling-goorm-ffffff?style=flat-square"/>
   </a>
 </p>
+
+https://github.com/ziweek/desirable-sea/assets/99459331/a861922b-2486-45da-9844-30aa821bff28
+
 
 * Webpage - 프론트엔드 개발 완료. 메인 서버와 딥러닝 서버를 구분하여 개발 중에 있음.
 
@@ -61,7 +65,7 @@
 <br/>
 
 
-# 2. 프로덕트
+# 2. 프로덕트
 
 ## 아키텍처
 
