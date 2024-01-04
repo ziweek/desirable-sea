@@ -58,12 +58,12 @@
 </table>
 <br/>
 
-# 2. 프로젝트 설계
+
+# 2. 프로덕트
+
+## 아키텍처
 
 <img src="./src/web-architecture.png">
-<br/>
-
-# 3. 프로덕트
 
 ## 모델링
 
@@ -118,8 +118,6 @@ cd ..
 wget https://raw.githubusercontent.com/ziweek/desirable-sea/main/src/demo.png
 
 ```
-
-<br/>
 
 ### 추론 실행방법
 1. 아래의 쉘스크립트 복사 후 터미널에 붙여넣기.
