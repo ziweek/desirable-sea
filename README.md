@@ -11,14 +11,8 @@
   <br/>
   <img src="https://img.shields.io/badge/Ensemble-Weighted%20boxes%20fusion-0194E2?style=flat-square"/>
   <br/>
-  <a href='https://paperswithcode.com/task/object-detection-in-aerial-images'>
+  <a href='https://github.com/open-mmlab/mmrotate'>
     <img src="https://img.shields.io/badge/Baseline-MMRotate-0194E2?style=flat-square"/>
-  </a>
-  <a href='https://paperswithcode.com/paper/spatial-transform-decoupling-for-oriented'>
-    <img src="https://img.shields.io/badge/Baseline-STD%2BHiViT-0194E2?style=flat-square"/>
-  </a>
-  <a href='https://paperswithcode.com/paper/large-selective-kernel-network-for-remote'>
-    <img src="https://img.shields.io/badge/Baseline-LSKNet-0194E2?style=flat-square"/>
   </a>
   </br>
   <img src="https://img.shields.io/badge/Weights%20&%20Biases-dea500?style=flat-square&logo=weightsandbiases&logoColor=white&text=white"/>
