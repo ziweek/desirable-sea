@@ -4,10 +4,22 @@
 "Intelligent Platform for Long-Term Abandoned Vehicle Detection Utilizing Jeju Satellite Data"
 
 <p align="left">
+  <a href='https://paperswithcode.com/task/object-detection-in-aerial-images'>
+    <img src="https://img.shields.io/badge/Paperswithcode-Object%20Detection%20In%20Aerial%20Images-0194E2?style=flat-square"/>
+  </a>
+  <br/>
+  <br/>
   <img src="https://img.shields.io/badge/Ensemble-Weighted%20boxes%20fusion-0194E2?style=flat-square"/>
   <br/>
-  <img src="https://img.shields.io/badge/Baseline-MMRotate-0194E2?style=flat-square"/>
-  <img src="https://img.shields.io/badge/Baseline-YOLOv8-0194E2?style=flat-square"/>
+  <a href='https://paperswithcode.com/task/object-detection-in-aerial-images'>
+    <img src="https://img.shields.io/badge/Baseline-MMRotate-0194E2?style=flat-square"/>
+  </a>
+  <a href='https://paperswithcode.com/paper/spatial-transform-decoupling-for-oriented'>
+    <img src="https://img.shields.io/badge/Baseline-STD%2BHiViT-0194E2?style=flat-square"/>
+  </a>
+  <a href='https://paperswithcode.com/paper/large-selective-kernel-network-for-remote'>
+    <img src="https://img.shields.io/badge/Baseline-LSKNet-0194E2?style=flat-square"/>
+  </a>
   </br>
   <img src="https://img.shields.io/badge/Weights%20&%20Biases-dea500?style=flat-square&logo=weightsandbiases&logoColor=white&text=white"/>
   </br>
