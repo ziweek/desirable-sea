@@ -135,7 +135,7 @@ cd ..
 
 mkdir checkpoints
 cd checkpoints
-wget https://download.openmmlab.com/mmrotate/v0.1.0/rotated_retinanet/rotated_retinanet_obb_r50_fpn_1x_dota_ms_rr_le90/rotated_retinanet_obb_r50_fpn_1x_dota_ms_rr_le90-1da1ec9c.pth
+wget https://download.openmmlab.com/mmrotate/v0.1.0/redet/redet_re50_fpn_1x_dota_ms_rr_le90/redet_re50_fpn_1x_dota_ms_rr_le90-fc9217b5.pth
 cd ..
 
 wget https://raw.githubusercontent.com/ziweek/desirable-sea/main/src/demo.png
@@ -148,7 +148,7 @@ wget https://raw.githubusercontent.com/ziweek/desirable-sea/main/src/demo.png
 3. 동일 디렉토리 내에서 result.jpg 파일 확인하기.
 
 ```shell
-python mmrotate/demo/image_demo.py demo.png mmrotate/configs/rotated_retinanet/rotated_retinanet_obb_r50_fpn_1x_dota_ms_rr_le90.py checkpoints/rotated_retinanet_obb_r50_fpn_1x_dota_ms_rr_le90-1da1ec9c.pth --out-file result.jpg
+python mmrotate/demo/image_demo.py demo.png mmrotate/configs/redet/redet_re50_refpn_1x_dota_ms_rr_le90.py checkpoints/redet_re50_fpn_1x_dota_ms_rr_le90-fc9217b5.pth --out-file result.jpg
 ```
 <img src="./src/mvp-performance.png">
 <br/>
