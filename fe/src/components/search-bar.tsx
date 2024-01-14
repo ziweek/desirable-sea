@@ -6,11 +6,24 @@ import {
 } from "@nextui-org/react";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { useCallback, useState } from "react";
+import { useMediaQuery } from "react-responsive";
 
 const dataset = [
   {
     section: "제주시 방치 차량 탐지 장소",
     documents: [
+      {
+        name: "삼다수숲길 주차장",
+        address: "제주특별자치도 제주시 조천읍 교래리 280",
+        latitude: "2023.01.01",
+        longitude: "2023.01.01",
+      },
+      {
+        name: "조천읍 무료 주차장(405-2-000274)",
+        address: "제주특별자치도 제주시 조천읍 함덕16길 15-13",
+        latitude: "2023.01.01",
+        longitude: "2023.01.01",
+      },
       {
         name: "삼다수숲길 주차장",
         address: "제주특별자치도 제주시 조천읍 교래리 280",
@@ -40,6 +53,18 @@ const dataset = [
         latitude: "2023.01.01",
         longitude: "2023.01.01",
       },
+      {
+        name: "제주은행맞은편공영주차장",
+        address: "제주특별자치도 서귀포시 대정읍 하모리 846-11",
+        latitude: "2023.01.01",
+        longitude: "2023.01.01",
+      },
+      {
+        name: "대정읍하모리 노상공영주차장",
+        address: "제주특별자치도 서귀포시 대정읍 하모리 772-22",
+        latitude: "2023.01.01",
+        longitude: "2023.01.01",
+      },
     ],
   },
 ];
@@ -52,6 +77,7 @@ export default function SearchBar(props: SearchBarProps): any {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const isTabletOrMobile = useMediaQuery({ maxWidth: 1200 });
   const [textInput, setTextInput] = useState<string>(props.value || "");
 
   const createQueryString = useCallback(
@@ -72,7 +98,7 @@ export default function SearchBar(props: SearchBarProps): any {
       classNames={{
         clearButton: "text-[#006FEE]",
         selectorButton: "text-[#006FEE]",
-        listboxWrapper: "min-h-[500px]",
+        listboxWrapper: "min-h-[400px]",
       }}
       inputProps={{
         classNames: {
@@ -83,11 +109,11 @@ export default function SearchBar(props: SearchBarProps): any {
       listboxProps={{}}
       color={"primary"}
       fullWidth
-      radius="full"
+      radius={"md"}
       allowsCustomValue={true}
       placeholder="검색 키워드를 입력하시오."
-      variant="bordered"
-      size={"lg"}
+      variant={"flat"}
+      size={isTabletOrMobile ? "md" : "sm"}
       isClearable={true}
       inputValue={textInput}
       onInputChange={(e) => {

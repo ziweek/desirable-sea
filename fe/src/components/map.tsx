@@ -308,15 +308,6 @@ const MapStyleSilver = [
   },
   {
     featureType: "administrative.land_parcel",
-    elementType: "labels",
-    stylers: [
-      {
-        visibility: "off",
-      },
-    ],
-  },
-  {
-    featureType: "administrative.land_parcel",
     elementType: "labels.text.fill",
     stylers: [
       {
@@ -335,27 +326,10 @@ const MapStyleSilver = [
   },
   {
     featureType: "poi",
-    elementType: "labels.text",
-    stylers: [
-      {
-        visibility: "off",
-      },
-    ],
-  },
-  {
-    featureType: "poi",
     elementType: "labels.text.fill",
     stylers: [
       {
         color: "#757575",
-      },
-    ],
-  },
-  {
-    featureType: "poi.business",
-    stylers: [
-      {
-        visibility: "off",
       },
     ],
   },
@@ -365,15 +339,6 @@ const MapStyleSilver = [
     stylers: [
       {
         color: "#e5e5e5",
-      },
-    ],
-  },
-  {
-    featureType: "poi.park",
-    elementType: "labels.text",
-    stylers: [
-      {
-        visibility: "off",
       },
     ],
   },
@@ -419,15 +384,6 @@ const MapStyleSilver = [
     stylers: [
       {
         color: "#616161",
-      },
-    ],
-  },
-  {
-    featureType: "road.local",
-    elementType: "labels",
-    stylers: [
-      {
-        visibility: "off",
       },
     ],
   },
@@ -512,7 +468,7 @@ export default function BaseMap() {
             zoomControl: false,
             mapTypeControl: false,
             fullscreenControl: false,
-            styles: MapStyleRetro,
+            styles: MapStyleSilver,
           }}
         >
           {/* Child components, such as markers, info windows, etc. */}

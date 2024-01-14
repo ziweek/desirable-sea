@@ -3,18 +3,17 @@
 import {
   Card,
   Pagination,
-  PaginationItem,
-  PaginationCursor,
   CardBody,
-  CardHeader,
-  Divider,
+  CardFooter,
+  Button,
 } from "@nextui-org/react";
 import { IconLogo } from "../common/icons";
 import { useRouter } from "next/navigation";
 import SearchBar from "../search-bar";
 import { useMediaQuery } from "react-responsive";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
+import "react-horizontal-scrolling-menu/dist/styles.css";
 
 type HeaderProps = {
   isLogoVisible?: boolean;
@@ -27,33 +26,14 @@ type HeaderProps = {
 
 export default function Header(props: HeaderProps) {
   const router = useRouter();
-  const isDesktopOrLaptop = useMediaQuery({ minWidth: 1224 });
-  const isBigScreen = useMediaQuery({ minWidth: 1824 });
   const isTabletOrMobile = useMediaQuery({ maxWidth: 1200, minWidth: 360 });
-  const isPortrait = useMediaQuery({ orientation: "portrait" });
-  const isRetina = useMediaQuery({ minResolution: "2dppx" });
-
-  const [mobile, setMobile] = useState<boolean>(false);
-
-  const checkResize = () => {
-    if (isTabletOrMobile) {
-      setMobile(true);
-    } else {
-      setMobile(false);
-    }
-  };
-
-  useEffect(() => {
-    checkResize();
-  }, [isTabletOrMobile]);
 
   return (
-    <>
+    <div className="relative">
       {isTabletOrMobile ? (
-        <div>
+        <div className="top-0 left-0 z-50 fixed space-y-2">
           <Card
-            isBlurred
-            className={`z-50 fixed top-0 flex flex-row items-center justify-between w-full py-2 px-4 rounded-b-none`}
+            className={`w-screen flex flex-row items-center justify-between py-2 px-4 rounded-t-none`}
             style={{
               display: "grid",
               gridTemplateColumns: "auto 1fr",
@@ -65,8 +45,8 @@ export default function Header(props: HeaderProps) {
               {props.isLogoVisible || props.isLogoVisible == undefined ? (
                 <Image
                   src={"/images/appIcon.png"}
-                  width={50}
-                  height={50}
+                  width={45}
+                  height={45}
                   alt="logo"
                 ></Image>
               ) : (
@@ -82,6 +62,45 @@ export default function Header(props: HeaderProps) {
                 <></>
               )}
             </div>
+          </Card>
+          <Card
+            className="absolute z-50 w-screen bg-transparent border-0 scrollbar-hide"
+            radius={"none"}
+            shadow={"none"}
+          >
+            <ScrollMenu>
+              {[1, 2, 3].map((e, i) => (
+                <Card
+                  key={i}
+                  className={`w-[200px] h-[200px] ml-2 shadow-md ${
+                    e == 3 ? "mr-2" : ""
+                  }`}
+                  radius={"sm"}
+                >
+                  <Image
+                    alt="img"
+                    className="object-cover"
+                    height={200}
+                    src={`/images/results/${e}.png`}
+                    width={200}
+                  />
+                  <CardFooter className="justify-between bg-white/50 border-white/50 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
+                    <p className="text-tiny text-black/80 font-bold">
+                      제주시 어디어디동
+                    </p>
+                    <Button
+                      className="text-tiny text-white bg-black/50"
+                      variant="flat"
+                      color="default"
+                      radius="lg"
+                      size="sm"
+                    >
+                      바로가기
+                    </Button>
+                  </CardFooter>
+                </Card>
+              ))}
+            </ScrollMenu>
           </Card>
         </div>
       ) : (
@@ -177,6 +196,6 @@ export default function Header(props: HeaderProps) {
           </Card>
         </div>
       )}
-    </>
+    </div>
   );
 }

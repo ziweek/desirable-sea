@@ -27,10 +27,7 @@ export default function Home() {
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-width: 1224px)",
   });
-  const isBigScreen = useMediaQuery({ query: "(min-width: 1824px)" });
-  const isTabletOrMobile = useMediaQuery({ maxWidth: 1200, minWidth: 360 });
-  const isPortrait = useMediaQuery({ query: "(orientation: portrait)" });
-  const isRetina = useMediaQuery({ query: "(min-resolution: 2dppx)" });
+  const isTabletOrMobile = useMediaQuery({ maxWidth: 1200 });
 
   useEffect(() => {
     AOS.init();
@@ -92,7 +89,7 @@ export default function Home() {
               data-aos={"fade-in"}
               data-aos-duration="1000"
               className={`select-none pt-24 font-bold text-white text-center ${
-                isTabletOrMobile ? "text-2xl" : "text-2xl"
+                isTabletOrMobile ? "text-sm" : "text-4xl"
               }`}
             >
               제주 위성데이터를 활용한 장기 방치 차량 탐색 지능형 플랫폼
@@ -141,7 +138,7 @@ export default function Home() {
             <div
               className="flex min-h-[60vh] px-4 w-full select-none items-center justify-between max-w-[1200px]"
               style={
-                !isDesktopOrLaptop
+                isTabletOrMobile
                   ? {
                       display: "grid",
                       gridTemplateRows: "1fr 1fr",
@@ -214,7 +211,7 @@ export default function Home() {
           <div
             className="flex min-h-[60vh] w-[90vw] select-none flex-col items-center justify-between max-w-[1200px]"
             style={
-              !isDesktopOrLaptop
+              isTabletOrMobile
                 ? { gap: "20px" }
                 : {
                     display: "grid",
