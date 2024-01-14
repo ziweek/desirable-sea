@@ -25,7 +25,7 @@ import Image from "next/image";
 export default function Home() {
   const router = useRouter();
   const [mobile, setMobile] = useState<boolean>(false);
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width:1200px)" });
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width:1224px)" });
 
   const checkResize = () => {
     if (isTabletOrMobile) {
@@ -98,7 +98,7 @@ export default function Home() {
               data-aos={"fade-in"}
               data-aos-duration="1000"
               className={`select-none pt-24 font-bold text-white text-center ${
-                isTabletOrMobile ? "text-sm" : "text-4xl"
+                mobile ? "text-sm" : "text-4xl"
               }`}
             >
               제주 위성데이터를 활용한 장기 방치 차량 탐색 지능형 플랫폼
@@ -147,7 +147,7 @@ export default function Home() {
             <div
               className="flex min-h-[60vh] px-4 w-full select-none items-center justify-between max-w-[1200px]"
               style={
-                isTabletOrMobile
+                mobile
                   ? {
                       display: "grid",
                       gridTemplateRows: "1fr 1fr",
@@ -220,7 +220,7 @@ export default function Home() {
           <div
             className="flex min-h-[60vh] w-[90vw] select-none flex-col items-center justify-between max-w-[1200px]"
             style={
-              isTabletOrMobile
+              mobile
                 ? { gap: "20px" }
                 : {
                     display: "grid",
