@@ -1,7 +1,9 @@
 # Hello, BaDang
 
-**제주위성데이터를 활용한 장기방치차량 탐지 지능형 플랫폼**  
-"Intelligent Platform for Long-Term Abandoned Vehicle Detection Utilizing Jeju Satellite Data"
+<img src="./src/banner_ko.png"/>
+
+**제주 위성데이터를 활용한 장기방치차량 탐지 지능형 플랫폼**  
+**Intelligent Platform for Long-Term Abandoned Vehicle Detection Utilizing Jeju Satellite Data**
 
 <p align="left">
   <a href='https://paperswithcode.com/task/object-detection-in-aerial-images'>
@@ -61,7 +63,9 @@
     * 서버와 데이터베이스 연동, 모바일 전용 페이지 개발 완료
   * Model
     * 성능 개선 (mAP : 73.4 -> 78.9 )
-      <img src="./src/result.png"/>
+      * 기존의 모델이 흰색 차량만을 식별했던 것과 달리 검은색, 빨간색의 차량도 식별.
+      * 건물의 그림자에 가려진 차량도 식별.
+        <img src="./src/result.png"/>
   * README
     * 튜토리얼 추가
 
@@ -204,8 +208,8 @@ Jenkins, Docker
       </p>
     </td>
     <td>
-      <p align='center'>
-        이 프로젝트에 리더로 참여하여 먼저, 제주의 독특한 지형과 교통 도전 과제에 직면해 지능형 플랫폼의 필요성을 깨닫게 되었습니다. Next.js, Google Map API, 그리고 FastAPI 등의 현대적인 기술들을 통합함으로써 우리의 솔루션은 효율적이고 사용자 친화적인 장기 방치 차량 관리를 실현하며, 위성데이터를 활용한 지능형 플랫폼의 발전에 일조하는 데 자부심을 느낄 수 있었습니다. 이 플랫폼은 제주의 교통환경을 혁신하고 미래 도시 계획에 기여하는 중요한 발판으로서의 역할을 할 것으로 기대됩니다.
+      <p align='left'>
+        이 프로젝트에 리더로 참여하여 먼저, 장기 방치 차량 문제에 직면해 이를 관리 하기 위한 지능형 플랫폼의 필요성을 깨닫게 되었습니다. Next.js, Google Map API, 그리고 FastAPI 등의 현대적인 기술들을 통합함으로써 우리의 솔루션은 효율적이고 사용자 친화적인 장기 방치 차량 관리를 실현하며, 위성데이터를 활용한 지능형 플랫폼의 발전에 일조하는 데 자부심을 느낄 수 있었습니다. 이 플랫폼은 제주의 차량문제를 혁신하고 미래 도시 계획에 기여하는 중요한 발판으로서의 역할을 할 것으로 기대됩니다.
       </p>
     </td>
   </tr>
@@ -223,7 +227,7 @@ Jenkins, Docker
       </p>
     </td>
     <td>
-      <p align='center'>
+      <p align='left'>
         CTO로 참여한 이 프로젝트는 최신 기술을 활용하여 제주의 장기 방치 차량 문제에 도전하는 흥미로운 경험이었습니다. 위성데이터와 딥러닝을 결합하여 차량을 정확하게 탐지하는 시스템을 개발하는 과정에서, 기술적인 도전과 혁신의 기회를 마주하게 되었습니다. 이 플랫폼은 미래 제주의 스마트한 지능형 시스템을 모색하는 데 있어 핵심적인 역할을 할 것으로 자부하고 있습니다.
       </p>
     </td>
