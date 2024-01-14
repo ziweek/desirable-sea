@@ -13,6 +13,7 @@ import { IconLogo } from "../common/icons";
 import { useRouter } from "next/navigation";
 import SearchBar from "../search-bar";
 import { useMediaQuery } from "react-responsive";
+import Image from "next/image";
 
 type HeaderProps = {
   isLogoVisible?: boolean;
@@ -35,9 +36,9 @@ export default function Header(props: HeaderProps) {
     <>
       {isTabletOrMobile ? (
         <div>
-          {/* <Card
+          <Card
             isBlurred
-            className={`z-50 absolute bottom-0 flex flex-row items-center justify-between w-full py-2 px-4 rounded-b-none`}
+            className={`z-50 fixed bottom-0 flex flex-row items-center justify-between w-full py-2 px-4 rounded-b-none`}
             style={{
               display: "grid",
               gridTemplateColumns: "auto 1fr",
@@ -45,9 +46,14 @@ export default function Header(props: HeaderProps) {
             }}
             radius={"sm"}
           >
-            <div className="flex flex-col justify-center w-fit px-2">
+            <div className="flex flex-col justify-center w-fit">
               {props.isLogoVisible || props.isLogoVisible == undefined ? (
-                <IconLogo width={"25px"} fill={"#006FEE"}></IconLogo>
+                <Image
+                  src={"/images/appIcon.png"}
+                  width={50}
+                  height={50}
+                  alt="logo"
+                ></Image>
               ) : (
                 <></>
               )}
@@ -61,7 +67,7 @@ export default function Header(props: HeaderProps) {
                 <></>
               )}
             </div>
-          </Card> */}
+          </Card>
         </div>
       ) : (
         <div

@@ -21,6 +21,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 import { IconLogo } from "@/components/common/icons";
+import Image from "next/image";
 
 export default function Home() {
   const router = useRouter();
@@ -52,33 +53,25 @@ export default function Home() {
                 router.push("/");
               }}
             >
-              <div className="flex flex-row items-end justify-start space-x-2">
-                <IconLogo width={"70px"} fill={"white"}></IconLogo>
-                {isTabletOrMobile ? (
-                  <></>
-                ) : (
-                  <div className="item-start flex h-full flex-col justify-end">
-                    <p className="select-none text-start text-xs text-white">
-                      제주 위성데이터를 활용한,
-                    </p>
-                    <p className="select-none text-start text-xs text-white">
-                      장기 방치 차량 탐색 지능형 플랫폼
-                    </p>
-                  </div>
-                )}
+              <div className="flex flex-row items-center justify-start space-x-2">
+                <Image
+                  src={"/images/appIcon.png"}
+                  width={75}
+                  height={75}
+                  alt="logo"
+                ></Image>
+                <div className="item-start flex h-full flex-col justify-end">
+                  <p className="select-none text-start text-lg text-white font-bold">
+                    바라는 바당
+                  </p>
+                  <p className="select-none text-start text-xs text-white">
+                    제주 위성데이터를 활용한, 장기 방치 차량 탐색 지능형 플랫폼
+                  </p>
+                </div>
               </div>
             </button>
           </div>
-          <div className="flex flex-row items-center justify-end space-x-4">
-            <Button
-              variant="light"
-              disableRipple
-              onPress={() => {
-                router.push("/dashboard");
-              }}
-            >
-              <p className={`font-bold text-white`}>서비스 체험</p>
-            </Button>
+          <div className="flex flex-row items-center justify-end">
             <Button
               variant="light"
               disableRipple
