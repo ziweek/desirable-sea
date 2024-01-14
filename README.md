@@ -29,9 +29,7 @@
 </p>
 <br/>
 
-
-
-***아래의 뱃지에서 프로토타입을 확인해보세요.***
+**_아래의 뱃지에서 프로토타입을 확인해보세요._**
 
 <p align="left">
   <a href='https://desirable-sea.vercel.app/'>
@@ -45,36 +43,34 @@
   </a>
 </p>
 
-
-
 # Update Log
 
-* **예선 제출물 (2024.01.03)**
-  * Product
-    * 프론트엔드 개발 완료. 메인 서버와 딥러닝 서버를 구분하여 개발 중에 있음.
-  * Model
-    * 아래의 프로덕트 > 모델링 > 추론 실행방법을 참고하여, 베이스라인을 기반으로 한 MVP 시연이 가능함.
-    
+- **예선 제출물 (2024.01.03)**
+
+  - Product
+    - 프론트엔드 개발 완료. 메인 서버와 딥러닝 서버를 구분하여 개발 중에 있음.
+  - Model
+
+    - 아래의 프로덕트 > 모델링 > 추론 실행방법을 참고하여, 베이스라인을 기반으로 한 MVP 시연이 가능함.
+
       https://github.com/ziweek/desirable-sea/assets/99459331/a861922b-2486-45da-9844-30aa821bff28
-    
 
-* **본선 제출물 (2024.01.21)**
-  * Product
-    * 서버와 데이터베이스 연동, 모바일 전용 페이지 개발 완료
-  * Model
-    * 성능 개선 (mAP : 73.4 -> 78.9 )
-      * 기존의 모델이 흰색 차량만을 식별했던 것과 달리 검은색, 빨간색의 차량도 식별.
-      * 건물의 그림자에 가려진 차량도 식별.
+- **본선 제출물 (2024.01.21)**
+  - Product
+    - 서버와 데이터베이스 연동, 모바일 전용 페이지 개발 완료
+  - Model
+    - 성능 개선 (mAP : 73.4 -> 78.9 )
+      - 기존의 모델이 흰색 차량만을 식별했던 것과 달리 검은색, 빨간색의 차량도 식별.
+      - 건물의 그림자에 가려진 차량도 식별.
         <img src="./src/model-improvement.png"/>
-  * README
-    * 튜토리얼 추가
-
+  - README
+    - 튜토리얼 추가
 
 <br/>
 
 # 1. 프로젝트 개요
-본 아이디어는, 제주 위성데이터를 활용하고 컴퓨터 비전의 객체 인식 AI 기술을 적용하여, 제주 지역에서 장기적으로 주차되거나 방치되어 있는 차량을 탐지하고, 해당 정보를 유관 기관이 통합하여 관리할 수 있는 지능형 플랫폼을 연구 및 개발하는 것입니다. 이를 통해 장기 방치 차량의 전수조사에 소요되는 인력과 시간을 절약하고 제주 미래항공우주산업 육성을 위한 첫걸음이 되기를 기대합니다.
 
+본 아이디어는, 제주 위성데이터를 활용하고 컴퓨터 비전의 객체 인식 AI 기술을 적용하여, 제주 지역에서 장기적으로 주차되거나 방치되어 있는 차량을 탐지하고, 해당 정보를 유관 기관이 통합하여 관리할 수 있는 지능형 플랫폼을 연구 및 개발하는 것입니다. 이를 통해 장기 방치 차량의 전수조사에 소요되는 인력과 시간을 절약하고 제주 미래항공우주산업 육성을 위한 첫걸음이 되기를 기대합니다.
 
 <table>
   <tr>
@@ -98,7 +94,6 @@
 </table>
 <br/>
 
-
 # 2. 프로덕트
 
 ## 2.1 아키텍처
@@ -108,6 +103,7 @@
 ## 2.2 딥러닝 모델
 
 #### 디렉토리 구조
+
 ```
 desirable-sea
 ├── checkpoints  # Pytorch 모델을 저장하는 폴더입니다.
@@ -121,6 +117,7 @@ desirable-sea
 ```
 
 #### 초기 설치방법
+
 1. setup.sh 파일 만들기.
 2. 아래의 쉘스크립트 복사 후 붙여넣기.
 3. 터미널에서 setup.sh 실행
@@ -160,6 +157,7 @@ wget https://raw.githubusercontent.com/ziweek/desirable-sea/main/src/demo.png
 ```
 
 #### 추론 실행방법
+
 1. 아래의 쉘스크립트 복사 후 터미널에 붙여넣기.
 2. 터미널에서 실행하기.
 3. 동일 디렉토리 내에서 result.jpg 파일 확인하기.
@@ -167,6 +165,7 @@ wget https://raw.githubusercontent.com/ziweek/desirable-sea/main/src/demo.png
 ```shell
 python mmrotate/demo/image_demo.py demo.png mmrotate/configs/redet/redet_re50_refpn_1x_dota_ms_rr_le90.py checkpoints/redet_re50_fpn_1x_dota_ms_rr_le90-fc9217b5.pth --out-file result.jpg
 ```
+
 <img src="./src/result.png">
 <br/>
 
@@ -193,7 +192,6 @@ Jenkins, Docker
 
 # Contribute
 
-
 <table>
   <tr>
     <td>
@@ -201,7 +199,7 @@ Jenkins, Docker
     </td>
     <td>
       <p align='center'>
-        <img src="https://drive.google.com/uc?export=view&id=1459-NPm4sC50nrQRdjTpmpz_eKunIi04" width=500/>
+        <img src="https://drive.google.com/uc?export=view&id=1459-NPm4sC50nrQRdjTpmpz_eKunIi04" width=600/>
         <a href='https://github.com/ziweek' target="_blank">
           <img src="https://img.shields.io/badge/Github-000000?style=flat-square&logo=Github&logoColor=white"/>
         </a>
@@ -220,7 +218,7 @@ Jenkins, Docker
     </td>
     <td>
       <p align='center'>
-        <img src="https://drive.google.com/uc?export=view&id=1RXq9nhJ5xsv_tMCUZ4l6QwDeiyR1mtSD" width=500/>
+        <img src="https://drive.google.com/uc?export=view&id=1RXq9nhJ5xsv_tMCUZ4l6QwDeiyR1mtSD" width=600/>
         <a href='https://github.com/Boo-seon-woong' target="_blank">
           <img src="https://img.shields.io/badge/Github-000000?style=flat-square&logo=Github&logoColor=white"/>
         </a>
@@ -233,10 +231,3 @@ Jenkins, Docker
     </td>
   </tr>
 </table>
-
-
-
-
-
-
-
