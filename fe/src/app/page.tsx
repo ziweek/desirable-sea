@@ -20,6 +20,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
+import { IconLogo } from "@/components/common/icons";
 
 export default function Home() {
   const router = useRouter();
@@ -27,7 +28,7 @@ export default function Home() {
     query: "(min-width: 1224px)",
   });
   const isBigScreen = useMediaQuery({ query: "(min-width: 1824px)" });
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 720px)" });
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1200px)" });
   const isPortrait = useMediaQuery({ query: "(orientation: portrait)" });
   const isRetina = useMediaQuery({ query: "(min-resolution: 2dppx)" });
 
@@ -51,7 +52,7 @@ export default function Home() {
                 router.push("/");
               }}
             >
-              {/* <div className="flex flex-row items-end justify-start space-x-2">
+              <div className="flex flex-row items-end justify-start space-x-2">
                 <IconLogo width={"70px"} fill={"white"}></IconLogo>
                 {isTabletOrMobile ? (
                   <></>
@@ -65,7 +66,7 @@ export default function Home() {
                     </p>
                   </div>
                 )}
-              </div> */}
+              </div>
             </button>
           </div>
           <div className="flex flex-row items-center justify-end space-x-4">

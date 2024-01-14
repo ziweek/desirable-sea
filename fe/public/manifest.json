@@ -1,6 +1,6 @@
 {
-  "name": "PWA App",
-  "short_name": "App",
+  "name": "바라는 바당",
+  "short_name": "바라는 바당",
   "icons": [
     {
       "src": "/icons/android-chrome-192x192.png",
