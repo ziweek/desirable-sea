@@ -44,6 +44,7 @@
 </p>
 
 
+
 # Update Log
 
 * **예선 제출물 (2024.01.03)**
@@ -54,11 +55,10 @@
     
 
 * **본선 제출물 (2024.01.21)**
-  * Webpage - 모바일 전용 페이지 개발 완료, 서버와 데이터베이스 연동
-  * README - 튜토리얼 추가
+  * Webpage - 서버와 데이터베이스 연동, 모바일 전용 페이지 개발 완료
   * Model - 성능 개선
-
-  <img src="./src/result.png"/>
+    <img src="./src/result.png"/>
+  * README - 튜토리얼 추가
 
 
 <br/>
@@ -80,10 +80,10 @@
   </tr>
    <tr>
     <td>
-      <img src="./src/result.png" width=500 height=250/>
+      <img src="./src/model-performance.png"/>
     </td>
     <td>
-      <img src="./src/user-ux.png" width=500 height=250/>
+      <img src="./src/user-ux.png"/>
     </td>
   </tr>
 </table>
@@ -92,13 +92,13 @@
 
 # 2. 프로덕트
 
-## 아키텍처
+## 2.1 아키텍처
 
 <img src="./src/service-architecture.png">
 
-## 딥러닝 모델
+## 2.2 딥러닝 모델
 
-디렉토리 구조
+#### 디렉토리 구조
 ```
 desirable-sea
 ├── checkpoints  # Pytorch 모델을 저장하는 폴더입니다.
@@ -111,7 +111,7 @@ desirable-sea
 └── result.jpg   # 모델링 결과로 출력되는 이미지입니다.
 ```
 
-### 초기 설치방법
+#### 초기 설치방법
 1. setup.sh 파일 만들기.
 2. 아래의 쉘스크립트 복사 후 붙여넣기.
 3. 터미널에서 setup.sh 실행
@@ -150,7 +150,7 @@ wget https://raw.githubusercontent.com/ziweek/desirable-sea/main/src/demo.png
 
 ```
 
-### 추론 실행방법
+#### 추론 실행방법
 1. 아래의 쉘스크립트 복사 후 터미널에 붙여넣기.
 2. 터미널에서 실행하기.
 3. 동일 디렉토리 내에서 result.jpg 파일 확인하기.
@@ -161,7 +161,13 @@ python mmrotate/demo/image_demo.py demo.png mmrotate/configs/redet/redet_re50_re
 <img src="./src/result.png">
 <br/>
 
-## 웹페이지
+## 2.3 웹페이지
+
+#### 프론트엔드
+
+#### 벡엔드
+
+#### CI/CD
 
 <br/>
 
