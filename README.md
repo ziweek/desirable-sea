@@ -33,7 +33,7 @@
 
 <p align="left">
   <a href='https://desirable-sea.vercel.app/'>
-    <img src="https://img.shields.io/badge/Webpage-Vercel-000000?style=flat-square"/>
+    <img src="https://img.shields.io/badge/Product-Vercel-000000?style=flat-square"/>
   </a>
   <a href='https://goor.me/FaXXZ3XPE5X2mMyW7'>
     <img src="https://img.shields.io/badge/Model-goorm-ffffff?style=flat-square"/>
@@ -48,14 +48,14 @@
 # Update Log
 
 * **예선 제출물 (2024.01.03)**
-  * Webpage - 프론트엔드 개발 완료. 메인 서버와 딥러닝 서버를 구분하여 개발 중에 있음.
+  * Product - 프론트엔드 개발 완료. 메인 서버와 딥러닝 서버를 구분하여 개발 중에 있음.
   * Model - 아래의 프로덕트 > 모델링 > 추론 실행방법을 참고하여, 베이스라인을 기반으로 한 MVP 시연이 가능함.
     
     https://github.com/ziweek/desirable-sea/assets/99459331/a861922b-2486-45da-9844-30aa821bff28
     
 
 * **본선 제출물 (2024.01.21)**
-  * Webpage - 서버와 데이터베이스 연동, 모바일 전용 페이지 개발 완료
+  * Product - 서버와 데이터베이스 연동, 모바일 전용 페이지 개발 완료
   * Model - 성능 개선
     <img src="./src/result.png"/>
   * README - 튜토리얼 추가
