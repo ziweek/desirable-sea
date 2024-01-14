@@ -24,13 +24,25 @@ import Image from "next/image";
 
 export default function Home() {
   const router = useRouter();
+  const [mobile, setMobile] = useState<boolean>(false);
   const isTabletOrMobile = useMediaQuery({ query: "(max-width:1200px)" });
+
+  const checkResize = () => {
+    if (isTabletOrMobile) {
+      setMobile(true);
+    } else {
+      setMobile(false);
+    }
+  };
+
+  useEffect(() => {
+    checkResize();
+  }, [isTabletOrMobile]);
 
   useEffect(() => {
     AOS.init();
     return () => {};
   }, []);
-
   return (
     <section>
       {/* 헤더 */}
