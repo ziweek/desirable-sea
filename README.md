@@ -8,29 +8,22 @@
     <img src="https://img.shields.io/badge/Paperswithcode-Object%20Detection%20In%20Aerial%20Images-0194E2?style=flat-square"/>
   </a>
   <br/>
-  <br/>
   <img src="https://img.shields.io/badge/Ensemble-Weighted%20boxes%20fusion-0194E2?style=flat-square"/>
-  <br/>
   <a href='https://github.com/open-mmlab/mmrotate'>
     <img src="https://img.shields.io/badge/Baseline-MMRotate-0194E2?style=flat-square"/>
   </a>
-  </br>
   <img src="https://img.shields.io/badge/Weights%20&%20Biases-dea500?style=flat-square&logo=weightsandbiases&logoColor=white&text=white"/>
   </br>
-  </br>
-  
   <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
-  <img src="https://img.shields.io/badge/PWA-5A0FC8?style=flat-square&logo=pwa&logoColor=white"/>
-  </br>
-  
+  <img src="https://img.shields.io/badge/PWA-5A0FC8?style=flat-square&logo=pwa&logoColor=white"/> 
+  <img src="https://img.shields.io/badge/Google%20Maps-4285F4?style=flat-square&logo=googlemaps&logoColor=white"/>
   <img src="https://img.shields.io/badge/NestJS-E0234E?style=flat-square&logo=nestjs&logoColor=white"/>
   <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"/>
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white"/>
-  </br>
-  
   <img src="https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white"/>
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
   <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"/>
 </p>
 <br/>
 
@@ -43,16 +36,31 @@
     <img src="https://img.shields.io/badge/Webpage-Vercel-000000?style=flat-square"/>
   </a>
   <a href='https://goor.me/FaXXZ3XPE5X2mMyW7'>
-    <img src="https://img.shields.io/badge/Modeling-goorm-ffffff?style=flat-square"/>
+    <img src="https://img.shields.io/badge/Model-goorm-ffffff?style=flat-square"/>
+  </a>
+  <a href='https://colab.research.google.com/drive/13-VZyx3LiYPRS8aw-AcMSBK0Z4--TF2j?usp=sharing'>
+    <img src="https://img.shields.io/badge/Tutorial-Google%20Colab-F9AB00?style=flat-square"/>
   </a>
 </p>
 
-https://github.com/ziweek/desirable-sea/assets/99459331/a861922b-2486-45da-9844-30aa821bff28
+
+# Update Log
+
+* **예선 제출물 (2024.01.03)**
+  * Webpage - 프론트엔드 개발 완료. 메인 서버와 딥러닝 서버를 구분하여 개발 중에 있음.
+  * Model - 아래의 프로덕트 > 모델링 > 추론 실행방법을 참고하여, 베이스라인을 기반으로 한 MVP 시연이 가능함.
+    
+    https://github.com/ziweek/desirable-sea/assets/99459331/a861922b-2486-45da-9844-30aa821bff28
+    
+
+* **본선 제출물 (2024.01.21)**
+  * Webpage - 모바일 전용 페이지 개발 완료, 서버와 데이터베이스 연동
+  * README - 튜토리얼 추가
+  * Model - 성능 개선
+
+  <img src="./src/result.png"/>
 
 
-* Webpage - 프론트엔드 개발 완료. 메인 서버와 딥러닝 서버를 구분하여 개발 중에 있음.
-
-* Modeling - 아래의 프로덕트 > 모델링 > 추론 실행방법을 참고하여, 베이스라인을 기반으로 한 MVP 시연이 가능함.
 <br/>
 
 # 1. 프로젝트 개요
@@ -72,7 +80,7 @@ https://github.com/ziweek/desirable-sea/assets/99459331/a861922b-2486-45da-9844-
   </tr>
    <tr>
     <td>
-      <img src="./src/model-performance.png" width=500 height=250/>
+      <img src="./src/result.png" width=500 height=250/>
     </td>
     <td>
       <img src="./src/user-ux.png" width=500 height=250/>
@@ -86,9 +94,9 @@ https://github.com/ziweek/desirable-sea/assets/99459331/a861922b-2486-45da-9844-
 
 ## 아키텍처
 
-<img src="./src/web-architecture.png">
+<img src="./src/service-architecture.png">
 
-## 모델링
+## 딥러닝 모델
 
 디렉토리 구조
 ```
@@ -150,7 +158,7 @@ wget https://raw.githubusercontent.com/ziweek/desirable-sea/main/src/demo.png
 ```shell
 python mmrotate/demo/image_demo.py demo.png mmrotate/configs/redet/redet_re50_refpn_1x_dota_ms_rr_le90.py checkpoints/redet_re50_fpn_1x_dota_ms_rr_le90-fc9217b5.pth --out-file result.jpg
 ```
-<img src="./src/mvp-performance.png">
+<img src="./src/result.png">
 <br/>
 
 ## 웹페이지
@@ -175,10 +183,10 @@ python mmrotate/demo/image_demo.py demo.png mmrotate/configs/redet/redet_re50_re
   </tr>
    <tr>
     <td>
-      <img src="https://drive.google.com/uc?export=view&id=1459-NPm4sC50nrQRdjTpmpz_eKunIi04" width=210 height=280/>
+      <img src="https://drive.google.com/uc?export=view&id=1459-NPm4sC50nrQRdjTpmpz_eKunIi04" width=210/>
     </td>
     <td>
-      <img src="https://drive.google.com/uc?export=view&id=1RXq9nhJ5xsv_tMCUZ4l6QwDeiyR1mtSD" width=210 height=280/>
+      <img src="https://drive.google.com/uc?export=view&id=1RXq9nhJ5xsv_tMCUZ4l6QwDeiyR1mtSD" width=210/>
     </td>
   </tr>
   <tr>
