@@ -69,7 +69,7 @@
   - Product
     - 서버와 데이터베이스 연동
     - 반응형 UI 개발 완료
-    - PWA 지원 (설치방법)
+    - PWA 지원 ([설치방법](https://github.com/ziweek/desirable-sea/tree/main?tab=readme-ov-file#pwa-%EC%84%A4%EC%B9%98%EB%B0%A9%EB%B2%95))
       <img src="./src/ui-mobile.png"/>
   - Model
     - 성능지표 개선 (mAP : 73.4 -> 78.9 )
