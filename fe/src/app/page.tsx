@@ -20,7 +20,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
-import { IconLogo } from "@/components/common/icons";
 import Image from "next/image";
 
 export default function Home() {
@@ -29,7 +28,7 @@ export default function Home() {
     query: "(min-width: 1224px)",
   });
   const isBigScreen = useMediaQuery({ query: "(min-width: 1824px)" });
-  const isTabletOrMobile = useMediaQuery({ maxWidth: 1250 });
+  const isTabletOrMobile = useMediaQuery({ maxWidth: 1200, minWidth: 360 });
   const isPortrait = useMediaQuery({ query: "(orientation: portrait)" });
   const isRetina = useMediaQuery({ query: "(min-resolution: 2dppx)" });
   const [mobile, setMobile] = useState<boolean>(false);
@@ -48,6 +47,7 @@ export default function Home() {
   };
 
   useEffect(() => {
+    console.log(isTabletOrMobile);
     checkResize();
   }, [isTabletOrMobile]);
 
