@@ -24,10 +24,7 @@ import Image from "next/image";
 
 export default function Home() {
   const router = useRouter();
-  const isDesktopOrLaptop = useMediaQuery({
-    query: "(min-width: 1224px)",
-  });
-  const isTabletOrMobile = useMediaQuery({ query: "(max-width:767px)" });
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width:1200px)" });
 
   useEffect(() => {
     AOS.init();
