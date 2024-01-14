@@ -1,6 +1,5 @@
 "use client";
 
-import { IconLogo } from "@/components/common/icons";
 import {
   Button,
   Card,
@@ -52,7 +51,7 @@ export default function Home() {
                 router.push("/");
               }}
             >
-              <div className="flex flex-row items-end justify-start space-x-2">
+              {/* <div className="flex flex-row items-end justify-start space-x-2">
                 <IconLogo width={"70px"} fill={"white"}></IconLogo>
                 {isTabletOrMobile ? (
                   <></>
@@ -66,7 +65,7 @@ export default function Home() {
                     </p>
                   </div>
                 )}
-              </div>
+              </div> */}
             </button>
           </div>
           <div className="flex flex-row items-center justify-end space-x-4">
