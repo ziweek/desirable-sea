@@ -12,6 +12,7 @@
     "@nextui-org/react": "^2.2.9",
     "@react-google-maps/api": "^2.19.2",
     "@types/aos": "^3.0.7",
+    "@types/react-responsive": "^8.0.8",
     "aos": "^2.3.4",
     "framer-motion": "^10.16.16",
     "next": "14.0.4",

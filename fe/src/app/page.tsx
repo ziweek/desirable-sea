@@ -27,7 +27,7 @@ export default function Home() {
   const isDesktopOrLaptop = useMediaQuery({
     query: "(min-width: 1224px)",
   });
-  const isTabletOrMobile = useMediaQuery({ maxWidth: 1200 });
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width:767px)" });
 
   useEffect(() => {
     AOS.init();

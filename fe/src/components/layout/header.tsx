@@ -26,7 +26,7 @@ type HeaderProps = {
 
 export default function Header(props: HeaderProps) {
   const router = useRouter();
-  const isTabletOrMobile = useMediaQuery({ maxWidth: 1200, minWidth: 360 });
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width:767px)" });
 
   return (
     <div className="relative">
