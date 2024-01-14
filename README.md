@@ -45,7 +45,12 @@
 
 # Update Log
 
-- **예선 제출물 (2024.01.03)**
+<details>
+  <summary>
+    <h3>
+      예선 제출물 (2024.01.03)
+    </h3>
+  </summary>
 
   - Product
     - 프론트엔드 개발 완료. 메인 서버와 딥러닝 서버를 구분하여 개발 중에 있음.
@@ -54,10 +59,18 @@
 
       https://github.com/ziweek/desirable-sea/assets/99459331/a861922b-2486-45da-9844-30aa821bff28
 
-- **본선 제출물 (2024.01.21)**
+</details>
+
+<details open>
+  <summary>
+    <h3>본선 제출물 (2024.01.21)</h3>
+  </summary>
+  
   - Product
     - 서버와 데이터베이스 연동
     - 반응형 UI 개발 완료
+    - PWA 지원 (설치방법)
+      <img src="./src/ui-mobile.png"/>
   - Model
     - 성능지표 개선 (mAP : 73.4 -> 78.9 )
     - 기존의 산출값에 대한 신뢰도 대폭 상승 (small vehicle 30% -> 91%)
@@ -66,6 +79,7 @@
       <img src="./src/model-improvement.png"/>
   - README
     - 튜토리얼 추가
+</details>
 
 <br/>
 
@@ -172,26 +186,25 @@ python mmrotate/demo/image_demo.py demo.png mmrotate/configs/redet/redet_re50_re
 
 ## 2.3 웹페이지
 
-#### 프론트엔드
+#### PWA 설치방법
 
-Next.js, flutter, PWA, Google Map API
+iOS에서 설치하는 방법:
 
-#### 벡엔드
+1. iOS 기기에서 Safari를 열고 PWA가 호스팅된 URL로 이동합니다.
+2. 화면 하단에 있는 공유 아이콘을 탭합니다.
+3. 화면을 아래로 스크롤하여 "홈 화면에 추가"를 탭합니다.
+4. 다음 화면에서 원하는 경우 앱의 이름을 변경할 수 있습니다. 우측 상단의 "추가"를 탭합니다.
+5. PWA 아이콘이 홈 화면에 나타납니다. 앱을 시작하려면 해당 아이콘을 탭합니다.
 
-nest.js
-FastAPI
+Android에서 설치하는 방법:
 
-#### CI/CD
+1. Android 기기에서 Chrome 브라우저를 열고 PWA가 호스팅된 URL로 이동합니다.
+2. 화면 우측 상단의 세 점 메뉴를 탭합니다.
+3. "홈 화면에 추가"를 탭합니다.
+4. 다음 화면에서 원하는 경우 앱의 이름을 변경할 수 있습니다. 우측 상단의 "추가"를 탭합니다.
+5. PWA 아이콘이 홈 화면에 나타납니다. 앱을 시작하려면 해당 아이콘을 탭합니다.
 
-Jenkins, Docker
-
-<br/>
-
-# Reference
-
-<br/>
-
-# Contribute
+# 3. 팀원 소개
 
 <table>
   <tr>
