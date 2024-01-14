@@ -69,9 +69,14 @@ export default function Home() {
                   <p className="select-none text-start text-lg text-white font-bold">
                     바라는 바당
                   </p>
-                  <p className="select-none text-start text-xs text-white">
-                    제주 위성데이터를 활용한, 장기 방치 차량 탐색 지능형 플랫폼
-                  </p>
+                  {mobile ? (
+                    <></>
+                  ) : (
+                    <p className="select-none text-start text-xs text-white">
+                      제주 위성데이터를 활용한, 장기 방치 차량 탐색 지능형
+                      플랫폼
+                    </p>
+                  )}
                 </div>
               </div>
             </button>
@@ -98,10 +103,11 @@ export default function Home() {
               data-aos={"fade-in"}
               data-aos-duration="1000"
               className={`select-none pt-24 font-bold text-white text-center ${
-                mobile ? "text-sm" : "text-4xl"
+                mobile ? "text-md" : "text-4xl"
               }`}
             >
-              제주 위성데이터를 활용한 장기 방치 차량 탐색 지능형 플랫폼
+              제주 위성데이터를 활용한 {mobile ? <br></br> : ""}장기 방치 차량
+              탐색 지능형 플랫폼
             </p>
             <div
               data-aos={"fade-in"}

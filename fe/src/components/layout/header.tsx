@@ -72,21 +72,21 @@ export default function Header(props: HeaderProps) {
               {[1, 2, 3].map((e, i) => (
                 <Card
                   key={i}
-                  className={`w-[200px] h-[200px] ml-2 shadow-md ${
+                  className={`w-[200px] h-[150px] ml-2 shadow-md ${
                     e == 3 ? "mr-2" : ""
                   }`}
                   radius={"sm"}
                 >
                   <Image
                     alt="img"
-                    className="object-cover"
-                    height={200}
+                    className="object-cover object-center"
+                    height={150}
                     src={`/images/results/${e}.png`}
                     width={200}
                   />
                   <CardFooter className="justify-between bg-white/50 border-white/50 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
                     <p className="text-tiny text-black/80 font-bold">
-                      제주시 어디어디동
+                      제주시 어디동
                     </p>
                     <Button
                       className="text-tiny text-white bg-black/50"
