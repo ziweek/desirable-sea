@@ -33,7 +33,7 @@ export default function Header(props: HeaderProps) {
       {isTabletOrMobile ? (
         <div className="top-0 left-0 z-50 fixed space-y-2">
           <Card
-            className={`w-screen flex flex-row items-center justify-between py-2 px-4 rounded-t-none`}
+            className={`w-screen flex flex-row items-center justify-between py-2 px-2 rounded-t-none`}
             style={{
               display: "grid",
               gridTemplateColumns: "auto 1fr",
@@ -45,8 +45,8 @@ export default function Header(props: HeaderProps) {
               {props.isLogoVisible || props.isLogoVisible == undefined ? (
                 <Image
                   src={"/images/appIcon.png"}
-                  width={45}
-                  height={45}
+                  width={30}
+                  height={30}
                   alt="logo"
                 ></Image>
               ) : (

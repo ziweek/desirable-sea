@@ -61,13 +61,13 @@ export default function Home() {
               <div className="flex flex-row items-center justify-start space-x-2">
                 <Image
                   src={"/images/appIcon.png"}
-                  width={75}
-                  height={75}
+                  width={mobile ? 45 : 75}
+                  height={mobile ? 45 : 75}
                   alt="logo"
                 ></Image>
                 <div className="item-start flex h-full flex-col justify-end">
                   <p className="select-none text-start text-lg text-white font-bold">
-                    바라는 바당
+                    바라는바당
                   </p>
                   {mobile ? (
                     <></>
@@ -100,24 +100,18 @@ export default function Home() {
         <div className="flex h-screen flex-col items-center justify-center bg-[url('../../public/images/jeju-satellite.jpg')] bg-cover bg-center">
           <div className="flex flex-col items-center justify-center space-y-4 max-w-[1200px] w-full">
             <p
-              data-aos={"fade-in"}
-              data-aos-duration="1000"
               className={`select-none pt-24 font-bold text-white text-center ${
-                mobile ? "text-md" : "text-4xl"
+                mobile ? "text-xl" : "text-4xl"
               }`}
             >
               제주 위성데이터를 활용한 {mobile ? <br></br> : ""}장기 방치 차량
               탐색 지능형 플랫폼
             </p>
-            <div
-              data-aos={"fade-in"}
-              data-aos-delay="250"
-              data-aos-duration="1000"
-            >
+            <div>
               <div className="flex flex-row space-x-4">
                 <Button
                   className="hover:-translate-y-1 border-white"
-                  size={"lg"}
+                  size={mobile ? "md" : "lg"}
                   variant={"bordered"}
                   onClick={() => {
                     router.push("/dashboard");
@@ -127,7 +121,7 @@ export default function Home() {
                 </Button>
                 <Button
                   className="hover:-translate-y-1 border-white"
-                  size={"lg"}
+                  size={mobile ? "md" : "lg"}
                   variant={"bordered"}
                   onClick={() => {
                     router.push("/dashboard");
