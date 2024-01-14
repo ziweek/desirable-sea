@@ -5,12 +5,12 @@
 
 <p align="left">
   <a href='https://paperswithcode.com/task/object-detection-in-aerial-images'>
-    <img src="https://img.shields.io/badge/Paperswithcode-Object%20Detection%20In%20Aerial%20Images-0194E2?style=flat-square"/>
+    <img src="https://img.shields.io/badge/Paperswithcode-Object%20Detection%20In%20Aerial%20Images-EF2D5E?style=flat-square"/>
   </a>
   <br/>
-  <img src="https://img.shields.io/badge/Ensemble-Weighted%20boxes%20fusion-0194E2?style=flat-square"/>
+  <img src="https://img.shields.io/badge/Ensemble-Weighted%20boxes%20fusion-EF2D5E?style=flat-square"/>
   <a href='https://github.com/open-mmlab/mmrotate'>
-    <img src="https://img.shields.io/badge/Baseline-MMRotate-0194E2?style=flat-square"/>
+    <img src="https://img.shields.io/badge/Baseline-MMRotate-EF2D5E?style=flat-square"/>
   </a>
   <img src="https://img.shields.io/badge/Weights%20&%20Biases-dea500?style=flat-square&logo=weightsandbiases&logoColor=white&text=white"/>
   </br>
@@ -48,17 +48,22 @@
 # Update Log
 
 * **예선 제출물 (2024.01.03)**
-  * Product - 프론트엔드 개발 완료. 메인 서버와 딥러닝 서버를 구분하여 개발 중에 있음.
-  * Model - 아래의 프로덕트 > 모델링 > 추론 실행방법을 참고하여, 베이스라인을 기반으로 한 MVP 시연이 가능함.
+  * Product
+    * 프론트엔드 개발 완료. 메인 서버와 딥러닝 서버를 구분하여 개발 중에 있음.
+  * Model
+    * 아래의 프로덕트 > 모델링 > 추론 실행방법을 참고하여, 베이스라인을 기반으로 한 MVP 시연이 가능함.
     
-    https://github.com/ziweek/desirable-sea/assets/99459331/a861922b-2486-45da-9844-30aa821bff28
+      https://github.com/ziweek/desirable-sea/assets/99459331/a861922b-2486-45da-9844-30aa821bff28
     
 
 * **본선 제출물 (2024.01.21)**
-  * Product - 서버와 데이터베이스 연동, 모바일 전용 페이지 개발 완료
-  * Model - 성능 개선
-    <img src="./src/result.png"/>
-  * README - 튜토리얼 추가
+  * Product
+    * 서버와 데이터베이스 연동, 모바일 전용 페이지 개발 완료
+  * Model
+    * 성능 개선 (mAP : 73.4 -> 78.9 )
+      <img src="./src/result.png"/>
+  * README
+    * 튜토리얼 추가
 
 
 <br/>
@@ -165,9 +170,16 @@ python mmrotate/demo/image_demo.py demo.png mmrotate/configs/redet/redet_re50_re
 
 #### 프론트엔드
 
+Next.js, flutter, PWA, Google Map API
+
 #### 벡엔드
 
+nest.js
+FastAPI
+
 #### CI/CD
+
+Jenkins, Docker
 
 <br/>
 
@@ -184,20 +196,8 @@ python mmrotate/demo/image_demo.py demo.png mmrotate/configs/redet/redet_re50_re
       <p align='center'>김지욱</p>
     </td>
     <td>
-      <p align='center'>부선웅</p>
-    </td>
-  </tr>
-   <tr>
-    <td>
-      <img src="https://drive.google.com/uc?export=view&id=1459-NPm4sC50nrQRdjTpmpz_eKunIi04" width=210/>
-    </td>
-    <td>
-      <img src="https://drive.google.com/uc?export=view&id=1RXq9nhJ5xsv_tMCUZ4l6QwDeiyR1mtSD" width=210/>
-    </td>
-  </tr>
-  <tr>
-    <td>
       <p align='center'>
+        <img src="https://drive.google.com/uc?export=view&id=1459-NPm4sC50nrQRdjTpmpz_eKunIi04" width=500/>
         <a href='' target="_blank">
           <img src="https://img.shields.io/badge/Github-000000?style=flat-square&logo=Github&logoColor=white"/>
         </a>
@@ -205,9 +205,26 @@ python mmrotate/demo/image_demo.py demo.png mmrotate/configs/redet/redet_re50_re
     </td>
     <td>
       <p align='center'>
+        이 프로젝트에 리더로 참여하여 먼저, 제주의 독특한 지형과 교통 도전 과제에 직면해 지능형 플랫폼의 필요성을 깨닫게 되었습니다. Next.js, Google Map API, 그리고 FastAPI 등의 현대적인 기술들을 통합함으로써 우리의 솔루션은 효율적이고 사용자 친화적인 장기 방치 차량 관리를 실현하며, 위성데이터를 활용한 지능형 플랫폼의 발전에 일조하는 데 자부심을 느낄 수 있었습니다. 이 플랫폼은 제주의 교통환경을 혁신하고 미래 도시 계획에 기여하는 중요한 발판으로서의 역할을 할 것으로 기대됩니다.
+      </p>
+    </td>
+  </tr>
+  
+   <tr>
+    <td>
+      <p align='center'>부선웅</p>
+    </td>
+    <td>
+      <p align='center'>
+        <img src="https://drive.google.com/uc?export=view&id=1RXq9nhJ5xsv_tMCUZ4l6QwDeiyR1mtSD" width=500/>
         <a href='' target="_blank">
           <img src="https://img.shields.io/badge/Github-000000?style=flat-square&logo=Github&logoColor=white"/>
         </a>
+      </p>
+    </td>
+    <td>
+      <p align='center'>
+        CTO로 참여한 이 프로젝트는 최신 기술을 활용하여 제주의 장기 방치 차량 문제에 도전하는 흥미로운 경험이었습니다. 위성데이터와 딥러닝을 결합하여 차량을 정확하게 탐지하는 시스템을 개발하는 과정에서, 기술적인 도전과 혁신의 기회를 마주하게 되었습니다. 이 플랫폼은 미래 제주의 스마트한 지능형 시스템을 모색하는 데 있어 핵심적인 역할을 할 것으로 자부하고 있습니다.
       </p>
     </td>
   </tr>
