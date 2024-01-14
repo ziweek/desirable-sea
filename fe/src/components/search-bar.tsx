@@ -72,7 +72,7 @@ export default function SearchBar(props: SearchBarProps): any {
       classNames={{
         clearButton: "text-[#006FEE]",
         selectorButton: "text-[#006FEE]",
-        // listboxWrapper: "min-h-[500px]",
+        listboxWrapper: "min-h-[500px]",
       }}
       inputProps={{
         classNames: {

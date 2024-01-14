@@ -20,10 +20,17 @@ import { useRouter } from "next/navigation";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import Image from "next/image";
+import { useMediaQuery } from "react-responsive";
 
 export default function Home() {
   const router = useRouter();
+  const isDesktopOrLaptop = useMediaQuery({
+    query: "(min-width: 1224px)",
+  });
+  const isBigScreen = useMediaQuery({ query: "(min-width: 1824px)" });
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+  const isPortrait = useMediaQuery({ query: "(orientation: portrait)" });
+  const isRetina = useMediaQuery({ query: "(min-resolution: 2dppx)" });
 
   useEffect(() => {
     AOS.init();
@@ -34,7 +41,7 @@ export default function Home() {
     <section>
       {/* 헤더 */}
       <div
-        className={`fixed z-30 top-0 flex w-full flex-row items-center justify-center px-24 py-6 ${
+        className={`fixed z-30 top-0 flex w-full flex-row items-center justify-center px-4 py-3 ${
           true ? "bg-black/75" : ""
         }`}
       >
@@ -47,14 +54,18 @@ export default function Home() {
             >
               <div className="flex flex-row items-end justify-start space-x-2">
                 <IconLogo width={"70px"} fill={"white"}></IconLogo>
-                <div className="item-start flex h-full flex-col justify-end">
-                  <p className="select-none text-start text-xs text-white">
-                    제주 위성데이터를 활용한,
-                  </p>
-                  <p className="select-none text-start text-xs text-white">
-                    장기 방치 차량 탐색 지능형 플랫폼
-                  </p>
-                </div>
+                {isTabletOrMobile ? (
+                  <></>
+                ) : (
+                  <div className="item-start flex h-full flex-col justify-end">
+                    <p className="select-none text-start text-xs text-white">
+                      제주 위성데이터를 활용한,
+                    </p>
+                    <p className="select-none text-start text-xs text-white">
+                      장기 방치 차량 탐색 지능형 플랫폼
+                    </p>
+                  </div>
+                )}
               </div>
             </button>
           </div>
@@ -88,7 +99,9 @@ export default function Home() {
             <p
               data-aos={"fade-in"}
               data-aos-duration="1000"
-              className="select-none pt-24 text-2xl font-bold text-white"
+              className={`select-none pt-24 font-bold text-white text-center ${
+                isTabletOrMobile ? "text-2xl" : "text-2xl"
+              }`}
             >
               제주 위성데이터를 활용한 장기 방치 차량 탐색 지능형 플랫폼
             </p>
@@ -123,7 +136,7 @@ export default function Home() {
           </div>
         </div>
         {/* 2. 문제 제기 */}
-        <div className="space-y-4 flex h-screen flex-col items-center justify-center bg-[url('../../public/images/jeju-car.jpg')] bg-cover bg-center">
+        <div className="space-y-4 flex h-full py-16 min-h-screen flex-col items-center justify-center bg-[url('../../public/images/jeju-car.jpg')] bg-cover bg-center">
           <div className="flex flex-col items-center justify-center space-y-4 max-w-[1200px] w-full">
             <div className="flex flex-col items-center justify-center space-y-4 max-w-[1200px] w-full">
               <p className="select-none text-2xl font-bold text-white">
@@ -134,12 +147,22 @@ export default function Home() {
               </p>
             </div>
             <div
-              className="flex min-h-[60vh] w-[90vw] select-none flex-row items-center justify-between max-w-[1200px]"
-              style={{
-                display: "grid",
-                gridTemplateColumns: "1fr 1fr",
-                gap: "20px",
-              }}
+              className="flex min-h-[60vh] px-4 w-full select-none items-center justify-between max-w-[1200px]"
+              style={
+                isTabletOrMobile
+                  ? {
+                      display: "grid",
+                      gridTemplateRows: "1fr 1fr",
+                      gridTemplateColumns: "1fr",
+                      gap: "20px",
+                    }
+                  : {
+                      display: "grid",
+                      gridTemplateRows: "1fr",
+                      gridTemplateColumns: "1fr 1fr",
+                      gap: "20px",
+                    }
+              }
             >
               {[
                 {
@@ -173,42 +196,11 @@ export default function Home() {
                 },
                 {
                   title: "시스템 아키텍쳐",
-                  children: (
-                    <div className="flex w-full flex-row">
-                      {[
-                        {
-                          name: "NEXT.js",
-                          imgSrc: "/images/logo/nextjs.png",
-                          content: "I am a tooltip",
-                        },
-                      ].map((achitecture, i) => (
-                        <Tooltip
-                          key={i}
-                          showArrow
-                          content={
-                            <div className="flex flex-col space-y-2">
-                              <p className="font-bold">{achitecture.name}</p>
-                              <p>{achitecture.content}</p>
-                            </div>
-                          }
-                          placement={"bottom"}
-                        >
-                          <Card>
-                            {/* <Image
-                            src={achitecture.imgSrc}
-                            width={150}
-                            height={50}
-                            alt="a"
-                          ></Image> */}
-                          </Card>
-                        </Tooltip>
-                      ))}
-                    </div>
-                  ),
+                  children: <></>,
                 },
               ].map((content, i) => {
                 return (
-                  <Card key={i} className="h-full p-4">
+                  <Card key={i} className="min-h-[400px] h-full p-4 w-full">
                     <CardHeader>
                       <p className="text-lg font-bold">{content.title}</p>
                     </CardHeader>
@@ -223,19 +215,23 @@ export default function Home() {
           </div>
         </div>
         {/* 3. 핵심 기술 설명 */}
-        <div className="flex h-screen flex-col items-center justify-center space-y-8 bg-white">
+        <div className="flex h-full py-16 min-h-screen flex-col items-center justify-center space-y-8 bg-white">
           <p className="select-none text-4xl font-bold text-black">
             서비스 소개
           </p>
           <div
-            className="flex min-h-[60vh] w-[90vw] select-none flex-row items-center justify-between max-w-[1200px]"
-            style={{
-              display: "grid",
-              gridTemplateAreas: `"a b c" "d e e"`,
-              gridTemplateColumns: "1fr 1fr 1fr",
-              gridTemplateRows: "1fr 1fr",
-              gap: "20px",
-            }}
+            className="flex min-h-[60vh] w-[90vw] select-none flex-col items-center justify-between max-w-[1200px]"
+            style={
+              isTabletOrMobile
+                ? { gap: "20px" }
+                : {
+                    display: "grid",
+                    gridTemplateAreas: `"a b c" "d e e"`,
+                    gridTemplateColumns: "1fr 1fr 1fr",
+                    gridTemplateRows: "1fr 1fr",
+                    gap: "20px",
+                  }
+            }
           >
             {[
               { title: "실시간 지도 API 연동", gridArea: "a", text: "sdf" },
@@ -249,7 +245,7 @@ export default function Home() {
               return (
                 <Card
                   key={i}
-                  className="h-full w-full p-4"
+                  className="min-h-[300px] h-full w-full p-4"
                   isBlurred
                   style={{ gridArea: content.gridArea }}
                 >
@@ -334,7 +330,7 @@ export default function Home() {
               return (
                 <Card
                   key={i}
-                  className="h-full w-full p-4"
+                  className="min-h-[300px] h-full w-full p-4"
                   isBlurred
                   style={{ gridArea: content.gridArea }}
                 >
