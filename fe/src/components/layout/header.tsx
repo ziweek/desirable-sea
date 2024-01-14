@@ -14,6 +14,7 @@ import { useRouter } from "next/navigation";
 import SearchBar from "../search-bar";
 import { useMediaQuery } from "react-responsive";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 type HeaderProps = {
   isLogoVisible?: boolean;
@@ -31,6 +32,20 @@ export default function Header(props: HeaderProps) {
   const isTabletOrMobile = useMediaQuery({ maxWidth: 780 });
   const isPortrait = useMediaQuery({ orientation: "portrait" });
   const isRetina = useMediaQuery({ minResolution: "2dppx" });
+
+  const [mobile, setMobile] = useState<boolean>(false);
+
+  const checkResize = () => {
+    if (isTabletOrMobile) {
+      setMobile(true);
+    } else {
+      setMobile(false);
+    }
+  };
+
+  useEffect(() => {
+    checkResize();
+  }, [isTabletOrMobile]);
 
   return (
     <>

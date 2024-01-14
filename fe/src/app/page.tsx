@@ -18,7 +18,7 @@ import {
 import { useRouter } from "next/navigation";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { IconLogo } from "@/components/common/icons";
 import Image from "next/image";
@@ -32,11 +32,24 @@ export default function Home() {
   const isTabletOrMobile = useMediaQuery({ maxWidth: 780 });
   const isPortrait = useMediaQuery({ query: "(orientation: portrait)" });
   const isRetina = useMediaQuery({ query: "(min-resolution: 2dppx)" });
+  const [mobile, setMobile] = useState<boolean>(false);
 
   useEffect(() => {
     AOS.init();
     return () => {};
   }, []);
+
+  const checkResize = () => {
+    if (isTabletOrMobile) {
+      setMobile(true);
+    } else {
+      setMobile(false);
+    }
+  };
+
+  useEffect(() => {
+    checkResize();
+  }, [isTabletOrMobile]);
 
   return (
     <section>
