@@ -35,7 +35,7 @@ export default function Header(props: HeaderProps) {
     <>
       {isTabletOrMobile ? (
         <div>
-          <Card
+          {/* <Card
             isBlurred
             className={`z-50 absolute bottom-0 flex flex-row items-center justify-between w-full py-2 px-4 rounded-b-none`}
             style={{
@@ -61,7 +61,7 @@ export default function Header(props: HeaderProps) {
                 <></>
               )}
             </div>
-          </Card>
+          </Card> */}
         </div>
       ) : (
         <div
