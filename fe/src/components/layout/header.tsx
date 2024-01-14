@@ -29,7 +29,7 @@ export default function Header(props: HeaderProps) {
   const router = useRouter();
   const isDesktopOrLaptop = useMediaQuery({ minWidth: 1224 });
   const isBigScreen = useMediaQuery({ minWidth: 1824 });
-  const isTabletOrMobile = useMediaQuery({ maxWidth: 780 });
+  const isTabletOrMobile = useMediaQuery({ maxWidth: 1250 });
   const isPortrait = useMediaQuery({ orientation: "portrait" });
   const isRetina = useMediaQuery({ minResolution: "2dppx" });
 
@@ -53,7 +53,7 @@ export default function Header(props: HeaderProps) {
         <div>
           <Card
             isBlurred
-            className={`z-50 fixed bottom-0 flex flex-row items-center justify-between w-full py-2 px-4 rounded-b-none`}
+            className={`z-50 fixed top-0 flex flex-row items-center justify-between w-full py-2 px-4 rounded-b-none`}
             style={{
               display: "grid",
               gridTemplateColumns: "auto 1fr",
