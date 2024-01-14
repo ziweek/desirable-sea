@@ -65,7 +65,7 @@
     * 성능 개선 (mAP : 73.4 -> 78.9 )
       * 기존의 모델이 흰색 차량만을 식별했던 것과 달리 검은색, 빨간색의 차량도 식별.
       * 건물의 그림자에 가려진 차량도 식별.
-        <img src="./src/model-improvement .png"/>
+        <img src="./src/model-improvement.png"/>
   * README
     * 튜토리얼 추가
 
