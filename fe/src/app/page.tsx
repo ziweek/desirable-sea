@@ -31,25 +31,11 @@ export default function Home() {
   const isTabletOrMobile = useMediaQuery({ maxWidth: 1200, minWidth: 360 });
   const isPortrait = useMediaQuery({ query: "(orientation: portrait)" });
   const isRetina = useMediaQuery({ query: "(min-resolution: 2dppx)" });
-  const [mobile, setMobile] = useState<boolean>(false);
 
   useEffect(() => {
     AOS.init();
     return () => {};
   }, []);
-
-  const checkResize = () => {
-    if (isTabletOrMobile) {
-      setMobile(true);
-    } else {
-      setMobile(false);
-    }
-  };
-
-  useEffect(() => {
-    console.log(isTabletOrMobile);
-    checkResize();
-  }, [isTabletOrMobile]);
 
   return (
     <section>
@@ -155,7 +141,7 @@ export default function Home() {
             <div
               className="flex min-h-[60vh] px-4 w-full select-none items-center justify-between max-w-[1200px]"
               style={
-                isTabletOrMobile
+                !isDesktopOrLaptop
                   ? {
                       display: "grid",
                       gridTemplateRows: "1fr 1fr",
@@ -228,7 +214,7 @@ export default function Home() {
           <div
             className="flex min-h-[60vh] w-[90vw] select-none flex-col items-center justify-between max-w-[1200px]"
             style={
-              isTabletOrMobile
+              !isDesktopOrLaptop
                 ? { gap: "20px" }
                 : {
                     display: "grid",
