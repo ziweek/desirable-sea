@@ -6,6 +6,13 @@ import {
   CardBody,
   CardFooter,
   Button,
+  Tooltip,
+  Modal,
+  ModalContent,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  useDisclosure,
 } from "@nextui-org/react";
 import { IconLogo } from "../common/icons";
 import { useRouter } from "next/navigation";
@@ -14,6 +21,8 @@ import { useMediaQuery } from "react-responsive";
 import Image from "next/image";
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 import "react-horizontal-scrolling-menu/dist/styles.css";
+import { Children, useEffect, useState } from "react";
+import { LottieCongratulations } from "../common/lotties";
 
 type HeaderProps = {
   isLogoVisible?: boolean;
@@ -24,14 +33,95 @@ type HeaderProps = {
   isHeaderBackgroundVisible?: boolean;
 };
 
+const tutorialContent = [
+  {
+    header: (
+      <div className="text-2xl font-bold">{/* 짜잔! 바라는바당입니다. */}</div>
+    ),
+    body: (
+      <div>
+        <p className="text-lg text-center w-full">
+          안녕하세요. 바라는 바당입니다.
+        </p>
+        <p className="text-lg text-center w-full">
+          지금부터 튜토리얼을 진행하겠습니다.
+        </p>
+      </div>
+    ),
+  },
+  {
+    header: <div>반갑습니다! 바라는바당입니다.</div>,
+    body: (
+      <>
+        <p>제주 위성데이터를 활용한 장기방치차량 탐지 지능형 플랫폼을 개발</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+          pulvinar risus non risus hendrerit venenatis. Pellentesque sit amet
+          hendrerit risus, sed porttitor quam.
+        </p>
+        <p>
+          Magna exercitation reprehenderit magna aute tempor cupidatat consequat
+          elit dolor adipisicing. Mollit dolor eiusmod sunt ex incididunt cillum
+          quis. Velit duis sit officia eiusmod Lorem aliqua enim laboris do
+          dolor eiusmod. Et mollit incididunt nisi consectetur esse laborum
+          eiusmod pariatur proident Lorem eiusmod et. Culpa deserunt nostrud ad
+          veniam.
+        </p>
+      </>
+    ),
+  },
+  {
+    header: <div>반갑습니다! 바라는바당입니다.</div>,
+    body: (
+      <>
+        <p>제주 위성데이터를 활용한 장기방치차량 탐지 지능형 플랫폼을 개발</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+          pulvinar risus non risus hendrerit venenatis. Pellentesque sit amet
+          hendrerit risus, sed porttitor quam.
+        </p>
+        <p>
+          Magna exercitation reprehenderit magna aute tempor cupidatat consequat
+          elit dolor adipisicing. Mollit dolor eiusmod sunt ex incididunt cillum
+          quis. Velit duis sit officia eiusmod Lorem aliqua enim laboris do
+          dolor eiusmod. Et mollit incididunt nisi consectetur esse laborum
+          eiusmod pariatur proident Lorem eiusmod et. Culpa deserunt nostrud ad
+          veniam.
+        </p>
+      </>
+    ),
+  },
+  {
+    header: <div></div>,
+    body: (
+      <div>
+        <LottieCongratulations loop={true}></LottieCongratulations>
+        <p className="text-lg text-center w-full">
+          안녕하세요. 바라는 바당입니다.
+        </p>
+        <p className="text-lg text-center w-full">
+          지금부터 튜토리얼을 진행하겠습니다.
+        </p>
+      </div>
+    ),
+  },
+];
+
 export default function Header(props: HeaderProps) {
   const router = useRouter();
   const isTabletOrMobile = useMediaQuery({ query: "(max-width:1200px)" });
+  const [isModalVisible, setIsModalVisible] = useState<boolean>(true);
+  const [isSliderVisible, setIsSliderVisible] = useState<boolean>(false);
+  const [isTooltipVisible, setIsTooltipVisible] = useState<boolean>(true);
+  const [indexOfModal, setIndexOfModal] = useState<number>(0);
+  const { isOpen, onOpen, onOpenChange } = useDisclosure();
+
+  useEffect(() => {}, []);
 
   return (
     <div className="relative">
       {isTabletOrMobile ? (
-        <div className="top-0 left-0 z-50 fixed space-y-2">
+        <div className="top-0 left-0 z-20 fixed space-y-2">
           <Card
             className={`w-screen flex flex-row items-center justify-between py-2 px-2 rounded-t-none`}
             style={{
@@ -43,65 +133,100 @@ export default function Header(props: HeaderProps) {
           >
             <div className="flex flex-col justify-center w-fit">
               {props.isLogoVisible || props.isLogoVisible == undefined ? (
-                <Image
-                  src={"/images/appIcon.png"}
-                  width={30}
-                  height={30}
-                  alt="logo"
-                ></Image>
+                <Tooltip
+                  color="primary"
+                  content="상단의 로고를 탭하여 분석 시작하기"
+                  delay={1000}
+                  isOpen={indexOfModal == 1}
+                  size={"lg"}
+                  showArrow={true}
+                  placement={"bottom-start"}
+                >
+                  <Button
+                    isIconOnly
+                    size={"lg"}
+                    variant={"light"}
+                    onPress={() => {
+                      setIsSliderVisible(!isSliderVisible);
+                    }}
+                  >
+                    <Image
+                      src={"/images/appIcon.png"}
+                      width={50}
+                      height={50}
+                      alt="logo"
+                    ></Image>
+                  </Button>
+                </Tooltip>
               ) : (
                 <></>
               )}
             </div>
             <div>
               {props.isSearchBarVisible ? (
-                <div className="flex w-full flex-col items-center justify-center">
-                  <SearchBar value={props.searchedText}></SearchBar>
-                </div>
+                <>
+                  <Tooltip
+                    color="primary"
+                    content="키워드를 검색하여 시작하기"
+                    delay={1000}
+                    isOpen={indexOfModal == 2}
+                    size={"lg"}
+                    showArrow={true}
+                    placement={"bottom"}
+                  >
+                    <div className="flex w-full flex-col items-center justify-center">
+                      <SearchBar value={props.searchedText}></SearchBar>
+                    </div>
+                  </Tooltip>
+                </>
               ) : (
                 <></>
               )}
             </div>
           </Card>
-          <Card
-            className="absolute z-50 w-screen bg-transparent border-0 scrollbar-hide"
-            radius={"none"}
-            shadow={"none"}
-          >
-            <ScrollMenu>
-              {[1, 2, 3].map((e, i) => (
-                <Card
-                  key={i}
-                  className={`w-[200px] h-[150px] ml-2 shadow-md ${
-                    e == 3 ? "mr-2" : ""
-                  }`}
-                  radius={"sm"}
-                >
-                  <Image
-                    alt="img"
-                    className="object-cover object-center"
-                    height={150}
-                    src={`/images/results/${e}.png`}
-                    width={200}
-                  />
-                  <CardFooter className="justify-between bg-white/50 border-white/50 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
-                    <p className="text-tiny text-black/80 font-bold">
-                      제주시 어디동
-                    </p>
-                    <Button
-                      className="text-tiny text-white bg-black/50"
-                      variant="flat"
-                      color="default"
-                      radius="lg"
-                      size="sm"
-                    >
-                      바로가기
-                    </Button>
-                  </CardFooter>
-                </Card>
-              ))}
-            </ScrollMenu>
-          </Card>
+          {isSliderVisible ? (
+            <Card
+              className="absolute z-50 w-screen bg-transparent border-0 scrollbar-hide"
+              radius={"none"}
+              shadow={"none"}
+            >
+              <ScrollMenu>
+                {[1, 2, 3].map((e, i) => (
+                  <Card
+                    key={i}
+                    className={`w-[200px] h-[150px] ml-2 shadow-md ${
+                      e == 3 ? "mr-2" : ""
+                    }`}
+                    radius={"sm"}
+                  >
+                    <Image
+                      alt="img"
+                      className="object-cover object-center"
+                      height={150}
+                      src={`/images/results/${e}.png`}
+                      width={200}
+                    />
+                    <CardFooter className="justify-between bg-white/50 border-white/50 border-1 overflow-hidden py-1 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
+                      <p className="text-tiny text-black/80 font-bold">
+                        제주시 어디동
+                      </p>
+                      <Button
+                        className="text-tiny text-white bg-black/50"
+                        variant="flat"
+                        color="default"
+                        radius="lg"
+                        size="sm"
+                      >
+                        바로가기
+                      </Button>
+                    </CardFooter>
+                  </Card>
+                ))}
+              </ScrollMenu>
+            </Card>
+          ) : (
+            <></>
+          )}
         </div>
       ) : (
         <div
@@ -196,6 +321,50 @@ export default function Header(props: HeaderProps) {
           </Card>
         </div>
       )}
+      <Modal isOpen={isModalVisible} isDismissable>
+        <ModalContent>
+          <>
+            <ModalHeader className="flex flex-col gap-1">
+              {tutorialContent[indexOfModal]?.header}
+            </ModalHeader>
+            <ModalBody>{tutorialContent[indexOfModal]?.body}</ModalBody>
+
+            <ModalFooter>
+              <Button
+                color="danger"
+                variant="light"
+                onPress={() => {
+                  if (indexOfModal == 0) {
+                    router.back();
+                  } else {
+                    setIndexOfModal((indexOfModal) => {
+                      return indexOfModal - 1;
+                    });
+                  }
+                }}
+              >
+                돌아가기
+              </Button>
+              <Button
+                color="primary"
+                onPress={() => {
+                  if (indexOfModal == tutorialContent.length - 1) {
+                    setIsModalVisible(false);
+                  } else {
+                    setIndexOfModal((indexOfModal) => {
+                      return indexOfModal + 1;
+                    });
+                  }
+                }}
+              >
+                {indexOfModal == tutorialContent.length - 1
+                  ? "시작하기"
+                  : "다음으로"}
+              </Button>
+            </ModalFooter>
+          </>
+        </ModalContent>
+      </Modal>
     </div>
   );
 }

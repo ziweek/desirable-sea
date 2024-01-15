@@ -102,6 +102,7 @@ export default function SearchBar(props: SearchBarProps): any {
       }}
       inputProps={{
         classNames: {
+          input: "text-lg",
           base: "text-[#006FEE]",
           label: "text-[#006FEE]",
         },
