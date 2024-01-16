@@ -213,10 +213,8 @@ export default function Home() {
           </div>
         </div>
         {/* 3. 핵심 기술 설명 */}
-        <div className="flex h-full py-16 min-h-screen flex-col items-center justify-center space-y-8 bg-white">
-          <p className="select-none text-4xl font-bold text-black">
-            서비스 소개
-          </p>
+        <div className="flex h-full py-16 min-h-screen flex-col items-center justify-center space-y-8">
+          <p className="select-none text-4xl font-bold">서비스 소개</p>
           <div
             className="flex min-h-[60vh] w-[90vw] select-none flex-col items-center justify-between max-w-[1200px]"
             style={
@@ -244,7 +242,6 @@ export default function Home() {
                 <Card
                   key={i}
                   className="min-h-[300px] h-full w-full p-4"
-                  isBlurred
                   style={{ gridArea: content.gridArea }}
                 >
                   <CardHeader>
@@ -329,7 +326,6 @@ export default function Home() {
                 <Card
                   key={i}
                   className="min-h-[300px] h-full w-full p-4"
-                  isBlurred
                   style={{ gridArea: content.gridArea }}
                 >
                   <CardHeader>
@@ -343,6 +339,32 @@ export default function Home() {
               );
             })}
           </div>
+        </div>
+        {/* Footer */}
+        <div className="h-fit w-ful flex flex-col items-center justify-center pb-8">
+          <div className="flex flex-row space-x-4 py-6">
+            <Button
+              className="hover:-translate-y-1"
+              size={"lg"}
+              variant={"light"}
+              onClick={() => {
+                router.push("/dashboard");
+              }}
+            >
+              <p className="font-bold">서비스 소개자료</p>
+            </Button>
+            <Button
+              className="hover:-translate-y-1"
+              size={"lg"}
+              variant={"light"}
+              onClick={() => {
+                router.push("/dashboard");
+              }}
+            >
+              <p className="font-bold">서비스 체험하기</p>
+            </Button>
+          </div>
+          <p className="opacity-50 font-bold">팀 바라는바당</p>
         </div>
       </div>
     </section>

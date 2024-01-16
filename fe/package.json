@@ -17,6 +17,7 @@
     "framer-motion": "^10.16.16",
     "next": "14.0.4",
     "next-pwa": "^5.6.0",
+    "next-themes": "^0.2.1",
     "react": "^18",
     "react-dom": "^18",
     "react-horizontal-scrolling-menu": "^4.1.2",

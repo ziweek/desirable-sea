@@ -22,7 +22,7 @@ import Image from "next/image";
 import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu";
 import "react-horizontal-scrolling-menu/dist/styles.css";
 import { Children, useEffect, useState } from "react";
-import { LottieCongratulations } from "../common/lotties";
+import { LottieCongratulations, LottieHi } from "../common/lotties";
 
 type HeaderProps = {
   isLogoVisible?: boolean;
@@ -40,8 +40,14 @@ const tutorialContent = [
     ),
     body: (
       <div>
+        <p className="text-center w-full text-2xl font-bold">
+          제주 위성데이터를 활용한<br></br>장기 방치 차량 탐지 지능형 플랫폼
+        </p>
+        <div className="w-full flex flex-col items-center">
+          <LottieHi loop={true} width={"200px"}></LottieHi>
+        </div>
         <p className="text-lg text-center w-full">
-          안녕하세요. 바라는 바당입니다.
+          안녕하세요. 바라는바당 팀입니다.
         </p>
         <p className="text-lg text-center w-full">
           지금부터 튜토리얼을 진행하겠습니다.
@@ -50,43 +56,39 @@ const tutorialContent = [
     ),
   },
   {
-    header: <div>반갑습니다! 바라는바당입니다.</div>,
+    header: (
+      <div className="font-bold text-xl">장기 방치 차량 자동 분석하기</div>
+    ),
     body: (
       <>
-        <p>제주 위성데이터를 활용한 장기방치차량 탐지 지능형 플랫폼을 개발</p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-          pulvinar risus non risus hendrerit venenatis. Pellentesque sit amet
-          hendrerit risus, sed porttitor quam.
+        <p className="font-bold">실행방법</p>
+        <p className="px-2">
+          상단바의 좌측에 위치한 <strong>로고 버튼</strong>을 탭합니다.
         </p>
-        <p>
-          Magna exercitation reprehenderit magna aute tempor cupidatat consequat
-          elit dolor adipisicing. Mollit dolor eiusmod sunt ex incididunt cillum
-          quis. Velit duis sit officia eiusmod Lorem aliqua enim laboris do
-          dolor eiusmod. Et mollit incididunt nisi consectetur esse laborum
-          eiusmod pariatur proident Lorem eiusmod et. Culpa deserunt nostrud ad
-          veniam.
+        <p className="font-bold">기능소개</p>
+        <p className="px-2">
+          <strong>장기 방치 차량 자동 분석하기</strong> 기능은 서버에서
+          지속적으로 모니터링하여 장기 방치 차량으로 추정되는 타겟을
+          데이터베이스에서 불러와 화면에 표시하는 기능입니다.
         </p>
       </>
     ),
   },
   {
-    header: <div>반갑습니다! 바라는바당입니다.</div>,
+    header: (
+      <div className="font-bold text-xl">검색어로 특정 지역 분석하기</div>
+    ),
     body: (
       <>
-        <p>제주 위성데이터를 활용한 장기방치차량 탐지 지능형 플랫폼을 개발</p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-          pulvinar risus non risus hendrerit venenatis. Pellentesque sit amet
-          hendrerit risus, sed porttitor quam.
+        <p className="font-bold">실행방법</p>
+        <p className="px-2">
+          상단바의 중앙에 위치한 <strong>검색창</strong>에 질의어를 입력합니다.
         </p>
-        <p>
-          Magna exercitation reprehenderit magna aute tempor cupidatat consequat
-          elit dolor adipisicing. Mollit dolor eiusmod sunt ex incididunt cillum
-          quis. Velit duis sit officia eiusmod Lorem aliqua enim laboris do
-          dolor eiusmod. Et mollit incididunt nisi consectetur esse laborum
-          eiusmod pariatur proident Lorem eiusmod et. Culpa deserunt nostrud ad
-          veniam.
+        <p className="font-bold">기능소개</p>
+        <p className="px-2">
+          <strong>검색어로 특정 지역 분석하기</strong> 기능은 질의어로 특정된
+          지역의 위성데이터를 실시간으로 서버에서 분석하고 그 결과를 화면에
+          표시하는 기능입니다.
         </p>
       </>
     ),
@@ -96,11 +98,8 @@ const tutorialContent = [
     body: (
       <div>
         <LottieCongratulations loop={true}></LottieCongratulations>
-        <p className="text-lg text-center w-full">
-          안녕하세요. 바라는 바당입니다.
-        </p>
-        <p className="text-lg text-center w-full">
-          지금부터 튜토리얼을 진행하겠습니다.
+        <p className="text-lg text-center w-full px-2">
+          지금부터 프로토타입을 시작하겠습니다.
         </p>
       </div>
     ),

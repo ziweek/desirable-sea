@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Head from "next/head";
+import AppProvider from "./providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ko" className="scroll-smooth">
+    <html lang="ko" className="scroll-smooth" suppressHydrationWarning={true}>
       <head>
         <meta
           name="viewport"
@@ -140,7 +140,9 @@ export default function RootLayout({
           sizes="640x1136"
         />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <AppProvider>{children}</AppProvider>
+      </body>
     </html>
   );
 }

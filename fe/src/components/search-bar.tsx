@@ -158,8 +158,8 @@ export default function SearchBar(props: SearchBarProps): any {
             >
               <div className="flex flex-row items-center justify-between space-y-1 py-2">
                 <div className="flex flex-col items-start justify-between">
-                  <p className="truncate text-black">{document.name}</p>
-                  <p className="text-xs text-black/50">{document.address}</p>
+                  <p className="truncate">{document.name}</p>
+                  <p className="text-xs">{document.address}</p>
                 </div>
                 <p className="text-xs">
                   {Math.round(Math.random() * (200 - 50) + 50)}
