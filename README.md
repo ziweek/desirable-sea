@@ -84,11 +84,16 @@
     - PWA 지원 ([설치방법](https://github.com/ziweek/desirable-sea/tree/main?tab=readme-ov-file#pwa-%EC%84%A4%EC%B9%98%EB%B0%A9%EB%B2%95))
       <img src="./src/ui-mobile.png"/>
   - Model
-    - 성능지표 개선 (mAP : 73.4 -> 78.9 )
-    - 기존의 산출값에 대한 신뢰도 대폭 상승 (small vehicle 30% -> 91%)
-    - 기존의 모델이 흰색 차량만을 식별했던 것과 달리 검은색, 빨간색의 차량도 식별.
-    - 건물의 그림자에 가려진 차량도 식별.
-      <img src="./src/model-improvement.png"/>
+    - 성능지표가 크게 개선됨. (mAP : 73.4 -> 78.9 )
+      <img src="./src/model-improvement.png" width="100%"/>
+    - 기존의 결과값에 비해 정확도 및 신뢰도가 대폭 상승함. (ship 30% -> small vehicle 91%)
+      <img src="./src/dif-precision.png" width="100%"/>
+    - 기존의 모델이 흰색 차량만을 식별했던 것과 달리 검은색, 검은색의 차량도 식별함.
+      <img src="./src/dif-color.png" width="100%"/>
+    - 건물의 그림자가 걸쳐진 차량도 식별함.
+      
+      <img src="./src/dif-shadow.png" width="100%"/>
+      
   - README
     - 튜토리얼 추가
 </details>
