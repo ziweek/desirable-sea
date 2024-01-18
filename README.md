@@ -2,10 +2,12 @@
 
 <img src="./src/banner_ko.png"/>
 
-**제주 위성데이터를 활용한 장기방치차량 탐지 지능형 플랫폼**  
-**Intelligent Platform for Long-Term Abandoned Vehicle Detection Utilizing Jeju Satellite Data**
-
-<p align="left">
+<p align="center">
+  <strong>제주 위성데이터를 활용한 장기방치차량 탐지 지능형 플랫폼</strong>
+  <br/>
+  <strong>Intelligent Platform for Long-Term Abandoned Vehicle Detection Utilizing Jeju Satellite Data</strong>
+  <br/>
+  <br/>
   <a href='https://paperswithcode.com/task/object-detection-in-aerial-images'>
     <img src="https://img.shields.io/badge/Paperswithcode-Object%20Detection%20In%20Aerial%20Images-EF2D5E?style=flat-square"/>
   </a>
@@ -29,9 +31,12 @@
 </p>
 <br/>
 
-**_아래의 뱃지에서 프로토타입을 확인해보세요._**
 
-<p align="left">
+
+<p align="center">
+  <strong>아래의 뱃지에서 프로토타입을 확인해보세요.<strong>
+  <br/>
+  <br/>
   <a href='https://desirable-sea.vercel.app/'>
     <img src="https://img.shields.io/badge/Product-Vercel-000000?style=flat-square"/>
   </a>
@@ -45,7 +50,7 @@
 
 # Update Log
 
-<details>
+<details open>
   <summary>
     <h3>
       예선 제출물 (2024.01.03)
