@@ -4,7 +4,7 @@
 
 
 
-https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-7d2adbb045ec
+
 
 
 
@@ -44,9 +44,9 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
 </p>
 <br/>
 
-
-
-<p align="center">
+https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-7d2adbb045ec
+  
+<p align="center">  
   <strong>아래의 뱃지에서 프로토타입을 확인해보세요.<strong>
   <br/>
   <br/>
