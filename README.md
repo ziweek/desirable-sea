@@ -2,6 +2,12 @@
 
 <img src="./src/banner_ko.png"/>
 
+
+
+https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-7d2adbb045ec
+
+
+
 <p align="center">
   <strong>제주 위성데이터를 활용한 장기방치차량 탐지 지능형 플랫폼</strong>
   <br/>
