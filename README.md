@@ -11,11 +11,18 @@
   <a href='https://paperswithcode.com/task/object-detection-in-aerial-images'>
     <img src="https://img.shields.io/badge/Paperswithcode-Object%20Detection%20In%20Aerial%20Images-EF2D5E?style=flat-square"/>
   </a>
+  <a href='https://paperswithcode.com/task/object-detection-in-aerial-images'>
+    <img src="https://img.shields.io/badge/Paperswithcode-Image%20Super%20Resolution-EF2D5E?style=flat-square"/>
+  </a>
   <br/>
   <img src="https://img.shields.io/badge/Ensemble-Weighted%20boxes%20fusion-EF2D5E?style=flat-square"/>
   <a href='https://github.com/open-mmlab/mmrotate'>
     <img src="https://img.shields.io/badge/Baseline-MMRotate-EF2D5E?style=flat-square"/>
   </a>
+  <a href='https://github.com/open-mmlab/mmrotate'>
+    <img src="https://img.shields.io/badge/Baseline-MMRotate-EF2D5E?style=flat-square"/>
+  </a>
+  
   <img src="https://img.shields.io/badge/Weights%20&%20Biases-dea500?style=flat-square&logo=weightsandbiases&logoColor=white&text=white"/>
   </br>
   <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
