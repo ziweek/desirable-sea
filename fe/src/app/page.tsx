@@ -82,7 +82,7 @@ export default function Home() {
             </button>
           </div>
           <div className="flex flex-row items-center justify-end">
-            <Button
+            {/* <Button
               variant="light"
               disableRipple
               onPress={() => {
@@ -90,7 +90,7 @@ export default function Home() {
               }}
             >
               <p className={`font-bold text-white`}>개발팀 소개</p>
-            </Button>
+            </Button> */}
           </div>
         </div>
       </div>
@@ -114,7 +114,7 @@ export default function Home() {
                   size={mobile ? "md" : "lg"}
                   variant={"bordered"}
                   onClick={() => {
-                    router.push("/dashboard");
+                    router.push("https://github.com/ziweek/desirable-sea");
                   }}
                 >
                   <p className="font-bold text-white">서비스 소개자료</p>
@@ -346,9 +346,10 @@ export default function Home() {
             <Button
               className="hover:-translate-y-1"
               size={"lg"}
-              variant={"light"}
+              color={"primary"}
+              variant={"solid"}
               onClick={() => {
-                router.push("/dashboard");
+                router.push("https://github.com/ziweek/desirable-sea");
               }}
             >
               <p className="font-bold">서비스 소개자료</p>
@@ -356,7 +357,8 @@ export default function Home() {
             <Button
               className="hover:-translate-y-1"
               size={"lg"}
-              variant={"light"}
+              color={"primary"}
+              variant={"solid"}
               onClick={() => {
                 router.push("/dashboard");
               }}
