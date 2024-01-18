@@ -119,10 +119,14 @@ export default function Header(props: HeaderProps) {
 
   return (
     <div className="relative">
-      {isTabletOrMobile ? (
-        <div className="top-0 left-0 z-20 fixed space-y-2">
+      {true ? (
+        <div
+          className={`top-0 left-0 z-20 fixed space-y-2 flex flex-col items-center justify-center w-full`}
+        >
           <Card
-            className={`w-screen flex flex-row items-center justify-between py-2 px-2 rounded-t-none`}
+            className={`flex flex-row items-center justify-between py-2 px-2 rounded-t-none ${
+              isTabletOrMobile ? "" : "w-[600px]"
+            }`}
             style={{
               display: "grid",
               gridTemplateColumns: "auto 1fr",
@@ -185,7 +189,9 @@ export default function Header(props: HeaderProps) {
           </Card>
           {isSliderVisible ? (
             <Card
-              className="absolute z-50 w-screen bg-transparent border-0 scrollbar-hide"
+              className={`z-50  bg-transparent border-0 scrollbar-hide ${
+                isTabletOrMobile ? "w-screen" : "w-fit"
+              }`}
               radius={"none"}
               shadow={"none"}
             >
