@@ -4,10 +4,6 @@
 
 
 
-
-
-
-
 <p align="center">
   <strong>제주 위성데이터를 활용한 장기방치차량 탐지 지능형 플랫폼</strong>
   <br/>
@@ -43,8 +39,7 @@
   <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"/>
 </p>
 <br/>
-
-https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-7d2adbb045ec
+<br/>
   
 <p align="center">  
   <strong>아래의 뱃지에서 프로토타입을 확인해보세요.<strong>
@@ -61,55 +56,14 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
   </a>
 </p>
 
-# Update Log
-
-<details open>
-  <summary>
-    <h3>
-      예선 제출물 (2024.01.03)
-    </h3>
-  </summary>
-
-  - Product
-    - 프론트엔드 개발 완료. 메인 서버와 딥러닝 서버를 구분하여 개발 중에 있음.
-  - Model
-    - 아래의 프로덕트 > 모델링 > 추론 실행방법을 참고하여, 베이스라인을 기반으로 한 MVP 시연이 가능함.
-
-      https://github.com/ziweek/desirable-sea/assets/99459331/a861922b-2486-45da-9844-30aa821bff28
-
-</details>
-
-<details open>
-  <summary>
-    <h3>본선 제출물 (2024.01.21)</h3>
-  </summary>
-  
-  - Product
-    - 서버와 데이터베이스 연동
-    - 반응형 UI 개발 완료
-      <img src="./src/darkmode.png" width="100%"/>
-    - PWA(Progressive Web Apps) 지원 ([설치방법](https://github.com/ziweek/desirable-sea/tree/main?tab=readme-ov-file#pwa-%EC%84%A4%EC%B9%98%EB%B0%A9%EB%B2%95))
-      <img src="./src/ui-mobile.png"/>
-  - Model
-    - 성능지표가 크게 개선됨. (mAP : 73.4 -> 78.9 )
-      <img src="./src/model-improvement.png" width="100%"/>
-    - 기존의 결과값에 비해 정확도 및 신뢰도가 대폭 상승함. (ship 30% -> small vehicle 91%)
-      <img src="./src/dif-precision.png" width="100%"/>
-    - 기존의 모델이 흰색 차량만을 식별했던 것과 달리 검은색, 검은색의 차량도 식별함.
-      <img src="./src/dif-color.png" width="100%"/>
-    - 건물의 그림자가 걸쳐진 차량도 식별함.
-      
-      <img src="./src/dif-shadow.png" width="100%"/>
-      
-  - README
-    - 튜토리얼 추가
-</details>
-
+<br/>
 <br/>
 
 # 1. 프로젝트 개요
 
-본 아이디어는, 제주 위성데이터를 활용하고 컴퓨터 비전의 객체 인식 AI 기술을 적용하여, 제주 지역에서 장기적으로 주차되거나 방치되어 있는 차량을 탐지하고, 해당 정보를 유관 기관이 통합하여 관리할 수 있는 지능형 플랫폼을 연구 및 개발하는 것입니다. 이를 통해 장기 방치 차량의 전수조사에 소요되는 인력과 시간을 절약하고 제주 미래항공우주산업 육성을 위한 첫걸음이 되기를 기대합니다.
+본 아이디어는, 제주 위성데이터를 활용하고 컴퓨터 비전의 객체 인식 AI 기술을 적용하여, 제주 지역에서 장기적으로 주차되거나 방치되어 있는 차량을 탐지하고, 해당 정보를 유관 기관이 통합하여 관리할 수 있는 지능형 플랫폼을 연구 및 개발하는 것입니다.
+
+https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-7d2adbb045ec
 
 <table>
   <tr>
@@ -133,16 +87,77 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
 </table>
 <br/>
 
+<br/>
+<br/>
+
+# 업데이트 로그
+
+<details>
+  <summary>
+    <b>
+      예선 제출물 (2024.01.03)
+    </b>
+  </summary>
+
+  - Product
+    - 프론트엔드 개발 완료. 메인 서버와 딥러닝 서버를 구분하여 개발 중에 있음.
+  - Model
+    - 아래의 프로덕트 > 모델링 > 추론 실행방법을 참고하여, 베이스라인을 기반으로 한 MVP 시연이 가능함.
+
+      https://github.com/ziweek/desirable-sea/assets/99459331/a861922b-2486-45da-9844-30aa821bff28
+
+</details>
+
+<details>
+  <summary>
+    <b>본선 제출물 (2024.01.21)</b>
+  </summary>
+  
+  - Product
+    - 서버와 데이터베이스 연동
+    - 반응형 UI 개발 완료
+      <img src="./src/darkmode.png" width="100%"/>
+    - PWA(Progressive Web Apps) 지원 ([설치방법](https://github.com/ziweek/desirable-sea/tree/main?tab=readme-ov-file#pwa-%EC%84%A4%EC%B9%98%EB%B0%A9%EB%B2%95))
+      <img src="./src/ui-mobile.png"/>
+  - Model
+    - 성능지표가 크게 개선됨. (mAP : 73.4 -> 78.9 )
+      <img src="./src/model-improvement.png" width="100%"/>
+    - 기존의 결과값에 비해 정확도 및 신뢰도가 대폭 상승함. (ship 30% -> small vehicle 91%)
+      <img src="./src/dif-precision.png" width="100%"/>
+    - 기존의 모델이 흰색 차량만을 식별했던 것과 달리 검은색, 검은색의 차량도 식별함.
+      <img src="./src/dif-color.png" width="100%"/>
+    - 건물의 그림자가 걸쳐진 차량도 식별함.
+      
+      <img src="./src/dif-shadow.png" width="100%"/>
+      
+  - README
+    - CoLab 튜토리얼 추가 [![CoLab](https://img.shields.io/badge/Tutorial-Google%20Colab-F9AB00?style=flat-square)](https://colab.research.google.com/drive/13-VZyx3LiYPRS8aw-AcMSBK0Z4--TF2j?usp=sharing)
+      
+      
+</details>
+
+<br/>
+<br/>
+
 # 2. 프로덕트
 
 ## 2.1 아키텍처
 
-<img src="./src/service-architecture.png">
+<details >
+  <summary><b>아키텍처 구조</b></summary>
+  <img src="./src/service-architecture.png">
+</details>
+
+<details >
+  <summary><b>데이터 활용</b></summary>
+  <img src="./src/service-architecture.png">
+</details>
 
 ## 2.2 딥러닝 모델
 
-#### 디렉토리 구조
-
+<details >
+  <summary><b>디렉토리 구조</b></summary>
+  
 ```
 desirable-sea
 ├── checkpoints  # Pytorch 모델을 저장하는 폴더입니다.
@@ -154,8 +169,10 @@ desirable-sea
 ├── demo.png     # MVP 시연에 사용될 데모 이미지입니다.
 └── result.jpg   # 모델링 결과로 출력되는 이미지입니다.
 ```
+</details>
 
-#### 초기 설치방법
+<details >
+  <summary><b>초기 설치방법</b></summary>
 
 1. setup.sh 파일 만들기.
 2. 아래의 쉘스크립트 복사 후 붙여넣기.
@@ -194,8 +211,11 @@ cd ..
 wget https://raw.githubusercontent.com/ziweek/desirable-sea/main/src/demo.png
 
 ```
+</details>
 
-#### 추론 실행방법
+
+<details >
+  <summary><b>추론 실행방법</b></summary>
 
 1. 아래의 쉘스크립트 복사 후 터미널에 붙여넣기.
 2. 터미널에서 실행하기.
@@ -205,12 +225,15 @@ wget https://raw.githubusercontent.com/ziweek/desirable-sea/main/src/demo.png
 python mmrotate/demo/image_demo.py demo.png mmrotate/configs/redet/redet_re50_refpn_1x_dota_ms_rr_le90.py checkpoints/redet_re50_fpn_1x_dota_ms_rr_le90-fc9217b5.pth --out-file result.jpg
 ```
 
+
 <img src="./src/result.png">
-<br/>
+
+</details>
 
 ## 2.3 웹페이지
 
-#### PWA 설치방법
+<details >
+  <summary><b>PWA 설치방법</b></summary>
 
 iOS에서 설치하는 방법:
 
@@ -227,6 +250,11 @@ Android에서 설치하는 방법:
 3. "홈 화면에 추가"를 탭합니다.
 4. 다음 화면에서 원하는 경우 앱의 이름을 변경할 수 있습니다. 우측 상단의 "추가"를 탭합니다.
 5. PWA 아이콘이 홈 화면에 나타납니다. 앱을 시작하려면 해당 아이콘을 탭합니다.
+
+</details>
+
+<br/>
+<br/>
 
 # 3. 팀원 소개
 
