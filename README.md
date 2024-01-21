@@ -119,6 +119,8 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
   </summary>
   
   - Product
+    - 공공데이터 포털에서 제공하는 [제주특별자치도_주차장기본정보](https://www.data.go.kr/data/15099715/openapi.do) 사용함.
+      <img src="./src/public-api-data.png" width="100%"/>
     - 서버와 데이터베이스 연동
       <img src="./src/server-doc.png" width="100%"/>
     - 반응형 UI 개발 완료 및 다크모드 지원
@@ -168,7 +170,7 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
   
 </details>
 
-## 2.2 딥러닝 모델
+## 2.2 초고해상도 이미지 모델
 
 <details >
   <summary><b>디렉토리 구조</b></summary>
@@ -245,7 +247,84 @@ python mmrotate/demo/image_demo.py demo.png mmrotate/configs/redet/redet_re50_re
 
 </details>
 
-## 2.3 웹페이지
+## 2.3 소형 객체 인식 모델
+
+<details >
+  <summary><b>디렉토리 구조</b></summary>
+  
+```
+desirable-sea
+├── checkpoints  # Pytorch 모델을 저장하는 폴더입니다.
+├── mmrotate     # 베이스라인 관련 코드입니다.
+│   ├── config
+│   ├── ...
+│   └── demo
+├── ...
+├── demo.png     # MVP 시연에 사용될 데모 이미지입니다.
+└── result.jpg   # 모델링 결과로 출력되는 이미지입니다.
+```
+</details>
+
+<details >
+  <summary><b>초기 설치방법</b></summary>
+
+1. setup.sh 파일 만들기.
+2. 아래의 쉘스크립트 복사 후 붙여넣기.
+3. 터미널에서 setup.sh 실행
+
+```shell
+# this code is written in Linux.
+
+sudo apt update
+sudo apt -y install libgl1-mesa-glx
+
+wget https://repo.anaconda.com/miniconda/Miniconda3-py37_4.9.2-Linux-x86_64.sh
+chmod +x Miniconda3-py37_4.9.2-Linux-x86_64.sh
+bash ./Miniconda3-py37_4.9.2-Linux-x86_64.sh -b -f -p /usr/local
+which conda
+conda --version
+
+pip install torch==1.7.0+cu110 torchvision==0.8.1+cu110 torchaudio==0.7.0 -f https://download.pytorch.org/whl/torch_stable.html
+pip install openmim --use-feature=2020-resolver
+mim install mmcv-full==1.5.3
+mim install mmdet==2.25.1
+
+git clone https://github.com/open-mmlab/mmrotate.git
+cd mmrotate
+pip install -r requirements/build.txt
+pip install -v -e .
+
+cd ..
+
+
+mkdir checkpoints
+cd checkpoints
+wget https://download.openmmlab.com/mmrotate/v0.1.0/redet/redet_re50_fpn_1x_dota_ms_rr_le90/redet_re50_fpn_1x_dota_ms_rr_le90-fc9217b5.pth
+cd ..
+
+wget https://raw.githubusercontent.com/ziweek/desirable-sea/main/src/demo.png
+
+```
+</details>
+
+
+<details >
+  <summary><b>추론 실행방법</b></summary>
+
+1. 아래의 쉘스크립트 복사 후 터미널에 붙여넣기.
+2. 터미널에서 실행하기.
+3. 동일 디렉토리 내에서 result.jpg 파일 확인하기.
+
+```shell
+python mmrotate/demo/image_demo.py demo.png mmrotate/configs/redet/redet_re50_refpn_1x_dota_ms_rr_le90.py checkpoints/redet_re50_fpn_1x_dota_ms_rr_le90-fc9217b5.pth --out-file result.jpg
+```
+
+
+<img src="./src/result.png">
+
+</details>
+
+## 2.4 웹페이지
 
 <details >
   <summary><b>PWA 설치방법</b></summary>
