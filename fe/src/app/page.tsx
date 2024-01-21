@@ -134,7 +134,7 @@ export default function Home() {
           </div>
         </div>
         {/* 2. 문제 제기 */}
-        <div className="space-y-4 flex h-full py-16 min-h-screen flex-col items-center justify-center bg-[url('../../public/images/jeju-car.jpg')] bg-cover bg-center">
+        <div className="space-y-4 flex h-full py-16 min-h-screen flex-col items-center justify-center">
           <div className="flex flex-col items-center justify-center space-y-4 max-w-[1200px] w-full">
             <div className="flex flex-col items-center justify-center space-y-4 max-w-[1200px] w-full">
               <p className="select-none text-2xl font-bold text-white">
@@ -347,7 +347,7 @@ export default function Home() {
               className="hover:-translate-y-1"
               size={"lg"}
               color={"primary"}
-              variant={"solid"}
+              variant={"ghost"}
               onClick={() => {
                 router.push("https://github.com/ziweek/desirable-sea");
               }}
@@ -358,7 +358,7 @@ export default function Home() {
               className="hover:-translate-y-1"
               size={"lg"}
               color={"primary"}
-              variant={"solid"}
+              variant={"ghost"}
               onClick={() => {
                 router.push("/dashboard");
               }}

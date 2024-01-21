@@ -98,6 +98,9 @@ const tutorialContent = [
     body: (
       <div>
         <LottieCongratulations loop={true}></LottieCongratulations>
+        <p className="text-lg text-center w-full">
+          축하합니다! 튜토리얼을 마치겠습니다.
+        </p>
         <p className="text-lg text-center w-full px-2">
           지금부터 프로토타입을 시작하겠습니다.
         </p>
@@ -326,7 +329,7 @@ export default function Header(props: HeaderProps) {
           </Card>
         </div>
       )}
-      <Modal isOpen={isModalVisible} isDismissable>
+      <Modal isOpen={isModalVisible} isDismissable closeButton={<></>}>
         <ModalContent>
           <>
             <ModalHeader className="flex flex-col gap-1">
