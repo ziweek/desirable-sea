@@ -90,6 +90,8 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
 <br/>
 <br/>
 
+
+
 # 업데이트 로그
 
 <details>
@@ -103,7 +105,7 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
     - 프론트엔드 개발 완료. 메인 서버와 딥러닝 서버를 구분하여 개발 중에 있음.
   - Model
     - 아래의 프로덕트 > 모델링 > 추론 실행방법을 참고하여, 베이스라인을 기반으로 한 MVP 시연이 가능함.
-
+  
       https://github.com/ziweek/desirable-sea/assets/99459331/a861922b-2486-45da-9844-30aa821bff28
 
 </details>
@@ -115,11 +117,18 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
   
   - Product
     - 서버와 데이터베이스 연동
-    - 반응형 UI 개발 완료
+      <img src="./src/darkmode.png" width="100%"/>
+    - 반응형 UI 개발 완료 및 다크모드 지원
       <img src="./src/darkmode.png" width="100%"/>
     - PWA(Progressive Web Apps) 지원 ([설치방법](https://github.com/ziweek/desirable-sea/tree/main?tab=readme-ov-file#pwa-%EC%84%A4%EC%B9%98%EB%B0%A9%EB%B2%95))
       <img src="./src/ui-mobile.png"/>
   - Model
+    - 원본데이터에 Super Image Resolution 딥러닝 모델을 적용하여 해상도 개선
+      <img src="./src/comp-super-image-resolution.png" width="100%">
+    - 원본데이터에 대해 데이터 라벨링 진행
+
+      https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-bebd22ce3fb3
+      
     - 성능지표가 크게 개선됨. (mAP : 73.4 -> 78.9 )
       <img src="./src/model-improvement.png" width="100%"/>
     - 기존의 결과값에 비해 정확도 및 신뢰도가 대폭 상승함. (ship 30% -> small vehicle 91%)
@@ -129,7 +138,7 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
     - 건물의 그림자가 걸쳐진 차량도 식별함.
       
       <img src="./src/dif-shadow.png" width="100%"/>
-      
+
   - README
     - CoLab 튜토리얼 추가 [![CoLab](https://img.shields.io/badge/Tutorial-Google%20Colab-F9AB00?style=flat-square)](https://colab.research.google.com/drive/13-VZyx3LiYPRS8aw-AcMSBK0Z4--TF2j?usp=sharing)
       
@@ -150,7 +159,10 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
 
 <details >
   <summary><b>데이터 활용</b></summary>
-  <img src="./src/service-architecture.png">
+  <img src="./src/comp-super-image-resolution.png">
+
+  https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-bebd22ce3fb3
+  
 </details>
 
 ## 2.2 딥러닝 모델
