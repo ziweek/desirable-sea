@@ -34,3 +34,36 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+@media (prefers-color-scheme: dark) {
+  .gm-style .gm-style-iw-c {
+    background-color: black;
+  }
+
+  .gm-style-iw-d {
+    background-color: black;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .gm-style-iw-d::-webkit-scrollbar {
+    display: none;
+    /* width: 10px; */
+  }
+  .gm-style .gm-style-iw-tc::after {
+    background: black;
+  }
+}
+
+*/ img {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -webkit-user-drag: none;
+}

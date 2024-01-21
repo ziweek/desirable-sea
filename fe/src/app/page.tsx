@@ -137,12 +137,10 @@ export default function Home() {
         <div className="space-y-4 flex h-full py-16 min-h-screen flex-col items-center justify-center">
           <div className="flex flex-col items-center justify-center space-y-4 max-w-[1200px] w-full">
             <div className="flex flex-col items-center justify-center space-y-4 max-w-[1200px] w-full">
-              <p className="select-none text-2xl font-bold text-white">
+              <p className="select-none text-4xl font-bold">
                 제주도에 방치된 차량은 얼마나 될까요?
               </p>
-              <p className="select-none text-white">
-                000의 가 방되어 있는 것으로 확인됨.
-              </p>
+              <p className="select-none">000의 가 방되어 있는 것으로 확인됨.</p>
             </div>
             <div
               className="flex min-h-[60vh] px-4 w-full select-none items-center justify-between max-w-[1200px]"
