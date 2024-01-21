@@ -2,31 +2,34 @@
 
 <img src="./src/banner_ko.png"/>
 
-
-
 <p align="center">
   <strong>제주 위성데이터를 활용한 장기방치차량 탐지 지능형 플랫폼</strong>
   <br/>
   <strong>Intelligent Platform for Long-Term Abandoned Vehicle Detection Utilizing Jeju Satellite Data</strong>
   <br/>
   <br/>
-  <a href='https://paperswithcode.com/task/object-detection-in-aerial-images'>
-    <img src="https://img.shields.io/badge/Paperswithcode-Object%20Detection%20In%20Aerial%20Images-EF2D5E?style=flat-square"/>
+
+  <a href='https://paperswithcode.com/task/image-super-resolution'>
+    <img src="https://img.shields.io/badge/Paperswithcode-Image%20Super%20Resolution-25c2a0?style=flat-square"/>
   </a>
-  <a href='https://paperswithcode.com/task/object-detection-in-aerial-images'>
-    <img src="https://img.shields.io/badge/Paperswithcode-Image%20Super%20Resolution-EF2D5E?style=flat-square"/>
+  <a href='https://github.com/XPixelGroup/HAT'>
+    <img src="https://img.shields.io/badge/XPixelGroup-HAT-EF2D5E?style=flat-square"/>
   </a>
-  <br/>
-  <img src="https://img.shields.io/badge/Ensemble-Weighted%20boxes%20fusion-EF2D5E?style=flat-square"/>
-  <a href='https://github.com/open-mmlab/mmrotate'>
-    <img src="https://img.shields.io/badge/Baseline-MMRotate-EF2D5E?style=flat-square"/>
-  </a>
-  <a href='https://github.com/open-mmlab/mmrotate'>
-    <img src="https://img.shields.io/badge/Baseline-MMRotate-EF2D5E?style=flat-square"/>
-  </a>
-  
   <img src="https://img.shields.io/badge/Weights%20&%20Biases-dea500?style=flat-square&logo=weightsandbiases&logoColor=white&text=white"/>
   </br>
+  
+  <a href='https://paperswithcode.com/task/object-detection-in-aerial-images'>
+    <img src="https://img.shields.io/badge/Paperswithcode-Object%20Detection%20In%20Aerial%20Images-25c2a0?style=flat-square"/>
+  </a>
+  <a href='https://github.com/open-mmlab/mmrotate'>
+    <img src="https://img.shields.io/badge/OpenMMLab-MMRotate-EF2D5E?style=flat-square"/>
+  </a>
+  <a href='https://github.com/ZFTurbo/Weighted-Boxes-Fusion'>
+    <img src="https://img.shields.io/badge/Ensemble-Weighted%20Boxes%20Fusion-EF2D5E?style=flat-square"/>
+  </a>
+  <br/>
+
+  
   <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
   <img src="https://img.shields.io/badge/PWA-5A0FC8?style=flat-square&logo=pwa&logoColor=white"/> 
   <img src="https://img.shields.io/badge/Google%20Maps-4285F4?style=flat-square&logo=googlemaps&logoColor=white"/>
@@ -117,7 +120,7 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
   
   - Product
     - 서버와 데이터베이스 연동
-      <img src="./src/darkmode.png" width="100%"/>
+      <img src="./src/server-doc.png" width="100%"/>
     - 반응형 UI 개발 완료 및 다크모드 지원
       <img src="./src/darkmode.png" width="100%"/>
     - PWA(Progressive Web Apps) 지원 ([설치방법](https://github.com/ziweek/desirable-sea/tree/main?tab=readme-ov-file#pwa-%EC%84%A4%EC%B9%98%EB%B0%A9%EB%B2%95))
