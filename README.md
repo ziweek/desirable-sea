@@ -54,7 +54,7 @@
   <a href='https://desirable-sea.vercel.app/'>
     <img src="https://img.shields.io/badge/Product-Vercel-000000?style=flat-square"/>
   </a>
-  <a href='https://goor.me/CdMJ34JkJJZy1eHL8'>
+  <a href='https://goor.me/edkv2g6bKZt7nopy6'>
     <img src="https://img.shields.io/badge/Model-goorm-ffffff?style=flat-square"/>
   </a>
   <a href='https://colab.research.google.com/drive/13-VZyx3LiYPRS8aw-AcMSBK0Z4--TF2j?usp=sharing'>
