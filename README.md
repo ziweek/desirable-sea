@@ -15,6 +15,9 @@
   <a href='https://github.com/XPixelGroup/HAT'>
     <img src="https://img.shields.io/badge/XPixelGroup-HAT-EF2D5E?style=flat-square"/>
   </a>
+  <a href='https://github.com/xinntao/ESRGAN?tab=readme-ov-file'>
+    <img src="https://img.shields.io/badge/Xintao-ESRGAN-EF2D5E?style=flat-square"/>
+  </a>
   <img src="https://img.shields.io/badge/Weights%20&%20Biases-dea500?style=flat-square&logo=weightsandbiases&logoColor=white&text=white"/>
   </br>
   
@@ -186,15 +189,15 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
   <summary><b>디렉토리 구조</b></summary>
   
 ```
-desirable-sea
-├── checkpoints  # Pytorch 모델을 저장하는 폴더입니다.
-├── mmrotate     # 베이스라인 관련 코드입니다.
-│   ├── config
+ESRGAN
+├── LR                      # Pytorch 모델을 저장하는 폴더입니다.
+│   └── demo.png            # MVP 시연에 사용될 데모 이미지입니다.
+├── models
 │   ├── ...
-│   └── demo
+│   └── RRDB_ESRGAN_x4.pth  # 베이스라인 관련 코드입니다.
 ├── ...
-├── demo.png     # MVP 시연에 사용될 데모 이미지입니다.
-└── result.jpg   # 모델링 결과로 출력되는 이미지입니다.
+└── results
+    └── demo_rlt.png        # 모델링 결과로 출력되는 이미지입니다.
 ```
 </details>
 
@@ -205,19 +208,19 @@ desirable-sea
 2. 아래의 쉘스크립트 복사 후 붙여넣기.
 3. 터미널에서 setup.sh 실행
 
+
 ```shell
-# this code is written in Linux.
 
-git clone https://github.com/XPixelGroup/HAT.git
-cd HAT
+git clone https://github.com/xinntao/ESRGAN
+cd ESRGAN
 
-pip install -r requirements.txt
-python setup.py develop
+cd models
+wget --load-cookies ~/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies ~/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1TPrz5QKd8DHHt1k8SRtm6tMiPjz_Qene' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1TPrz5QKd8DHHt1k8SRtm6tMiPjz_Qene" -O RRDB_ESRGAN_x4.pth && rm -rf ~/cookies.txt
+cd ..
 
-pip install cog
-
-wget https://raw.githubusercontent.com/ziweek/desirable-sea/main/src/demo-resolution.png
-
+cd LR
+wget https://raw.githubusercontent.com/ziweek/desirable-sea/main/src/demo.png
+cd ..
 ```
 </details>
 
@@ -230,7 +233,7 @@ wget https://raw.githubusercontent.com/ziweek/desirable-sea/main/src/demo-resolu
 3. 동일 디렉토리 내에서 result-resolution.jpg 파일 확인하기.
 
 ```shell
-python mmrotate/demo/image_demo.py demo.png mmrotate/configs/redet/redet_re50_refpn_1x_dota_ms_rr_le90.py checkpoints/redet_re50_fpn_1x_dota_ms_rr_le90-fc9217b5.pth --out-file result.jpg
+python test.py
 ```
 
 
