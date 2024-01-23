@@ -82,7 +82,7 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
     </td>
     <td>
       <p align='center'>
-        프로덕트 웹파이즈
+        프로덕트 웹페이지
       </p>
     </td>
   </tr>
