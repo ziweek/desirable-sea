@@ -70,21 +70,31 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
 
 <table>
   <tr>
-    <td>
-      <p align='center'>딥러닝 모델링 시연 결과</p>
+     <td>
+      <p align='center'>
+        해상도 이미지 모델
+      </p>
     </td>
     <td>
       <p align='center'>
-        사용자 UX 개발 내용
+        소형 객체 인식 모델링
+      </p>
+    </td>
+    <td>
+      <p align='center'>
+        프로덕트 웹파이즈
       </p>
     </td>
   </tr>
    <tr>
     <td>
-      <img src="./src/model-performance.png"/>
+      <img src="./src/preview-super-image-resolution.png"/>
     </td>
     <td>
-      <img src="./src/user-ux.png"/>
+      <img src="./src/preview-small-object-detection.png"/>
+    </td>
+    <td>
+      <img src="./src/preview-product-webpage.png"/>
     </td>
   </tr>
 </table>
