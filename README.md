@@ -1,8 +1,11 @@
 # Hello, BaDang
-
+ 
 <img src="./src/banner_ko.png"/>
 
 <p align="center">
+  <strong>🏆 2023 제주특별자치도 도지사상 수상 작품 🏆</strong>
+  <br/>
+  <br/>
   <a href='https://github.com/ziweek/desirable-sea/blob/main/README.md'>
     KOREAN
   </a>
