@@ -187,7 +187,11 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
 
 <details open>
   <summary><b>아키텍처 구조</b></summary>
-  <img src="./src/service-architecture.png">
+    <picture>
+      <source media="(prefers-color-scheme: light)" srcset="./src/service-architecture.png">
+      <source media="(prefers-color-scheme: dark)" srcset="./src/service-architecture-darkmode.png">
+      <img alt="IMAGE" src="http://LIGHT_IMAGE_URL.png">
+    </picture>
 </details>
 
 <details >
