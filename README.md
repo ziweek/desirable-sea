@@ -185,7 +185,7 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
 
 ## 2.1 아키텍처
 
-<details >
+<details open>
   <summary><b>아키텍처 구조</b></summary>
   <img src="./src/service-architecture.png">
 </details>
