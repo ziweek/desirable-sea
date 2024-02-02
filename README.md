@@ -185,7 +185,7 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
 
 ## 2.1 아키텍처
 
-<details open>
+<details >
   <summary><b>아키텍처 구조</b></summary>
     <picture>
       <source media="(prefers-color-scheme: light)" srcset="./src/service-architecture.png">
@@ -337,7 +337,7 @@ python mmrotate/demo/image_demo.py demo.png mmrotate/configs/redet/redet_re50_re
 
 </details>
 
-## 2.4 웹페이지
+## 2.4 웹 어플리케이션
 
 <details >
   <summary><b>PWA 설치방법</b></summary>
