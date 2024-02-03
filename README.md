@@ -122,7 +122,7 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
 <br/>
 
 
-
+<!--
 # 업데이트 로그
 
 <details>
@@ -175,11 +175,12 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
   - README
     - CoLab 튜토리얼 추가 [![CoLab](https://img.shields.io/badge/Tutorial-Google%20Colab-F9AB00?style=flat-square)](https://colab.research.google.com/drive/13-VZyx3LiYPRS8aw-AcMSBK0Z4--TF2j?usp=sharing)
       
-      
 </details>
+<br/>
+<br/>
+-->
 
-<br/>
-<br/>
+
 
 # 2. 프로덕트
 
@@ -187,6 +188,15 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
 
 <details >
   <summary><b>아키텍처 구조</b></summary>
+
+<br/>
+
+* 본 프로젝트의 아키텍처는 데이터 전처리 수행 서버(초고해생도 이미지 개선 딥러닝 모델), 핵심 기능 수행 서버(소형 객체 식별 딥러닝 모델), 그리고 웹 어플리케이션(프론트엔드와 벡엔드 및 데이터베이스)으로 구성되어 있습니다.
+  * 데이터 전처리 수행 서버의 경우, Python 기반의 FastAPI로 서버를 구성하였습니다.
+  * 핵심 기능 수행 서버의 경우, Python 기반의 FastAPI로 서버를 구성하였습니다.
+  * 웹 어플리케이션의 경우, Next.js로 프론트엔드를, nest.js로 벡엔드를, MySQL로 데이터베이스를 구성하였습니다.
+
+ 
     <picture>
       <source media="(prefers-color-scheme: light)" srcset="./src/service-architecture.png">
       <source media="(prefers-color-scheme: dark)" srcset="./src/service-architecture-darkmode.png">
@@ -195,14 +205,23 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
 </details>
 
 <details >
-  <summary><b>데이터 활용</b></summary>
+  <summary><b>데이터 활용성</b></summary>
+ 
+ * 데이터 전처리 과정에서 초고해상도 이미지 개선 딥러닝 모델을 원본 데이터에 적용하여 해상도를 크게 개선할 수 있었습니다.
+   
+   <img src="./src/comp-super-image-resolution.png" width="100%">
+      
+ * 전처리된 데이터셋을 라벨링하였습니다. 이때, 사전학습된 모델을 활용하여 자동으로 식별하게 하였고, 아래와 같이 예외적인 경우에는 수작업을 병행하였습니다.
+
+      https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-bebd22ce3fb3
+      
   <img src="./src/comp-super-image-resolution.png">
 
   https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-bebd22ce3fb3
   
 </details>
 
-## 2.2 초고해상도 이미지 모델
+## 2.2 초고해상도 이미지 개선 모델
 
 <details >
   <summary><b>디렉토리 구조</b></summary>
@@ -261,6 +280,17 @@ python test.py
 </details>
 
 ## 2.3 소형 객체 인식 모델
+
+
+- 성능지표가 크게 개선됨. (mAP : 73.4 -> 78.9 )
+  <img src="./src/model-improvement.png" width="100%"/>
+- 기존의 결과값에 비해 정확도 및 신뢰도가 대폭 상승함. (ship 30% -> small vehicle 91%)
+  <img src="./src/dif-precision.png" width="100%"/>
+- 기존의 모델이 흰색 차량만을 식별했던 것과 달리 검은색, 검은색의 차량도 식별함.
+  <img src="./src/dif-color.png" width="100%"/>
+- 건물의 그림자가 걸쳐진 차량도 식별함.
+  <img src="./src/dif-shadow.png" width="100%"/>
+
 
 <details >
   <summary><b>디렉토리 구조</b></summary>
@@ -338,6 +368,15 @@ python mmrotate/demo/image_demo.py demo.png mmrotate/configs/redet/redet_re50_re
 </details>
 
 ## 2.4 웹 어플리케이션
+
+- 공공데이터 포털에서 제공하는 [제주특별자치도_주차장기본정보](https://www.data.go.kr/data/15099715/openapi.do) 사용함.
+  <img src="./src/public-api-data.png" width="100%"/>
+- 서버와 데이터베이스 연동
+  <img src="./src/server-doc.png" width="100%"/>
+- 반응형 UI 개발 완료 및 다크모드 지원
+  <img src="./src/darkmode.png" width="100%"/>
+- PWA(Progressive Web Apps) 지원 ([설치방법](https://github.com/ziweek/desirable-sea/tree/main?tab=readme-ov-file#pwa-%EC%84%A4%EC%B9%98%EB%B0%A9%EB%B2%95))
+  <img src="./src/ui-mobile.png"/>
 
 <details >
   <summary><b>PWA 설치방법</b></summary>
