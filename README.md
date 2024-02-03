@@ -90,7 +90,7 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
   <tr>
      <td>
       <p align='center'>
-        해상도 이미지 모델
+        초고상도 이미지 개선 모델
       </p>
     </td>
     <td>
