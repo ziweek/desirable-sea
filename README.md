@@ -189,10 +189,10 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
 > 프로젝트 진행 현황
 > - [x] 기획안 작성 완료 :ok_hand:
 > - [x] 프론트엔드 개발 완료 :ok_hand:
+> - [x] 벡엔드 개발 완료 :ok_hand:
+> - [x] 머신러닝 서버 개발 완료 :ok_hand:
+> - [x] 데이터베이스 구축 완료:ok_hand:
 > - [x] 소개자료 및 시연영상 제작 완료 :ok_hand:
-> - [x] 벡엔드 작업 중... :construction:
-> - [x] 머신러닝 서버 작업 중 ... :construction:
-> - [x] 데이터베이스 구축 작업 중 ... :construction:
 
 > [!tip]
 > <details > <summary><b>프로토타입 설치방법</b></summary>
