@@ -184,25 +184,118 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
 
 # 2. 프로덕트
 
-## 2.1 아키텍처
+
+> [!IMPORTANT]
+> 프로젝트 진행 현황
+> - [x] 기획안 작성 완료 :ok_hand:
+> - [x] 프론트엔드 개발 완료 :ok_hand:
+> - [x] 소개자료 및 시연영상 제작 완료 :ok_hand:
+> - [x] 벡엔드 작업 중... :construction:
+> - [x] 머신러닝 서버 작업 중 ... :construction:
+> - [x] 데이터베이스 구축 작업 중 ... :construction:
+
+> [!tip]
+> <details > <summary><b>프로토타입 설치방법</b></summary>
+> <br/>
+>
+> iOS에서 설치하는 방법:
+>
+>  1. iOS 기기에서 Safari를 열고 PWA가 호스팅된 URL로 이동합니다.
+>  2. 화면 하단에 있는 공유 아이콘을 탭합니다.
+>  3. 화면을 아래로 스크롤하여 "홈 화면에 추가"를 탭합니다.
+>  4. 우측 상단의 "추가"를 탭합니다.
+>
+> Android에서 설치하는 방법:
+> 
+>  1. Android 기기에서 Chrome 브라우저를 열고 PWA가 호스팅된 URL로 이동합니다.
+>  2. 화면 우측 상단의 세 점 메뉴를 탭합니다.
+>  3. "홈 화면에 추가"를 탭합니다.
+>  4. 우측 상단의 "추가"를 탭합니다.
+> </details>
+
 
 <details >
-  <summary><b>아키텍처 구조</b></summary>
-
-<br/>
-
-* 본 프로젝트의 아키텍처는 데이터 전처리 수행 서버(초고해생도 이미지 개선 딥러닝 모델), 핵심 기능 수행 서버(소형 객체 식별 딥러닝 모델), 그리고 웹 어플리케이션(프론트엔드와 벡엔드 및 데이터베이스)으로 구성되어 있습니다.
-  * 데이터 전처리 수행 서버의 경우, Python 기반의 FastAPI로 서버를 구성하였습니다.
-  * 핵심 기능 수행 서버의 경우, Python 기반의 FastAPI로 서버를 구성하였습니다.
-  * 웹 어플리케이션의 경우, Next.js로 프론트엔드를, nest.js로 벡엔드를, MySQL로 데이터베이스를 구성하였습니다.
+ <summary><b>핵심기능</b></summary>
+ <br/>
 
  
-    <picture>
-      <source media="(prefers-color-scheme: light)" srcset="./src/service-architecture.png">
-      <source media="(prefers-color-scheme: dark)" srcset="./src/service-architecture-darkmode.png">
-      <img alt="IMAGE" src="http://LIGHT_IMAGE_URL.png">
-    </picture>
 </details>
+
+<details >
+  <summary><b>소개자료</b></summary>
+  <br/>
+ 
+  <table>
+  <tr>
+     <td>
+      <img width="100%" src="./src/img-intro.png">
+    </td>
+  </tr>
+   <tr>
+     <td>
+      <p>sdf</p>
+    </td>
+  </tr>
+    <tr>
+     <td>
+      <p>sdfsf</p>
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+     <td>
+      <img width="100%" src="./src/img-intro.png">
+    </td>
+  </tr>
+   <tr>
+     <td>
+      <p>sdf</p>
+    </td>
+  </tr>
+    <tr>
+     <td>
+      <p>sdfsf</p>
+    </td>
+  </tr>
+</table>
+
+ 
+</details>
+
+<details >
+  <summary><b>아키텍처</b></summary>
+
+ * 본 프로젝트의 아키텍처는 데이터 전처리 수행 서버(초고해생도 이미지 개선 딥러닝 모델), 핵심 기능 수행 서버(소형 객체 식별 딥러닝 모델), 그리고 웹 어플리케이션(프론트엔드와 벡엔드 및 데이터베이스)으로 구성되어 있습니다.
+   
+   * 데이터 전처리 수행 서버의 경우, Python 기반의 FastAPI로 서버를 구성하였습니다.
+     
+   * 핵심 기능 수행 서버의 경우, Python 기반의 FastAPI로 서버를 구성하였습니다.
+     
+   * 웹 어플리케이션의 경우, Next.js로 프론트엔드를, nest.js로 벡엔드를, MySQL로 데이터베이스를 구성하였습니다.
+
+
+<table>
+  <tr>
+     <td>
+      <img width="100%" src="./src/service-architecture.png">
+    </td>
+  </tr>
+   <tr>
+     <td>
+      <p>sdf</p>
+    </td>
+  </tr>
+    <tr>
+     <td>
+      <p>sdfsf</p>
+    </td>
+  </tr>
+</table>
+</details>
+
+
 
 <details >
   <summary><b>데이터 활용성</b></summary>
@@ -378,26 +471,6 @@ python mmrotate/demo/image_demo.py demo.png mmrotate/configs/redet/redet_re50_re
 - PWA(Progressive Web Apps) 지원 ([설치방법](https://github.com/ziweek/desirable-sea/tree/main?tab=readme-ov-file#pwa-%EC%84%A4%EC%B9%98%EB%B0%A9%EB%B2%95))
   <img src="./src/ui-mobile.png"/>
 
-<details >
-  <summary><b>PWA 설치방법</b></summary>
-
-iOS에서 설치하는 방법:
-
-1. iOS 기기에서 Safari를 열고 PWA가 호스팅된 URL로 이동합니다.
-2. 화면 하단에 있는 공유 아이콘을 탭합니다.
-3. 화면을 아래로 스크롤하여 "홈 화면에 추가"를 탭합니다.
-4. 다음 화면에서 원하는 경우 앱의 이름을 변경할 수 있습니다. 우측 상단의 "추가"를 탭합니다.
-5. PWA 아이콘이 홈 화면에 나타납니다. 앱을 시작하려면 해당 아이콘을 탭합니다.
-
-Android에서 설치하는 방법:
-
-1. Android 기기에서 Chrome 브라우저를 열고 PWA가 호스팅된 URL로 이동합니다.
-2. 화면 우측 상단의 세 점 메뉴를 탭합니다.
-3. "홈 화면에 추가"를 탭합니다.
-4. 다음 화면에서 원하는 경우 앱의 이름을 변경할 수 있습니다. 우측 상단의 "추가"를 탭합니다.
-5. PWA 아이콘이 홈 화면에 나타납니다. 앱을 시작하려면 해당 아이콘을 탭합니다.
-
-</details>
 
 <br/>
 <br/>
