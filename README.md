@@ -191,7 +191,7 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
 > - [x] 프론트엔드 개발 완료 :ok_hand:
 > - [x] 벡엔드 개발 완료 :ok_hand:
 > - [x] 머신러닝 서버 개발 완료 :ok_hand:
-> - [x] 데이터베이스 구축 완료:ok_hand:
+> - [x] 데이터베이스 구축 완료 :ok_hand:
 > - [x] 소개자료 및 시연영상 제작 완료 :ok_hand:
 
 > [!tip]
@@ -215,104 +215,132 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
 
 
 <details >
- <summary><b>핵심기능</b></summary>
- <br/>
+ <summary><b>핵심기능</b></summary><br/>
 
- 
-</details>
-
-<details >
-  <summary><b>소개자료</b></summary>
-  <br/>
- 
-  <table>
+ <table>
   <tr>
      <td>
-      <img width="100%" src="./src/img-intro.png">
+      <p align="left">1.1 초고해상도 이미지 개선 딥러닝 모델</p>
+    </td>
+     <td>
+      <p align="left">1.2 초고해상도 이미지 개선 딥러닝 모델 도입</p>
     </td>
   </tr>
    <tr>
      <td>
-      <p>sdf</p>
+      <img src="./src/comp-super-image-resolution.png" width="100%">
     </td>
+    <td>
+
+https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-bebd22ce3fb3
+     
+</td>
   </tr>
     <tr>
      <td>
-      <p>sdfsf</p>
+      <p align="left">데이터 전처리 과정에서 초고해상도 이미지 개선 딥러닝 모델을 원본 데이터에 적용하여 해상도를 크게 개선할 수 있었습니다.</p>
+    </td>
+     <td>
+      <p align="left">전처리된 데이터셋을 라벨링하였습니다. 이때, 사전학습된 모델을 활용하여 자동으로 식별하게 하였고, 아래와 같이 예외적인 경우에는 수작업을 병행하였습니다.</p>
     </td>
   </tr>
 </table>
 
-<table>
+
+ <table>
   <tr>
      <td>
-      <img width="100%" src="./src/img-intro.png">
+      <p align="left">2.1 객체 탐식 딥러닝 모델 도입</p>
+    </td>
+     <td>
+      <p align="left">2.2 WBF 앙상블 기법으로 성능 개선</p>
     </td>
   </tr>
    <tr>
      <td>
-      <p>sdf</p>
+      <img src="./src/result.png" width="100%">
+    </td>
+    <td>
+      <img src="./src/comp-super-image-resolution.png" width="100%">
     </td>
   </tr>
     <tr>
      <td>
-      <p>sdfsf</p>
+      <p align="left">데이터 전처리 과정에서 초고해상도 이미지 개선 딥러닝 모델을 원본 데이터에 적용하여 해상도를 크게 개선할 수 있었습니다.</p>
+    </td>
+     <td>
+      <p align="left">전처리된 데이터셋을 라벨링하였습니다. 이때, 사전학습된 모델을 활용하여 자동으로 식별하게 하였고, 아래와 같이 예외적인 경우에는 수작업을 병행하였습니다.</p>
     </td>
   </tr>
 </table>
 
- 
+ <table>
+  <tr>
+     <td>
+      <p align="left">3.1 Google Map API를 활용한 UX 구현</p>
+    </td>
+     <td>
+      <p align="left">3.2 반응형 UI 및 다크모드 지원으로 사용성 개선</p>
+    </td>
+  </tr>
+   <tr>
+     <td>
+      <img src="./src/result.png" width="100%">
+    </td>
+    <td>
+      <img src="./src/comp-super-image-resolution.png" width="100%">
+    </td>
+  </tr>
+    <tr>
+     <td>
+      <p align="left">데이터 전처리 과정에서 초고해상도 이미지 개선 딥러닝 모델을 원본 데이터에 적용하여 해상도를 크게 개선할 수 있었습니다.</p>
+    </td>
+     <td>
+      <p align="left">전처리된 데이터셋을 라벨링하였습니다. 이때, 사전학습된 모델을 활용하여 자동으로 식별하게 하였고, 아래와 같이 예외적인 경우에는 수작업을 병행하였습니다.</p>
+    </td>
+  </tr>
+</table>
 </details>
 
+
 <details >
-  <summary><b>아키텍처</b></summary>
+  <summary><b>아키텍처</b></summary><br/>
 
- * 본 프로젝트의 아키텍처는 데이터 전처리 수행 서버(초고해생도 이미지 개선 딥러닝 모델), 핵심 기능 수행 서버(소형 객체 식별 딥러닝 모델), 그리고 웹 어플리케이션(프론트엔드와 벡엔드 및 데이터베이스)으로 구성되어 있습니다.
-   
-   * 데이터 전처리 수행 서버의 경우, Python 기반의 FastAPI로 서버를 구성하였습니다.
-     
-   * 핵심 기능 수행 서버의 경우, Python 기반의 FastAPI로 서버를 구성하였습니다.
-     
-   * 웹 어플리케이션의 경우, Next.js로 프론트엔드를, nest.js로 벡엔드를, MySQL로 데이터베이스를 구성하였습니다.
-
-
-<table>
+ <table>
   <tr>
+     <td>
+      <p align="left">프로덕트 아키텍처</p>
+    </td>
+     <td>
+      <p align="left">AI 아키텍처</p>
+    </td>
+  </tr>
+   <tr>
      <td>
       <img width="100%" src="./src/service-architecture.png">
     </td>
-  </tr>
-   <tr>
-     <td>
-      <p>sdf</p>
+    <td>
+      <img src="./src/comp-super-image-resolution.png" width="100%">
     </td>
   </tr>
     <tr>
      <td>
-      <p>sdfsf</p>
+      <p align="left">본 프로젝트의 아키텍처는 데이터 전처리 수행 서버(초고해생도 이미지 개선 딥러닝 모델), 핵심 기능 수행 서버(소형 객체 식별 딥러닝 모델), 그리고 웹 어플리케이션(프론트엔드와 벡엔드 및 데이터베이스)으로 구성되어 있습니다.</p>
+    </td>
+     <td>
+      <p align="left">전처리된 데이터셋을 라벨링하였습니다. 이때, 사전학습된 모델을 활용하여 자동으로 식별하게 하였고, 아래와 같이 예외적인 경우에는 수작업을 병행하였습니다.</p>
     </td>
   </tr>
 </table>
 </details>
 
 
+<br/>
+<br/>
 
-<details >
-  <summary><b>데이터 활용성</b></summary>
- 
- * 데이터 전처리 과정에서 초고해상도 이미지 개선 딥러닝 모델을 원본 데이터에 적용하여 해상도를 크게 개선할 수 있었습니다.
-   
-   <img src="./src/comp-super-image-resolution.png" width="100%">
-      
- * 전처리된 데이터셋을 라벨링하였습니다. 이때, 사전학습된 모델을 활용하여 자동으로 식별하게 하였고, 아래와 같이 예외적인 경우에는 수작업을 병행하였습니다.
 
-      https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-bebd22ce3fb3
-      
-  <img src="./src/comp-super-image-resolution.png">
 
-  https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-bebd22ce3fb3
-  
-</details>
+<!--
 
 ## 2.2 초고해상도 이미지 개선 모델
 
@@ -471,9 +499,7 @@ python mmrotate/demo/image_demo.py demo.png mmrotate/configs/redet/redet_re50_re
 - PWA(Progressive Web Apps) 지원 ([설치방법](https://github.com/ziweek/desirable-sea/tree/main?tab=readme-ov-file#pwa-%EC%84%A4%EC%B9%98%EB%B0%A9%EB%B2%95))
   <img src="./src/ui-mobile.png"/>
 
-
-<br/>
-<br/>
+-->
 
 # 3. 팀원 소개
 
