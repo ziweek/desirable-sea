@@ -195,19 +195,19 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
 > - [x] 소개자료 및 시연영상 제작 완료 :ok_hand:
 
 > [!tip]
-> <details > <summary><b>프로토타입 설치방법</b></summary>
+> <details open> <summary><b>프로토타입 설치방법</b></summary>
 > <br/>
 >
 > iOS에서 설치하는 방법:
 >
->  1. iOS 기기에서 Safari를 열고 PWA가 호스팅된 URL로 이동합니다.
+>  1. iOS 기기에서 Safari를 열고 [PWA가 호스팅된 URL](https://desirable-sea.vercel.app/)로 이동합니다.
 >  2. 화면 하단에 있는 공유 아이콘을 탭합니다.
 >  3. 화면을 아래로 스크롤하여 "홈 화면에 추가"를 탭합니다.
 >  4. 우측 상단의 "추가"를 탭합니다.
 >
 > Android에서 설치하는 방법:
 > 
->  1. Android 기기에서 Chrome 브라우저를 열고 PWA가 호스팅된 URL로 이동합니다.
+>  1. Android 기기에서 Chrome 브라우저를 열고 [PWA가 호스팅된 URL](https://desirable-sea.vercel.app/)로 이동합니다.
 >  2. 화면 우측 상단의 세 점 메뉴를 탭합니다.
 >  3. "홈 화면에 추가"를 탭합니다.
 >  4. 우측 상단의 "추가"를 탭합니다.
