@@ -168,7 +168,7 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
  <table>
   <tr>
      <td colspan=2>
-      <p align="left">1.1 초고해상도 이미지 개선 딥러닝 모델</p>
+      <p align="center">1.1 초고해상도 이미지 개선 딥러닝 모델</p>
     </td>
   </tr>
    <tr>
@@ -180,11 +180,11 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
     </td>
   </tr>
 </table>
-
+<br/>
 <table>
   <tr>
      <td colspan=2>
-      <p align="left">1.2 초고해상도 이미지 개선 딥러닝 모델</p>
+      <p align="center">1.2 초고해상도 이미지 개선 딥러닝 모델</p>
     </td>
   </tr>
    <tr>
@@ -210,7 +210,7 @@ https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-
  <table>
   <tr>
      <td colspan=2>
-      <p align="left">2.1 객체 탐지 딥러닝 모델 도입</p>
+      <p align="center">2.1 객체 탐지 딥러닝 모델 도입</p>
     </td>
   </tr>
    <tr>
@@ -221,21 +221,12 @@ https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-
       <p align="left">데이터 전처리 과정에서 초고해상도 이미지 개선 딥러닝 모델을 원본 데이터에 적용하여 해상도를 크게 개선할 수 있었습니다.</p>
     </td>
   </tr>
-    <tr>
-     <td width="50%">
-      <img src="./src/comp-super-image-resolution.png" width="100%">
-    </td>
-     <td width="50%">
-      <p align="left">2.2 WBF 앙상블 기법으로 성능 개선</p>
-      <p align="left">전처리된 데이터셋을 라벨링하였습니다. 이때, 사전학습된 모델을 활용하여 자동으로 식별하게 하였고, 아래와 같이 예외적인 경우에는 수작업을 병행하였습니다.</p>
-    </td>
-  </tr>
 </table>
-
+<br/>
  <table>
   <tr>
      <td colspan=2>
-      <p align="left">2.2 WBF 앙상블 기법으로 성능 개선</p>
+      <p align="center">2.2 WBF 앙상블 기법으로 성능 개선</p>
     </td>
   </tr>
     <tr>
@@ -256,9 +247,9 @@ https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-
 ### 3. 사용자 경험
 
  <table>
-  <tr colspan=2>
-     <td>
-      <p align="left">3.1 Google Map API를 활용한 UX 구현</p>
+  <tr>
+     <td colspan=2>
+      <p align="center">3.1 Google Map API를 활용한 UX 구현</p>
     </td>
   </tr>
    <tr>
@@ -270,11 +261,11 @@ https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-
     </td>
   </tr>
 </table>
-
+<br/>
  <table>
-  <tr colspan=2>
-     <td>
-      <p align="left">3.2 반응형 UI 및 다크모드 지원으로 사용성 개선</p>
+  <tr>
+     <td colspan=2>
+      <p align="center">3.2 반응형 UI 및 다크모드 지원으로 사용성 개선</p>
     </td>
   </tr>
     <tr>
@@ -297,10 +288,28 @@ https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-
 <details >
   <summary><b>아키텍처</b></summary><br/>
 
+### 프로덕트 아키텍처
+
  <table>
-  <tr colspan=2>
-     <td>
-      <p align="left">프로덕트 아키텍처</p>
+  <tr>
+     <td colspan=2>
+      <p align="center">프로덕트 아키텍처</p>
+    </td>
+  </tr>
+   <tr>
+     <td width="50%">
+      <img width="100%" src="./src/service-architecture.png">
+    </td>
+    <td width="50%">
+           <p align="left">본 프로젝트의 아키텍처는 데이터 전처리 수행 서버(초고해생도 이미지 개선 딥러닝 모델), 핵심 기능 수행 서버(소형 객체 식별 딥러닝 모델), 그리고 웹 어플리케이션(프론트엔드와 벡엔드 및 데이터베이스)으로 구성되어 있습니다.</p>
+    </td>
+  </tr>
+</table>
+<br/>
+ <table>
+  <tr>
+     <td colspan=2>
+      <p align="center">프로덕트 아키텍처</p>
     </td>
   </tr>
    <tr>
@@ -318,10 +327,12 @@ https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-
 <br/>
 
 
+### AI 아키텍처
+
 <table>
-  <tr colspan=2>
-     <td>
-      <p align="left">AI 아키텍처</p>
+  <tr>
+     <td colspan=2>
+      <p align="center">AI 아키텍처</p>
     </td>
   </tr>
    <tr>
