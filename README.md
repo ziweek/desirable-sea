@@ -93,12 +93,12 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
     </td>
     <td>
       <p align='center'>
-        소형 객체 인식 모델링
+        소형 객체 인식 모델
       </p>
     </td>
     <td>
       <p align='center'>
-        프로덕트 웹페이지
+        웹서비스 프로덕트
       </p>
     </td>
   </tr>
