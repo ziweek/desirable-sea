@@ -39,7 +39,6 @@
   <a href='https://github.com/ZFTurbo/Weighted-Boxes-Fusion'>
     <img src="https://img.shields.io/badge/Ensemble-Weighted%20Boxes%20Fusion-EF2D5E?style=flat-square"/>
   </a>
-   <img src="https://img.shields.io/badge/Weights%20&%20Biases-dea500?style=flat-square&logo=weightsandbiases&logoColor=white&text=white"/>
   <br/>
 
   
@@ -53,22 +52,30 @@
   <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white"/>
   <img src="https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white"/>
   <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white"/>
+  <br/>
+  <br/>
+  <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Weights%20&%20Biases-dea500?style=flat-square&logo=weightsandbiases&logoColor=white&text=white"/>
 </p>
 <br/>
 <br/>
   
 <p align="center">  
-  <strong>아래의 뱃지에서 프로토타입을 확인해보세요.<strong>
+  <strong>아래의 뱃지에서 소재자료와 프로토타입을 확인해보세요.<strong>
   <br/>
   <br/>
+  <a href='https://www.canva.com/design/DAF6gh68bZ4/YeS-FN9gsbZpPdRnq52BXQ/view?utm_content=DAF6gh68bZ4&utm_campaign=designshare&utm_medium=link&utm_source=editor'>
+    <img src="https://img.shields.io/badge/소개자료-Canva-00C4CC?style=flat-square"/>
+  </a>
   <a href='https://desirable-sea.vercel.app/'>
-    <img src="https://img.shields.io/badge/Product-Vercel-000000?style=flat-square"/>
+    <img src="https://img.shields.io/badge/프로덕트-Vercel-000000?style=flat-square"/>
   </a>
   <a href='https://goor.me/edkv2g6bKZt7nopy6'>
-    <img src="https://img.shields.io/badge/Model-goorm-ffffff?style=flat-square"/>
+    <img src="https://img.shields.io/badge/AI%20시연-goorm-ffffff?style=flat-square"/>
   </a>
   <a href='https://colab.research.google.com/drive/13-VZyx3LiYPRS8aw-AcMSBK0Z4--TF2j?usp=sharing'>
-    <img src="https://img.shields.io/badge/Tutorial-Google%20Colab-F9AB00?style=flat-square"/>
+    <img src="https://img.shields.io/badge/튜토리얼-Google%20Colab-F9AB00?style=flat-square"/>
   </a>
 </p>
 
@@ -131,10 +138,10 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
 >
 > - [x] 기획안 작성 완료 :ok_hand:
 > - [x] 프론트엔드 개발 완료 :ok_hand:
-> - [x] 벡엔드 개발 완료 :ok_hand:
-> - [x] 머신러닝 서버 개발 완료 :ok_hand:
-> - [x] 데이터베이스 구축 완료 :ok_hand:
+> - [x] 벡엔드 및 데이터베이스 개발 완료 :ok_hand:
+> - [x] AI 서버 개발 완료 :ok_hand:
 > - [x] 소개자료 및 시연영상 제작 완료 :ok_hand:
+> - [ ] 2.0 버전 업데이트 기획 중
 >
 > </details>
 
