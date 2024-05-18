@@ -23,18 +23,15 @@
 
   <a href='https://paperswithcode.com/task/image-super-resolution'>
     <img src="https://img.shields.io/badge/Paperswithcode-Image%20Super%20Resolution-25c2a0?style=flat-square"/>
-  </a>
-  <a href='https://github.com/XPixelGroup/HAT'>
+  </a><br/>  
+  <a href='https://paperswithcode.com/task/object-detection-in-aerial-images'>
+    <img src="https://img.shields.io/badge/Paperswithcode-Object%20Detection%20In%20Aerial%20Images-25c2a0?style=flat-square"/>
+  </a><br/>
+    <a href='https://github.com/XPixelGroup/HAT'>
     <img src="https://img.shields.io/badge/XPixelGroup-HAT-EF2D5E?style=flat-square"/>
   </a>
   <a href='https://github.com/xinntao/ESRGAN?tab=readme-ov-file'>
     <img src="https://img.shields.io/badge/Xintao-ESRGAN-EF2D5E?style=flat-square"/>
-  </a>
-  <img src="https://img.shields.io/badge/Weights%20&%20Biases-dea500?style=flat-square&logo=weightsandbiases&logoColor=white&text=white"/>
-  </br>
-  
-  <a href='https://paperswithcode.com/task/object-detection-in-aerial-images'>
-    <img src="https://img.shields.io/badge/Paperswithcode-Object%20Detection%20In%20Aerial%20Images-25c2a0?style=flat-square"/>
   </a>
   <a href='https://github.com/open-mmlab/mmrotate'>
     <img src="https://img.shields.io/badge/OpenMMLab-MMRotate-EF2D5E?style=flat-square"/>
@@ -42,6 +39,7 @@
   <a href='https://github.com/ZFTurbo/Weighted-Boxes-Fusion'>
     <img src="https://img.shields.io/badge/Ensemble-Weighted%20Boxes%20Fusion-EF2D5E?style=flat-square"/>
   </a>
+   <img src="https://img.shields.io/badge/Weights%20&%20Biases-dea500?style=flat-square&logo=weightsandbiases&logoColor=white&text=white"/>
   <br/>
 
   
@@ -290,34 +288,40 @@ https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-
 
 ### 프로덕트 아키텍처
 
+ 
  <table>
-  <tr>
-     <td colspan=2>
-      <p align="center">프로덕트 아키텍처</p>
-    </td>
-  </tr>
    <tr>
-     <td width="50%">
+     <td>
       <img width="100%" src="./src/service-architecture.png">
     </td>
-    <td width="50%">
-           <p align="left">본 프로젝트의 아키텍처는 데이터 전처리 수행 서버(초고해생도 이미지 개선 딥러닝 모델), 핵심 기능 수행 서버(소형 객체 식별 딥러닝 모델), 그리고 웹 어플리케이션(프론트엔드와 벡엔드 및 데이터베이스)으로 구성되어 있습니다.</p>
-    </td>
-  </tr>
-</table>
-<br/>
- <table>
+   </tr>
   <tr>
-     <td colspan=2>
-      <p align="center">프로덕트 아키텍처</p>
-    </td>
-  </tr>
-   <tr>
-     <td width="50%">
-      <img width="100%" src="./src/service-architecture.png">
-    </td>
-    <td width="50%">
-           <p align="left">본 프로젝트의 아키텍처는 데이터 전처리 수행 서버(초고해생도 이미지 개선 딥러닝 모델), 핵심 기능 수행 서버(소형 객체 식별 딥러닝 모델), 그리고 웹 어플리케이션(프론트엔드와 벡엔드 및 데이터베이스)으로 구성되어 있습니다.</p>
+    <td>
+     <p align="left">본 프로젝트의 서비스 아키텍처는 크게 4가지로 나눠서 살펴볼 수 있습니다.</p>
+     <p> 1. 데이터 전처리 수행 서버</p>
+     <ul>
+      <li align="left">초고해상도 이미지 개선 딥러닝 모델</li>
+      <li align="left">핵심 기능 수행 서버(소형 객체 식별 딥러닝 모델)</li>
+      <li align="left">웹 어플리케이션(프론트엔드와 벡엔드 및 데이터베이스)</li>
+     </ul>
+     <p> 2. 핵심 기능 수행 서버</p>
+     <ul>
+      <li align="left">소형 객체 식별 딥러닝 모델</li>
+      <li align="left">핵심 기능 수행 서버(소형 객체 식별 딥러닝 모델)</li>
+      <li align="left">웹 어플리케이션(프론트엔드와 벡엔드 및 데이터베이스)</li>
+     </ul>
+     <p> 3. 웹 어플리케이션</p>
+     <ul>
+      <li align="left">프론트엔드</li>
+      <li align="left">벡엔드</li>
+      <li align="left">데이터베이스</li>
+     </ul>
+     <p> 4. 컨테이너화 및 배포 운영</p>
+     <ul>
+      <li align="left">프론트엔드</li>
+      <li align="left">벡엔드</li>
+      <li align="left">데이터베이스</li>
+     </ul>
     </td>
   </tr>
 </table>
@@ -329,18 +333,139 @@ https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-
 
 ### AI 아키텍처
 
-<table>
-  <tr>
-     <td colspan=2>
-      <p align="center">AI 아키텍처</p>
-    </td>
-  </tr>
+ <table>
    <tr>
-     <td width="50%">
-      <img src="./src/comp-super-image-resolution.png" width="100%">
+     <td>
+      <img width="100%" src="./src/service-architecture.png">
     </td>
-    <td width="50%">
-     <p align="left">전처리된 데이터셋을 라벨링하였습니다. 이때, 사전학습된 모델을 활용하여 자동으로 식별하게 하였고, 아래와 같이 예외적인 경우에는 수작업을 병행하였습니다.</p>
+   </tr>
+  <tr>
+    <td>
+     <p align="left">본 프로젝트의 AI 아키텍처는 크게 2가지로 나눠서 살펴볼 수 있습니다.</p>
+     <p> 1. 초고해상도 이미지 개선 딥러닝 모델</p>
+     <ul>
+      <li>
+       <details><summary><b>디렉토리 구조</b></summary>
+        
+```
+ESRGAN
+├── LR                      # Pytorch 모델을 저장하는 폴더입니다.
+│   └── demo.png            # MVP 시연에 사용될 데모 이미지입니다.
+├── models
+│   ├── ...
+│   └── RRDB_ESRGAN_x4.pth  # 베이스라인 관련 코드입니다.
+├── ...
+└── results
+    └── demo_rlt.png        # 모델링 결과로 출력되는 이미지입니다.
+```
+
+</details></li>
+<li><details><summary><b>초기 설치방법</b></summary>
+
+```shell
+# setup.sh 파일 만들기.
+# 아래의 쉘스크립트 복사 후 붙여넣기.
+# 터미널에서 setup.sh 실행
+
+git clone https://github.com/xinntao/ESRGAN
+cd ESRGAN
+
+cd models
+wget --load-cookies ~/cookies.txt \
+"https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies ~/cookies.txt \
+--keep-session-cookies --no-check-certificate \ 
+'https://docs.google.com/uc?export=download&id=1TPrz5QKd8DHHt1k8SRtm6tMiPjz_Qene' -O- \
+| sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1TPrz5QKd8DHHt1k8SRtm6tMiPjz_Qene" -O RRDB_ESRGAN_x4.pth \
+&& rm -rf ~/cookies.txt
+cd ..
+
+cd LR
+wget https://raw.githubusercontent.com/ziweek/desirable-sea/main/src/demo.png
+cd ..
+```
+
+</details></li>
+<li><details ><summary><b>추론 실행방법</b></summary>
+
+ ```shell
+# 1. 아래의 쉘스크립트 복사 후 터미널에 붙여넣기.
+# 2. 터미널에서 실행하기.
+# 3. 동일 디렉토리 내에서 result-resolution.jpg 파일 확인하기.
+
+python test.py
+```
+
+</details></li>
+     </ul>
+     <p> 2. 소형 객체 식별 딥러닝 모델</p>
+     <ul>
+      <li><details ><summary><b>디렉토리 구조</b></summary>
+  
+```
+desirable-sea
+├── checkpoints  # Pytorch 모델을 저장하는 폴더입니다.
+├── mmrotate     # 베이스라인 관련 코드입니다.
+│   ├── config
+│   ├── ...
+│   └── demo
+├── ...
+├── demo.png     # MVP 시연에 사용될 데모 이미지입니다.
+└── result.jpg   # 모델링 결과로 출력되는 이미지입니다.
+```
+</details></li>
+<li><details ><summary><b>초기 설치방법</b></summary>
+ 
+```shell
+# 1. setup.sh 파일 만들기.
+# 2. 아래의 쉘스크립트 복사 후 붙여넣기.
+# 3. 터미널에서 setup.sh 실행
+
+sudo apt update
+sudo apt -y install libgl1-mesa-glx
+
+wget https://repo.anaconda.com/miniconda/Miniconda3-py37_4.9.2-Linux-x86_64.sh
+chmod +x Miniconda3-py37_4.9.2-Linux-x86_64.sh
+bash ./Miniconda3-py37_4.9.2-Linux-x86_64.sh -b -f -p /usr/local
+which conda
+conda --version
+
+pip install torch==1.7.0+cu110 torchvision==0.8.1+cu110 torchaudio==0.7.0 -f https://download.pytorch.org/whl/torch_stable.html
+pip install openmim --use-feature=2020-resolver
+mim install mmcv-full==1.5.3
+mim install mmdet==2.25.1
+
+git clone https://github.com/open-mmlab/mmrotate.git
+cd mmrotate
+pip install -r requirements/build.txt
+pip install -v -e .
+
+cd ..
+
+
+mkdir checkpoints
+cd checkpoints
+wget https://download.openmmlab.com/mmrotate/v0.1.0/redet/redet_re50_fpn_1x_dota_ms_rr_le90/redet_re50_fpn_1x_dota_ms_rr_le90-fc9217b5.pth
+cd ..
+
+wget https://raw.githubusercontent.com/ziweek/desirable-sea/main/src/demo.png
+
+```
+</details></li>
+<li><details ><summary><b>추론 실행방법</b></summary>
+
+```shell
+# 1. 아래의 쉘스크립트 복사 후 터미널에 붙여넣기.
+# 2. 터미널에서 실행하기.
+# 3. 동일 디렉토리 내에서 result.jpg 파일 확인하기.
+
+python mmrotate/demo/image_demo.py demo.png \
+mmrotate/configs/redet/redet_re50_refpn_1x_dota_ms_rr_le90.py \
+checkpoints/redet_re50_fpn_1x_dota_ms_rr_le90-fc9217b5.pth \
+--out-file result.jpg
+```
+
+</details></li>
+     </ul>
     </td>
   </tr>
 </table>
