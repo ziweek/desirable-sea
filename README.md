@@ -379,7 +379,8 @@ cd ESRGAN
 
 cd models
 wget --load-cookies ~/cookies.txt \
-"https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies ~/cookies.txt \
+"https://docs.google.com/uc?export=download&confirm=$(wget \
+--quiet --save-cookies ~/cookies.txt \
 --keep-session-cookies --no-check-certificate \ 
 'https://docs.google.com/uc?export=download&id=1TPrz5QKd8DHHt1k8SRtm6tMiPjz_Qene' -O- \
 | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1TPrz5QKd8DHHt1k8SRtm6tMiPjz_Qene" -O RRDB_ESRGAN_x4.pth \
