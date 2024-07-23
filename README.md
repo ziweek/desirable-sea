@@ -1,6 +1,6 @@
 # Hello, desirable-sea
- 
-<img src="./src/banner_ko.png"/>
+
+<img src="./src/readme/banner_ko.png"/>
 
 <p align="center">
   <strong>🏆 2023 제주특별자치도 도지사상 수상 작품 🏆</strong>
@@ -85,8 +85,8 @@
 # 1. 개요
 
 > [!NOTE]
+>
 > - 본 아이디어는, 제주특별자치도에서 주최하는 [2023년도 제주 위성데이터 활용 경진대회](https://aifactory.space/task/2700/overview)에 출품하여 대상(제주특별자치도지사상)을 수상한 프로젝트입니다.
->   
 > - 본 아이디어는, 제주 위성데이터를 활용하고 컴퓨터 비전의 객체 인식 AI 기술을 적용하여, 제주 지역에서 장기적으로 주차되거나 방치되어 있는 차량을 탐지하고, 해당 정보를 유관 기관이 통합하여 관리할 수 있는 지능형 플랫폼을 연구 및 개발하는 것입니다.
 
 https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-7d2adbb045ec
@@ -111,13 +111,13 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
   </tr>
    <tr>
     <td style="width:1/3;">
-      <img src="./src/preview-super-image-resolution.png"/>
+      <img src="./src/readme/preview-super-image-resolution.png"/>
     </td>
     <td style="width:1/3;">
-      <img src="./src/preview-small-object-detection.png"/>
+      <img src="./src/readme/preview-small-object-detection.png"/>
     </td>
     <td style="width:1/3;">
-      <img src="./src/preview-product-webpage.png"/>
+      <img src="./src/readme/preview-product-webpage.png"/>
     </td>
   </tr>
 </table>
@@ -126,12 +126,10 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
 <br/>
 <br/>
 
-
-
 # 2. 프로덕트
 
-
 > [!IMPORTANT]
+>
 > <details> <summary><b>프로젝트 진행 현황</b></summary>
 > <br/>
 >
@@ -145,30 +143,30 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
 > </details>
 
 > [!tip]
+>
 > <details> <summary><b>프로토타입 설치 방법</b></summary>
 > <br/>
 >
 > iOS에서 설치하는 방법:
 >
->  1. iOS 기기에서 Safari를 열고 [PWA가 호스팅된 URL](https://desirable-sea.vercel.app/)로 이동합니다.
->  2. 화면 하단에 있는 공유 아이콘을 탭합니다.
->  3. 화면을 아래로 스크롤하여 "홈 화면에 추가"를 탭합니다.
->  4. 우측 상단의 "추가"를 탭합니다.
+> 1.  iOS 기기에서 Safari를 열고 [PWA가 호스팅된 URL](https://desirable-sea.vercel.app/)로 이동합니다.
+> 2.  화면 하단에 있는 공유 아이콘을 탭합니다.
+> 3.  화면을 아래로 스크롤하여 "홈 화면에 추가"를 탭합니다.
+> 4.  우측 상단의 "추가"를 탭합니다.
 >
 > Android에서 설치하는 방법:
-> 
->  1. Android 기기에서 Chrome 브라우저를 열고 [PWA가 호스팅된 URL](https://desirable-sea.vercel.app/)로 이동합니다.
->  2. 화면 우측 상단의 세 점 메뉴를 탭합니다.
->  3. "홈 화면에 추가"를 탭합니다.
->  4. 우측 상단의 "추가"를 탭합니다.
+>
+> 1.  Android 기기에서 Chrome 브라우저를 열고 [PWA가 호스팅된 URL](https://desirable-sea.vercel.app/)로 이동합니다.
+> 2.  화면 우측 상단의 세 점 메뉴를 탭합니다.
+> 3.  "홈 화면에 추가"를 탭합니다.
+> 4.  우측 상단의 "추가"를 탭합니다.
 > </details>
-
 
 <details>
  <summary><b>핵심기능</b></summary><br/>
 
 ### 1. 초고해상도 이미지 개선 딥러닝 모델
-   
+
  <table>
   <tr>
      <td colspan=2>
@@ -177,7 +175,7 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
   </tr>
    <tr>
      <td>
-      <img src="./src/comp-super-image-resolution.png" width="100%">
+      <img src="./src/readme/demo1.png" width="100%">
     </td>
   </tr>
    <tr>
@@ -196,9 +194,7 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
   <tr>
    <td align="left">
 
-     
 https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-bebd22ce3fb3
-
 
 </td>
     </tr>
@@ -222,7 +218,7 @@ https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-
   </tr>
    <tr>
      <td>
-      <img src="./src/result.png" width="100%">
+      <img src="./src/readme/demo2.png" width="100%">
     </td>
   </tr>
      <tr>
@@ -240,7 +236,7 @@ https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-
   </tr>
     <tr>
      <td>
-        <img src="./src/result.png" width="100%">
+        <img src="./src/readme/demo3.png" width="100%">
     </td>
   </tr>
     </tr>
@@ -251,10 +247,8 @@ https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-
   </tr>
 </table>
 
-
 <br/>
 <br/>
-
 
 ### 3. 사용자 경험
 
@@ -266,7 +260,7 @@ https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-
   </tr>
    <tr>
      <td>
-      <img src="./src/result.png" width="100%">
+      <img src="./src/readme/demo4.png" width="100%">
     </td>
   </tr>
     <td>
@@ -284,7 +278,7 @@ https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-
   </tr>
     <tr>
      <td>
-       <img src="./src/result.png" width="100%">
+       <img src="./src/readme/demo5.png" width="100%">
     </td>
   </tr>
   <tr>
@@ -297,20 +291,17 @@ https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-
 <br/>
 <br/>
 
-
 </details>
-
 
 <details >
   <summary><b>아키텍처</b></summary><br/>
 
 ### 프로덕트 아키텍처
 
- 
  <table>
    <tr>
      <td>
-      <img width="100%" src="./src/service-architecture.png">
+      <img width="100%" src="./src/readme/service-architecture.png">
     </td>
    </tr>
   <tr>
@@ -344,17 +335,15 @@ https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-
   </tr>
 </table>
 
-
 <br/>
 <br/>
-
 
 ### AI 아키텍처
 
  <table>
    <tr>
      <td>
-      <img width="100%" src="./src/service-architecture.png">
+      <img width="100%" src="./src/readme/service-architecture.png">
     </td>
    </tr>
   <tr>
@@ -392,7 +381,7 @@ cd models
 wget --load-cookies ~/cookies.txt \
 "https://docs.google.com/uc?export=download&confirm=$(wget \
 --quiet --save-cookies ~/cookies.txt \
---keep-session-cookies --no-check-certificate \ 
+--keep-session-cookies --no-check-certificate \
 'https://docs.google.com/uc?export=download&id=1TPrz5QKd8DHHt1k8SRtm6tMiPjz_Qene' -O- \
 | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1TPrz5QKd8DHHt1k8SRtm6tMiPjz_Qene" -O RRDB_ESRGAN_x4.pth \
 && rm -rf ~/cookies.txt
@@ -406,7 +395,7 @@ cd ..
 </details></li>
 <li><details ><summary><b>추론 실행방법</b></summary>
 
- ```shell
+```shell
 # 1. 아래의 쉘스크립트 복사 후 터미널에 붙여넣기.
 # 2. 터미널에서 실행하기.
 # 3. 동일 디렉토리 내에서 result-resolution.jpg 파일 확인하기.
@@ -460,7 +449,6 @@ pip install -v -e .
 
 cd ..
 
-
 mkdir checkpoints
 cd checkpoints
 wget https://download.openmmlab.com/mmrotate/v0.1.0/redet/redet_re50_fpn_1x_dota_ms_rr_le90/redet_re50_fpn_1x_dota_ms_rr_le90-fc9217b5.pth
@@ -468,7 +456,7 @@ cd ..
 
 wget https://raw.githubusercontent.com/ziweek/desirable-sea/main/src/demo.png
 
-```
+````
 </details></li>
 <li><details ><summary><b>추론 실행방법</b></summary>
 
@@ -481,7 +469,7 @@ python mmrotate/demo/image_demo.py demo.png \
 mmrotate/configs/redet/redet_re50_refpn_1x_dota_ms_rr_le90.py \
 checkpoints/redet_re50_fpn_1x_dota_ms_rr_le90-fc9217b5.pth \
 --out-file result.jpg
-```
+````
 
 </details></li>
      </ul>
@@ -489,14 +477,10 @@ checkpoints/redet_re50_fpn_1x_dota_ms_rr_le90-fc9217b5.pth \
   </tr>
 </table>
 
-
 </details>
 
-
 <br/>
 <br/>
-
-
 
 <!--
 
@@ -504,7 +488,7 @@ checkpoints/redet_re50_fpn_1x_dota_ms_rr_le90-fc9217b5.pth \
 
 <details >
   <summary><b>디렉토리 구조</b></summary>
-  
+
 ```
 ESRGAN
 ├── LR                      # Pytorch 모델을 저장하는 폴더입니다.
@@ -573,7 +557,7 @@ python test.py
 
 <details >
   <summary><b>디렉토리 구조</b></summary>
-  
+
 ```
 desirable-sea
 ├── checkpoints  # Pytorch 모델을 저장하는 폴더입니다.
