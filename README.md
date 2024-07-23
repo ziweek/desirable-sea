@@ -128,7 +128,6 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
 
 
 
-
 # 2. 프로덕트
 
 
@@ -165,7 +164,7 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
 > </details>
 
 
-<details >
+<details>
  <summary><b>핵심기능</b></summary><br/>
 
 ### 1. 초고해상도 이미지 개선 딥러닝 모델
@@ -177,11 +176,13 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
     </td>
   </tr>
    <tr>
-     <td width="50%">
+     <td>
       <img src="./src/comp-super-image-resolution.png" width="100%">
     </td>
+  </tr>
+   <tr>
     <td>
-     <p align="left">데이터 전처리 과정에서 초고해상도 이미지 개선 딥러닝 모델을 원본 데이터에 적용하여 해상도를 크게 개선할 수 있었습니다.</p>
+     <p align="left">소형 객체 탐지 모델의 성능을 개선하기 위해 전처리 모델로 XPixelGroup의 HAT라는 초고해상도 개선 모델을 도입하였습니다. 이를 통해 제공된 위성이미지 데이터셋의 해상도를 4배 이상 개선할 수 있었습니다.</p>
     </td>
   </tr>
 </table>
@@ -192,20 +193,21 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
       <p align="center">1.2 초고해상도 이미지 개선 딥러닝 모델</p>
     </td>
   </tr>
-   <tr>
-    <td width="50%">
+  <tr>
+   <td align="left">
 
      
 https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-bebd22ce3fb3
 
 
 </td>
+    </tr>
+      <tr>
      <td>
       <p align="left">전처리된 데이터셋을 라벨링하였습니다. 이때, 사전학습된 모델을 활용하여 자동으로 식별하게 하였고, 아래와 같이 예외적인 경우에는 수작업을 병행하였습니다.</p>
     </td>
     </tr>
 </table>
-
 
 <br/>
 <br/>
@@ -219,10 +221,12 @@ https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-
     </td>
   </tr>
    <tr>
-     <td width="50%">
+     <td>
       <img src="./src/result.png" width="100%">
     </td>
-    <td width="50%">
+  </tr>
+     <tr>
+    <td>
       <p align="left">데이터 전처리 과정에서 초고해상도 이미지 개선 딥러닝 모델을 원본 데이터에 적용하여 해상도를 크게 개선할 수 있었습니다.</p>
     </td>
   </tr>
@@ -235,9 +239,12 @@ https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-
     </td>
   </tr>
     <tr>
-     <td width="50%">
-      <img src="./src/comp-super-image-resolution.png" width="100%">
+     <td>
+        <img src="./src/result.png" width="100%">
     </td>
+  </tr>
+    </tr>
+    <tr>
      <td width="50%">
       <p align="left">전처리된 데이터셋을 라벨링하였습니다. 이때, 사전학습된 모델을 활용하여 자동으로 식별하게 하였고, 아래와 같이 예외적인 경우에는 수작업을 병행하였습니다.</p>
     </td>
@@ -258,13 +265,15 @@ https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-
     </td>
   </tr>
    <tr>
-     <td width="50%">
+     <td>
       <img src="./src/result.png" width="100%">
     </td>
-    <td width="50%">
+  </tr>
+    <td>
      <p align="left">데이터 전처리 과정에서 초고해상도 이미지 개선 딥러닝 모델을 원본 데이터에 적용하여 해상도를 크게 개선할 수 있었습니다.</p>
     </td>
   </tr>
+  
 </table>
 <br/>
  <table>
@@ -274,9 +283,11 @@ https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-
     </td>
   </tr>
     <tr>
-     <td width="50%">
-      <img src="./src/comp-super-image-resolution.png" width="100%">
+     <td>
+       <img src="./src/result.png" width="100%">
     </td>
+  </tr>
+  <tr>
      <td width="50%">
       <p align="left">전처리된 데이터셋을 라벨링하였습니다. 이때, 사전학습된 모델을 활용하여 자동으로 식별하게 하였고, 아래와 같이 예외적인 경우에는 수작업을 병행하였습니다.</p>
     </td>
