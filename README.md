@@ -105,7 +105,7 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
     </td>
     <td>
       <p align='center'>
-        웹서비스 프로덕트
+        프로덕트 웹사이트
       </p>
     </td>
   </tr>
@@ -144,7 +144,7 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
 
 > [!tip]
 >
-> <details> <summary><b>프로토타입 설치 방법</b></summary>
+> <details> <summary><b>PWA 설치 방법</b></summary>
 > <br/>
 >
 > iOS에서 설치하는 방법:
@@ -180,7 +180,7 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
   </tr>
    <tr>
     <td>
-     <p align="left">소형 객체 탐지 모델의 성능을 개선하기 위해 전처리 모델로 XPixelGroup의 HAT라는 초고해상도 개선 모델을 도입하였습니다. 이를 통해 제공된 위성이미지 데이터셋의 해상도를 4배 이상 개선할 수 있었습니다.</p>
+     <p align="left">소형 객체 탐지 모델의 성능을 개선하기 위해 전처리 모델로 XPixelGroup의 HAT라는 초고해상도 개선 모델을 도입하였습니다. 이를 통해 대회 측에서 제공한 위성이미지 데이터의 해상도를 4배 이상 개선할 수 있었습니다.</p>
     </td>
   </tr>
 </table>
@@ -192,7 +192,7 @@ https://github.com/ziweek/desirable-sea/assets/99459331/4a7edb47-754c-47fd-8dab-
     </td>
   </tr>
   <tr>
-   <td align="left">
+   <td align="center">
 
 https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-bebd22ce3fb3
 
@@ -200,7 +200,7 @@ https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-
     </tr>
       <tr>
      <td>
-      <p align="left">전처리된 데이터셋을 라벨링하였습니다. 이때, 사전학습된 모델을 활용하여 자동으로 식별하게 하였고, 아래와 같이 예외적인 경우에는 수작업을 병행하였습니다.</p>
+      <p align="left">초고해상도 개선 모델로 전처리된 데이터을 라벨링하였습니다. 이때, 사전 학습된 모델을 사용하여 자동으로 차량을 식별하게 하였습니다. 위의 영상은 사전 학습 모델이 식별하지 못한 예외적인 경우에 수작업으로 라벨링을 진행한 것입니다.</p>
     </td>
     </tr>
 </table>
@@ -223,7 +223,7 @@ https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-
   </tr>
      <tr>
     <td>
-      <p align="left">데이터 전처리 과정에서 초고해상도 이미지 개선 딥러닝 모델을 원본 데이터에 적용하여 해상도를 크게 개선할 수 있었습니다.</p>
+      <p align="left">MMRotate 프레임워크를 활용하여 위성이미지 데이터 내에서 차량 등의 객체를 식별할 수 있었습니다. 처음에는 사전 학습된 모델을 활용하여 성능지표를 평가하였습니다.</p>
     </td>
   </tr>
 </table>
@@ -231,7 +231,7 @@ https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-
  <table>
   <tr>
      <td colspan=2>
-      <p align="center">2.2 WBF 앙상블 기법으로 성능 개선</p>
+      <p align="center">2.2 Weighted Boxed Ensemble 앙상블 기법으로 성능 개선</p>
     </td>
   </tr>
     <tr>
@@ -242,7 +242,7 @@ https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-
     </tr>
     <tr>
      <td width="50%">
-      <p align="left">전처리된 데이터셋을 라벨링하였습니다. 이때, 사전학습된 모델을 활용하여 자동으로 식별하게 하였고, 아래와 같이 예외적인 경우에는 수작업을 병행하였습니다.</p>
+      <p align="left">소형 객체 탐지 모델의 성능을 개선하기 위하여, 추가적인 학습과 Weighted Boxed Ensemble 기법을 적용하였습니다. 그 결과, 이전에 식별한 차량에 대해서는 신뢰도가 대폭 상승한 것을 확인할 수 있었습니다. 뿐만 아니라, 이전에는 식별하지 못했던 유채색의 차량이나 주변 구조물의 그림자가 결쳐진 차량도 식별할 수 있었습니다.</p>
     </td>
   </tr>
 </table>
@@ -264,7 +264,7 @@ https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-
     </td>
   </tr>
     <td>
-     <p align="left">데이터 전처리 과정에서 초고해상도 이미지 개선 딥러닝 모델을 원본 데이터에 적용하여 해상도를 크게 개선할 수 있었습니다.</p>
+     <p align="left">Google Map API를 활용하여 지도 기반의 인터페이스를 구현하였습니다. 이 덕분에 사용자는 제주도 전역에 위치한 공영주차장의 위치를 한눈에 파악할 수 있습니다. 뿐만 아니라, 추후에 경로 탐색 기능을 추가할 계획입니다.</p>
     </td>
   </tr>
   
@@ -283,7 +283,7 @@ https://github.com/ziweek/desirable-sea/assets/99459331/2212ce20-bb1b-42f8-a97c-
   </tr>
   <tr>
      <td width="50%">
-      <p align="left">전처리된 데이터셋을 라벨링하였습니다. 이때, 사전학습된 모델을 활용하여 자동으로 식별하게 하였고, 아래와 같이 예외적인 경우에는 수작업을 병행하였습니다.</p>
+      <p align="left">스마트폰, 태블릿, 또는 컴퓨터에서도 연속적인 사용자 경험을 전달할 수 있도록 반응형 웹디자인을 적용하였습니다. 또, 더 나아가 다크모드 디자인을 적용하였습니다.</p>
     </td>
   </tr>
 </table>
